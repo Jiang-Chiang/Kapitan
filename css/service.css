@@ -39,8 +39,14 @@ main{
     position: relative;
 }
 
-.mp_rides, .mp_shooting_spot{
+.mp_rides, .mp_restaurant, .mp_hotel, 
+.mp_shooting_spot, .mp_shopping, .mp_public{
     display: none;
+    /* display: block;
+    border: none;
+    width: 30px;
+    position: absolute;
+    text-decoration: none; */
 }
 
 ._on{
@@ -51,7 +57,8 @@ main{
     text-decoration: none;
 } 
 
-.mp_rides::before, .mp_shooting_spot::before{
+.mp_rides::before, .mp_restaurant::before, .mp_hotel::before, 
+.mp_shooting_spot::before, .mp_shopping::before, .mp_public::before{
     display: inline-block;
     width: 60px;
     height: 25px;
@@ -68,17 +75,63 @@ main{
     left: -15px;
 }
 
-.mp_rides:hover, .mp_shooting_spot:hover{
+.mp_rides::after, .mp_restaurant::after, .mp_hotel::after, 
+.mp_shooting_spot::after, .mp_shopping::after, .mp_public::after{
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid RED;
+    border-top-color: darkred;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    content: " ";
+    position: absolute;
+    bottom: -15px;
+    left: 5px;
+}
+
+.mp_shooting_spot{
+    z-index: 5;
+}
+
+.mp_rides{
+    z-index: 4;
+}
+
+.mp_restaurant, .mp_hotel{
     z-index: 3;
 }
 
-#kavalan_village::before{
+.mp_shopping{
+    z-index: 2;
+}
+
+.mp_rides:hover, .mp_restaurant:hover, .mp_hotel:hover,
+.mp_shooting_spot:hover, .mp_shopping:hover, .mp_public:hover{
+    z-index: 7;
+}
+
+/* 長版客製框開始 */
+#bamboo_rice::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
+}
+
+#senaer_village::before{
     width: 100px;
     height: 25px;
     left: -35px;
 }
 
 #san_salvador_castle::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
+}
+
+#guzman_tavern::before{
     width: 100px;
     height: 25px;
     left: -35px;
@@ -96,21 +149,32 @@ main{
     left: -35px;
 }
 
-.mp_rides::after, .mp_shooting_spot::after{
-    display: block;
-    width: 0;
-    height: 0;
-    border: 10px solid RED;
-    border-top-color: darkred;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    content: " ";
-    position: absolute;
-    bottom: -15px;
-    left: 5px;
+#bilan_cultural::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
 }
 
+#tourist_center_west::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
+}
+
+#tourist_center_east::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
+}
+
+#kapitan_maritime::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
+}
+/* 長版客製框結束 */
+
+/* 遊樂設施定位開始 */
 #pirate_ship{
     top: 140px;
     left: 400px;
@@ -191,7 +255,47 @@ main{
 #maelstrom::before{
     content: "大漩渦";
 }
+/* 遊樂設施定位結束 */
 
+/* 美食住宿定位開始 */
+#bamboo_rice{
+    top: 260px;
+    left: 310px;
+}
+
+#bamboo_rice::before{
+    content: "平埔野餐區";
+}
+
+#chinese_seafood{
+    top: 340px;
+    left: 470px;
+}
+
+#chinese_seafood::before{
+    content: "閩粵海鮮";
+}
+
+#guzman_tavern{
+    top: 310px;
+    left: 740px;
+}
+
+#guzman_tavern::before{
+    content: "格司曼酒館";
+}
+
+#danhai_hotel{
+    top: 340px;
+    left: 980px;
+}
+
+#danhai_hotel::before{
+    content: "淡海飯店";
+}
+/* 美食住宿定位結束 */
+
+/* 攝影景點定位開始 */
 #san_salvador_castle{
     top: 200px;
     left: 710px;
@@ -201,13 +305,13 @@ main{
     content: "聖薩爾瓦多城堡";
 }
 
-#kavalan_village{
+#senaer_village{
     top: 170px;
     left: 450px;
 }
 
-#kavalan_village::before{
-    content: "噶瑪蘭村莊";
+#senaer_village::before{
+    content: "圭柔社村落";
 }
 
 #esquivel_trail{
@@ -225,8 +329,49 @@ main{
 }
 
 #formosa_square::before{
-    content: "福爾摩沙廣場";
+    content: "艾爾摩沙廣場";
 }
+/* 攝影景點定位結束 */
+
+/* 購物商城定位開始 */
+#bilan_cultural{
+    top: 300px;
+    left: 710px;
+}
+
+#bilan_cultural::before{
+    content: "碧藍文創中心";
+}
+/* 購物商城定位結束 */
+
+/* 公共機能定位開始 */
+#tourist_center_west{
+    top: 150px;
+    left: 590px;
+}
+
+#tourist_center_west::before{
+    content: "遊客中心（西）";
+}
+
+#tourist_center_east{
+    top: 350px;
+    left: 910px;
+}
+
+#tourist_center_east::before{
+    content: "遊客中心（東）";
+}
+
+#kapitan_maritime{
+    top: 590px;
+    left: 1050px;
+}
+
+#kapitan_maritime::before{
+    content: "甲必丹海洋學院";
+}
+/* 公共機能定位結束 */
 
 .tags_bar{
     width: 1000px;
@@ -240,7 +385,7 @@ main{
 
 .tag{
     border: none;
-    width: 140px;
+    width: 120px;
     height: 50px;
     background-color: white;
     color: black;
