@@ -1,0 +1,41 @@
+@import "./common/body.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/cover.css";
+
+main{
+    min-width: 1200px;
+    font-size: 0px;
+    text-align: center;
+}
+
+.content_container{
+    min-width: 1200px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+h2{
+    font-size: 72px;
+    margin-top: 160px; 
+    color: #152A69;
+    text-align: center;
+}
+
+.topic{
+    margin-bottom: 160px;
+    line-height: 40px;
+}
+
+h3{
+    font-size: 48px;
+    line-height: 10px;
+    margin-bottom: 160px;
+    color: #189EBB;
+    text-align: center;
+}
+
+.construction{
+    width: 300px;
+}

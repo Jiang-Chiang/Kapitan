@@ -1,0 +1,258 @@
+@import "./common/body.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/cover.css";
+
+main{
+    min-width: 1200px;
+    font-size: 0px;
+}
+
+.topic{
+    font-size: 42px;
+    color: #152A69;
+    text-align: center;
+}
+
+.breadcrumb{
+    border: 3px solid #707070;
+    border-radius: 40px;
+    width: 220px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    line-height: 33px;
+    margin-bottom: 40px;
+}
+
+.map_container{
+    border: 1px solid black;
+    width: 1200px;
+    height: 700px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 120px;
+    background-image: url(../images/map.png);
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.mp_rides, .mp_shooting_spot{
+    display: none;
+}
+
+._on{
+    display: block;
+    border: none;
+    width: 30px;
+    position: absolute;
+    text-decoration: none;
+} 
+
+.mp_rides::before, .mp_shooting_spot::before{
+    display: inline-block;
+    width: 60px;
+    height: 25px;
+    border-radius: 8px;
+    border: 1.5px solid #152A69;
+    background-color: white;
+    color: black;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 25px;
+    text-align: center;
+    position: absolute;
+    bottom: 2px;
+    left: -15px;
+}
+
+.mp_rides:hover, .mp_shooting_spot:hover{
+    z-index: 3;
+}
+
+#kavalan_village::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
+}
+
+#san_salvador_castle::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
+}
+
+#esquivel_trail::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
+}
+
+#formosa_square::before{
+    width: 100px;
+    height: 25px;
+    left: -35px;
+}
+
+.mp_rides::after, .mp_shooting_spot::after{
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid RED;
+    border-top-color: darkred;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    content: " ";
+    position: absolute;
+    bottom: -15px;
+    left: 5px;
+}
+
+#pirate_ship{
+    top: 140px;
+    left: 400px;
+}
+
+#pirate_ship::before{
+    content: "海盜船";
+}
+
+#kraken{
+    top: 120px;
+    left: 510px;
+}
+
+#kraken::before{
+    content: "大海怪";
+}
+
+#canoe{
+    top: 240px;
+    left: 490px;
+}
+
+#canoe::before{
+    content: "獨木舟";
+}
+
+#maten_wheel{
+    top: 220px;
+    left: 560px;
+}
+
+#maten_wheel::before{
+    content: "摩天輪";
+}
+
+#roller_coaster{
+    top: 260px;
+    left: 630px;
+}
+
+#roller_coaster::before{
+    content: "雲霄飛車";
+}
+
+#carousel{
+    top: 300px;
+    left: 580px;
+}
+
+#carousel::before{
+    content: "旋轉木馬";
+}
+
+#water_skiing{
+    top: 180px;
+    left: 670px;
+}
+
+#water_skiing::before{
+    content: "高台滑水";
+}
+
+#water_warship{
+    top: 330px;
+    left: 850px;
+}
+
+#water_warship::before{
+    content: "水戰船";
+}
+
+#maelstrom{
+    top: 430px;
+    left: 810px;
+}
+
+#maelstrom::before{
+    content: "大漩渦";
+}
+
+#san_salvador_castle{
+    top: 200px;
+    left: 710px;
+}
+
+#san_salvador_castle::before{
+    content: "聖薩爾瓦多城堡";
+}
+
+#kavalan_village{
+    top: 170px;
+    left: 450px;
+}
+
+#kavalan_village::before{
+    content: "噶瑪蘭村莊";
+}
+
+#esquivel_trail{
+    top: 300px;
+    left: 670px;
+}
+
+#esquivel_trail::before{
+    content: "艾斯奇維小徑";
+}
+
+#formosa_square{
+    top: 390px;
+    left: 710px;
+}
+
+#formosa_square::before{
+    content: "福爾摩沙廣場";
+}
+
+.tags_bar{
+    width: 1000px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: #E4E4E4;
+    margin: auto;
+    margin-bottom: 160px;
+    padding: 25px;
+}
+
+.tag{
+    border: none;
+    width: 140px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 15px;
+    text-decoration: none;
+    padding: 0;
+}
+
+.tag:hover{
+    background-color: #446DA3;
+    color: white;
+}

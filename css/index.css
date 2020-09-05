@@ -1,0 +1,286 @@
+@import "./common/body.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+
+.banner{
+    min-width: 1200px;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 0px;
+}
+
+main{
+    min-width: 1200px;
+    font-size: 0px;
+    text-align: center;
+}
+
+.chapter_1, .chapter_2, .chapter_3, .chapter_4{
+    position: relative;
+}
+
+.title{
+    font-size: 48px;
+    color: #152A69;
+    margin-top: 160px;
+}
+
+.sub_title{
+    font-size: 24px;
+    line-height: 0px;
+    margin-bottom: 80px;
+}
+
+.shortcut_container{
+    width: 200px;
+    height: 270px;
+    box-sizing: border-box;
+    text-align: center;
+    margin-right: 35px;
+    display: inline-block;
+}
+
+.shortcut_avatar{
+    width: 200px;
+    height: 200px;
+}
+
+.botton_area{
+    position: relative;
+}
+
+.shortcut_button{
+    width: 150px;
+    height: 50px;
+    background-color: #152A69;
+    border-radius: 20px;
+    position: relative;
+    right: 10px;
+    top: 20px;
+    z-index: 1;
+}
+
+.shortcut_button a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 24px;
+    font-family: 'Noto Sans TC';
+}
+
+.button_decoration{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    border: 2px solid black;
+    position: relative;
+    top: -25px;
+}
+
+.service_container_bg{
+    min-width: 1200px;
+    height: 600px;
+    background-color: #189EBB;
+    position: relative;
+    z-index: 0;
+}
+
+.service_container{
+    width: 1200px;
+    height: 600px;
+    background-color: #189EBB;
+    font-size: 0px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.service_img_block{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+
+.service_img_mask{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    margin: 0;
+    background-color: rgba(0, 0, 0, .8);
+    opacity: 0;
+}
+
+.service_mask_text_left{
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    left: 20px;
+    bottom: -5px;
+    opacity: 0;
+}
+
+.service_mask_text_right{
+    font-size: 28px;
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: -5px;
+    opacity: 0;
+}
+
+.service_img_block:hover .service_img_mask,.service_mask_text_left,.service_mask_text_right{
+    opacity: 1;
+}
+
+.service_text_block, .service_text_block1, .service_text_block2{
+    width: 300px;
+    height: 300px;
+    box-sizing: border-box;
+}
+
+.service_text_block1, .service_text_block2{
+    font-size: 16px;
+    text-align: left;
+    position: relative;
+}
+
+.service_text{
+    position: relative;
+    top: 45px;
+    left: 35px;
+    line-height: 30px;
+}
+
+.service_text_block1{
+    background-color: #92BECB;
+}
+
+.service_text_block2{
+    background-color: #FFFCED;
+}
+
+.yachts_container{
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    margin: auto;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.yacht_card{
+    font-size: 16px;
+    width: 325px;
+    height: 300px;
+    text-align: left;
+    line-height: 8px;
+    position: relative;
+}
+
+.yacht_avatar_block{
+    width: 325px;
+    height: 193px;
+    overflow: hidden;
+}
+
+.yacht_avatar{
+    width: 100%;
+}
+
+.yacht_text_block{
+    position: relative;
+}
+
+.yacht_title{
+    color: #135589;
+}
+
+.yacht_tags{
+    color: #979797;
+}
+
+.yacht_passengers_block{
+    position: absolute;
+    top: -3px;
+    right: 3px;
+}
+
+.slip_left{
+    position: absolute;
+    left: -40px;
+    top: 70px;
+}
+
+.slip_right{
+    position: absolute;
+    right: -40px;
+    top: 70px;   
+}
+
+.prologue_bg{
+    min-width: 1200px;
+    height: 450px;
+    background-image: url(../images/bg_sand.png);
+    z-index: 0;
+    margin-bottom: 130px;
+}
+
+.prologue_container{
+    width: 1200px;
+    height: 450px;
+    position: relative;
+    margin: auto;
+    display: flex;
+}
+
+.prologue_img_block, .prologue_img{
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    z-index: 1;
+}
+
+.prologue_text_block{
+    width: 587px;
+    font-size: 18px;
+    text-align: left;
+    line-height: 20px;
+    position: absolute;
+    top: 50px;
+    left: 530px;
+    z-index: 1;
+}
+
+.prologue_btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #152A69;
+    position: absolute;
+    bottom: 40px;
+    right: 90px;
+}
+
+.prologue_btn a{
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.slip_left_s{
+    position: absolute;
+    top: 200px;
+    left: 80px;
+}
+
+.slip_right_s{
+    position: absolute;
+    top: 200px;
+    left: 480px;
+}

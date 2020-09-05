@@ -1,0 +1,164 @@
+@import "./common/body.css";
+@import "./common/header.css";
+@import "./common/footer.css";
+@import "./common/cover.css";
+
+main{
+    min-width: 1200px;
+    font-size: 0px;
+}
+
+.topic{
+    font-size: 42px;
+    color: #152A69;
+    text-align: center;
+}
+
+.breadcrumb{
+    border: 3px solid #707070;
+    border-radius: 40px;
+    width: 220px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin: auto;
+    text-align: center;
+    line-height: 33px;
+    margin-bottom: 40px;
+}
+
+.middle_bn{
+    border: 1px solid black;
+    width: 1000px;
+    height: 360px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.tags_bar{
+    width: 1150px;
+    height: 250px;
+    background-color: #E4E4E4;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    margin: auto;
+    margin-bottom: 60px;
+    font-size: 24px;
+    line-height: 40px;
+}
+
+.checkbox_block{
+    display: flex;
+    margin-top: 20px;
+}
+
+.checkbox_text{
+    font-size: 20px;
+}
+
+.yachts_container{
+    width: 1150px;
+    height: 880px;
+    margin: auto;
+}
+
+.upper_yachts_block{
+    width: 1150px;
+    height: 525px;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recommended_yacht_card{
+    width: 750px;
+    height: 525px;
+    box-sizing: border-box;
+    position: relative;
+    font-size: 16px;
+    color: #979797;
+    margin-right: calc(100% - 750px - 350px);
+}
+
+.recommended_yacht_title{
+    color: #135589;
+    line-height: 3px;
+}
+
+.recommended_yacht_passengers_block{
+    color: black;
+    position: absolute;
+    right: 0;
+    bottom: 60px;
+}
+
+.rightside_yachts_block{
+    width: 350px;
+    height: 880px;
+    box-sizing: border-box;
+}
+
+.yacht_card{
+    font-size: 16px;
+    width: 350px;
+    height: 260px;
+    text-align: left;
+    line-height: 8px;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.yacht_text_block{
+    position: relative;
+}
+
+.yacht_title{
+    color: #135589;
+}
+
+.yacht_tags{
+    color: #979797;
+}
+
+.yacht_passengers_block{
+    position: absolute;
+    top: -3px;
+    right: 3px;
+}
+
+.downer_yachts_block{
+    width: 750px;
+    height: 260px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+
+.pagination{
+    width: 100px;
+    height: 40px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 120px;
+}
+
+.pagination a{
+    text-decoration: none;
+}
+
+.present_page, .page{
+    border: 1px solid #707070;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    font-size: 24px;
+}
+
+.present_page{
+    background-color: #152A69;
+    color: white;
+}
+
