@@ -93,7 +93,23 @@ p{
 }
 
 .news_img_block1{
-    background-image: url(../images/junk1.jpg);
+    background-image: url(../images/news_img1.png);
+}
+
+.news_img_block2{
+    background-image: url(../images/news_img2.jpg);
+}
+
+.news_img_block3{
+    background-image: url(../images/news_img3.jpg);
+}
+
+.news_img_block4{
+    background-image: url(../images/news_img4.jpg);
+}
+
+.news_img_block5{
+    background-image: url(../images/news_img5.jpg);
 }
 
 .pagination{
