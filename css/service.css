@@ -73,6 +73,7 @@ main{
     position: absolute;
     bottom: 2px;
     left: -15px;
+    z-index: 8;
 }
 
 .mp_rides::after, .mp_restaurant::after, .mp_hotel::after, 
@@ -89,6 +90,7 @@ main{
     position: absolute;
     bottom: -15px;
     left: 5px;
+    z-index: 8;
 }
 
 .mp_shooting_spot{
@@ -109,7 +111,7 @@ main{
 
 .mp_rides:hover, .mp_restaurant:hover, .mp_hotel:hover,
 .mp_shooting_spot:hover, .mp_shopping:hover, .mp_public:hover{
-    z-index: 7;
+    z-index: 9;
 }
 
 /* 長版客製框開始 */
