@@ -67,6 +67,11 @@ main{
     width: 150px;
 }
 
+.present_tag{
+    background-color: #446DA3;
+    color: white;
+}
+
 .subject_divider{
     width: 1000px;
     height: 50px;
@@ -107,6 +112,11 @@ main{
     margin-top: 10px;
 }
 
+.course_avatar:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease-out;
+}
+
 .course_title{
     font-size: 20px;
 }
@@ -118,6 +128,11 @@ main{
     border-radius: 55px;
     background-color: #189EBB;
     margin-top: 40px;
+}
+
+.course_btn:hover{
+    background-color: #152A69;
+    margin-top: 36px;
 }
 
 .pagination{

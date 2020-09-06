@@ -55,6 +55,11 @@ main{
     margin-right: 15px;
 }
 
+.present_tag{
+    background-color: #446DA3;
+    color: white;
+}
+
 .subject_divider{
     width: 1000px;
     height: 50px;
@@ -90,6 +95,30 @@ main{
     margin-bottom: 30px;
     text-align: center;
     position: relative;
+}
+
+.track_and_buy_block{
+    width: 300px;
+    height: 50px;
+    box-sizing: border-box;
+    opacity: 0%;
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.track_block, .buy_block{
+    width: 150px;
+    height: 50px;
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 85%;
+    padding: 10px;
+}
+
+.product_card:hover>.track_and_buy_block{
+    opacity: 85%;
+    bottom: 120px;
 }
 
 .product_information{

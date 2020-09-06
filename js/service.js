@@ -12,6 +12,8 @@
         var mp_shooting_spot = document.getElementsByClassName("mp_shooting_spot");
         var mp_shopping = document.getElementsByClassName("mp_shopping");
         var mp_public = document.getElementsByClassName("mp_public");
+        var choose_all_reveal = document.getElementsByClassName("choose_all_reveal");
+        var tag = document.getElementsByClassName("tag");
 
         tag_all_reveal.addEventListener("click", function(){
             for(let a = 0; a < mp_rides.length; a++){
@@ -35,6 +37,10 @@
         });
 
         tag_rides.addEventListener("click", function(){
+            //▼ 這段有問題//
+            for(let z = 0; z < tag.length; z++){
+                tag[z].classList.remove('_choosed');
+            }
             for(let a = 0; a < mp_rides.length; a++){
                 mp_rides[a].classList.add('_on');
             }

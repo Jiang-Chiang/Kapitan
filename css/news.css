@@ -88,6 +88,10 @@ p{
     right: 450px;
 }
 
+.learn_more_btn:hover{
+    background-color: #135589;
+}
+
 .news_block a{
     text-decoration: none;
 }
