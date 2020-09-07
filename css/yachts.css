@@ -27,6 +27,11 @@ main{
     margin-bottom: 40px;
 }
 
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+}
+
 .middle_bn{
     border: 1px solid black;
     width: 1150px;

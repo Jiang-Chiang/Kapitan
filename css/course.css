@@ -27,6 +27,11 @@ main{
     margin-bottom: 40px;
 }
 
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+}
+
 .middle_bn{
     border: 1px solid black;
     width: 1000px;
@@ -105,15 +110,17 @@ main{
     font-size: 16px;
     line-height: 10px;
     text-align: center;
-    display: block;
 }
 
 .course_avatar_block{
+    width: 90%;
+    margin: auto;
     margin-top: 10px;
+    overflow: hidden;
 }
 
 .course_avatar:hover{
-    transform: scale(1.05);
+    transform: scale(1.1, 1.1);
     transition: transform 1s ease-out;
 }
 
@@ -127,7 +134,9 @@ main{
     border: none;
     border-radius: 55px;
     background-color: #189EBB;
+    margin: auto;
     margin-top: 40px;
+    line-height: 65px;
 }
 
 .course_btn:hover{

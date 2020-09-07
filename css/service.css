@@ -27,6 +27,11 @@ main{
     margin-bottom: 40px;
 }
 
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+}
+
 .map_container{
     border: .1px solid #707070;
     width: 1200px;

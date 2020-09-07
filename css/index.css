@@ -2,11 +2,15 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
-.banner{
+.banner_block{
     min-width: 1200px;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow: -moz-hidden-unscrollable;
     font-size: 0px;
+}
+
+.banner{
+    width: 100%;
 }
 
 main{

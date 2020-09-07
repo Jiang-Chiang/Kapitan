@@ -27,6 +27,11 @@ main{
     margin-bottom: 40px;
 }
 
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+}
+
 .news_container{
     width: 1200px;
     height: 1950px;
