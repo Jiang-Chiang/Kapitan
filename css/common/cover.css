@@ -5,3 +5,26 @@
     font-size: 0;
     overflow: hidden;
 }
+
+.topic{
+    font-size: 42px;
+    color: #152A69;
+    text-align: center;
+}
+
+.breadcrumb{
+    width: 220px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 18px;
+    margin: auto;
+    margin-top: -35px;
+    text-align: center;
+    line-height: 33px;
+    margin-bottom: 75px;
+}
+
+.breadcrumb a{
+    text-decoration: none;
+    color: black;
+}

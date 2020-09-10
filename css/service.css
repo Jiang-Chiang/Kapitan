@@ -8,40 +8,49 @@ main{
     font-size: 0px;
 }
 
-.topic{
-    font-size: 42px;
-    color: #152A69;
-    text-align: center;
-}
-
-.breadcrumb{
-    border: 3px solid #707070;
-    border-radius: 40px;
-    width: 220px;
-    height: 40px;
-    box-sizing: border-box;
-    font-size: 18px;
-    margin: auto;
-    text-align: center;
-    line-height: 33px;
-    margin-bottom: 40px;
-}
-
-.breadcrumb a{
-    text-decoration: none;
-    color: black;
-}
-
 .map_container{
     border: .1px solid #707070;
     width: 1200px;
     height: 700px;
     margin: auto;
-    margin-bottom: 40px;
-    margin-top: 120px;
+    margin-bottom: 160px;
+    margin-top: 30px;
     background-image: url(../images/map.png);
     background-repeat: no-repeat;
     position: relative;
+}
+
+.tags_bar{
+    width: 1200px;
+    height: 100px;
+    box-sizing: border-box;
+    background-color: #E4E4E4;
+    margin: auto;
+    padding: 25px;
+}
+
+.tag{
+    border: none;
+    width: 120px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 15px;
+    text-decoration: none;
+    padding: 0;
+}
+
+.tag:hover{
+    background-color: #446DA3;
+    color: white;
+}
+
+._choosed{
+    background-color: #152A69;
+    color: white;
 }
 
 .mp_rides, .mp_restaurant, .mp_hotel, 
@@ -379,37 +388,3 @@ main{
     content: "甲必丹海洋學院";
 }
 /* 公共機能定位結束 */
-
-.tags_bar{
-    width: 1000px;
-    height: 100px;
-    box-sizing: border-box;
-    background-color: #E4E4E4;
-    margin: auto;
-    margin-bottom: 160px;
-    padding: 25px;
-}
-
-.tag{
-    border: none;
-    width: 120px;
-    height: 50px;
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    line-height: 50px;
-    margin-right: 15px;
-    text-decoration: none;
-    padding: 0;
-}
-
-.tag:hover{
-    background-color: #446DA3;
-    color: white;
-}
-
-._choosed{
-    background-color: #152A69;
-    color: white;
-}

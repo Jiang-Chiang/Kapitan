@@ -7,29 +7,6 @@ main{
     min-width: 1200px;
     font-size: 0px;
 }
-.topic{
-    font-size: 42px;
-    color: #152A69;
-    text-align: center;
-}
-
-.breadcrumb{
-    border: 3px solid #707070;
-    border-radius: 40px;
-    width: 220px;
-    height: 40px;
-    box-sizing: border-box;
-    font-size: 18px;
-    margin: auto;
-    text-align: center;
-    line-height: 33px;
-    margin-bottom: 40px;
-}
-
-.breadcrumb a{
-    text-decoration: none;
-    color: black;
-}
 
 .middle_bn{
     border: 1px solid black;
