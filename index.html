@@ -4,6 +4,8 @@
         <meta charset="utf-8">
         <title>甲必丹遊艇城：首頁</title>
         <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -16,7 +18,7 @@
                     <a href="./construction.html"><img src="./images/search.png" alt=""></a>
                     <a href="./construction.html"><img src="./images/shopping-cart.png" alt=""></a>
                     <a href="./construction.html"><img src="./images/user.png" alt=""></a>
-                </div>>
+                </div>
             </div>
         </header>
         <!--Header結束-->
@@ -33,9 +35,11 @@
         <!--導覽列結束-->
         
         <!--bn版位開始-->
-        <div class="banner_block">
-            <a href="./yachts_poseidon.html"><img src="./images/bn1.png" alt="" class="banner"></a>
-        </div>
+            <div class="banner_block">
+                <a href="./yachts_poseidon.html"><img src="./images/bn_large_1.png" alt="" class="banner"></a>
+                <a href="./yachts_poseidon.html"><img src="./images/bn_large_1.png" alt="" class="banner"></a>
+                <a href="./yachts_poseidon.html"><img src="./images/bn_large_1.png" alt="" class="banner"></a>
+            </div>
         <!--bn版位結束-->
         
         <!--主要內容開始-->
@@ -51,48 +55,55 @@
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-1.png" alt="">
                     </div>
-                    <div class="button_area">
-                        <button class="shortcut_btn"><a href="./yachts.html">遊艇租賃</a></button>
-                        <button class="button_decoration"></button>
-                    </div>
+                    <a href="./yachts.html">
+                        <div class="button_area">
+                            <div class="shortcut_btn">遊艇租賃</div>
+                            <div class="button_decoration"></div>
+                        </div>
+                    </a>
                 </div>
                 <!--「遊艇租賃」捷徑結束-->
 
                 <!--「紅毛樂園」捷徑開始-->
                 <div class="shortcut_container">
+                    <a href="./service.html">
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-2.png" alt="">
                     </div>
                     <a href="./service.html">
                         <div class="button_area">
-                            <button class="shortcut_btn">紅毛樂園</button>
-                            <button class="button_decoration"></button>
+                            <div class="shortcut_btn">紅毛樂園</div>
+                            <div class="button_decoration"></div>
                         </div>
                     </a>
                 </div>
                 <!--「紅毛樂園」捷徑結束-->
 
-                <!--「觀海飯店」捷徑開始-->
+                <!--「淡海飯店」捷徑開始-->
                 <div class="shortcut_container">
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-3.png" alt="">
                     </div>
-                    <div class="button_area">
-                        <button class="shortcut_btn"><a href="./service.html">淡海飯店</a></button>
-                        <button class="button_decoration"></button>
-                    </div>
+                    <a href="./service.html">
+                        <div class="button_area">
+                            <div class="shortcut_btn">淡海飯店</div>
+                            <div class="button_decoration"></div>
+                        </div>
+                    </a>
                 </div>
-                <!--「觀海飯店」捷徑結束-->
+                <!--「淡海飯店」捷徑結束-->
 
                 <!--「認證課程」捷徑開始-->
                 <div class="shortcut_container">
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-4.png" alt="">
                     </div>
-                    <div class="button_area">
-                        <button class="shortcut_btn"><a href="./course.html">認證課程</a></button>
-                        <button class="button_decoration"></button>
-                    </div>
+                    <a href="./course.html">
+                        <div class="button_area">
+                            <div class="shortcut_btn">認證課程</div>
+                            <div class="button_decoration"></div>
+                        </div>
+                    </a>
                 </div>
                 <!--「認證課程」捷徑結束-->
 
@@ -101,10 +112,12 @@
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-5.png" alt="">
                     </div>
-                    <div class="button_area">
-                        <button class="shortcut_btn"><a href="./store.html">碧藍文創</a></button>
-                        <button class="button_decoration"></button>
-                    </div>
+                    <a href="./store.html">
+                        <div class="button_area">
+                            <div class="shortcut_btn">碧藍文創</div>
+                            <div class="button_decoration"></div>
+                        </div>
+                    </a>
                 </div>
                 <!--「碧藍文創」捷徑結束-->
                    
@@ -123,12 +136,12 @@
                     <div class="service_container">
                         <!--「朗文大師」服務開始-->
                         <div class="service_img_block">
-                            <a href="#">
+                            <!-- <a href="#"> -->
                                 <img src="./images/chef.png" alt="" class="sevice_img">
                                 <div class="service_img_mask">
                                     <h2 class="service_mask_text_left">朗文大師</h2>
                                 </div>
-                            </a>
+                            <!-- </a> -->
                             
                         </div>
                         <!--「朗文大師」服務結束-->
@@ -146,41 +159,45 @@
 
                         <!--「熱血教練」服務開始-->
                         <div class="service_img_block">
-                            <a href=""><img src="./images/coach.png" alt="">
+                            <!-- <a href=""> -->
+                                <img src="./images/coach.png" alt="">
                                 <div class="service_img_mask">
                                     <h2 class="service_mask_text_right">熱血教練</h2>
                                 </div>
-                            </a>
+                            <!-- </a> -->
                         </div>
                         <!--「熱血教練」服務結束-->
 
                         <!--「超強DJ」服務開始-->
                         <div class="service_img_block">
-                            <a href=""><img src="./images/DJ.png" alt="">
+                            <!-- <a href=""> -->
+                                <img src="./images/DJ.png" alt="">
                                 <div class="service_img_mask">
                                     <h2 class="service_mask_text_right">超強DJ</h2>
                                 </div>
-                            </a>
+                            <!-- </a> -->
                         </div>
                         <!--「超強DJ」服務結束-->
 
                         <!--「南國調酒」服務開始-->
                         <div class="service_img_block">
-                            <a href=""><img src="./images/Bartending.png" alt="">
+                            <!-- <a href=""> -->
+                                <img src="./images/Bartending.png" alt="">
                                 <div class="service_img_mask">
                                     <h2 class="service_mask_text_left">南國調酒</h2>
                                 </div>
-                            </a>
+                            <!-- </a> -->
                         </div>
                         <!--「南國調酒」服務結束-->
 
                         <!--「誠摯微笑」服務開始-->
                         <div class="service_img_block">
-                            <a href=""><img src="./images/waiter.png" alt="">
+                            <!-- <a href=""> -->
+                                <img src="./images/waiter.png" alt="">
                                 <div class="service_img_mask">
                                     <h2 class="service_mask_text_left">誠摯微笑</h2>
                                 </div>
-                            </a>
+                            <!-- </a> -->
                         </div>
                         <!--「誠摯微笑」服務結束-->
 
@@ -197,11 +214,12 @@
 
                         <!--「浪漫煙火」服務開始-->
                         <div class="service_img_block">
-                            <a href=""><img src="./images/fireworks.png" alt="">
+                            <!-- <a href=""> -->
+                                <img src="./images/fireworks.png" alt="">
                                 <div class="service_img_mask">
                                     <h2 class="service_mask_text_right">浪漫煙火</h2>
                                 </div>
-                            </a>
+                            <!-- </a> -->
                         </div>
                         <!--「浪漫煙火」服務結束-->
                     </div>
@@ -266,10 +284,37 @@
                     </div>
                     <!--第三艘船「波賽頓」結束-->
 
-                    <img src="./images/left.png" alt="" class="slip_left">
-                    <img src="./images/right.png" alt="" class="slip_right">
-                        
-                </div>
+                    <!--第四艘船「艾瑞克森」開始-->
+                    <div class="yacht_card">
+                        <div class="yacht_avatar_block">
+                           <a href="./construction.html"><img src="./images/MOODY54.png" alt="" class="yacht_avatar"></a>
+                        </div>
+                        <div class="yacht_text_block">
+                            <h3 class="yacht_title">艾瑞克森</h3>
+                            <span class="yacht_tags">遠航│包船│過夜│專職領隊</span>
+                            <span class="yacht_passengers_block">
+                                <img src="./images/user-friends.png" alt="">
+                                6
+                            </span>
+                        </div>
+                    </div>
+                    <!--第四艘船「艾瑞克森」結束-->
+
+                    <!--第五艘船「逍遙」開始-->
+                    <div class="yacht_card">
+                        <div class="yacht_avatar_block">
+                            <a href="./construction.html"><img src="./images/Asteria 96.png" alt="" class="yacht_avatar"></a>
+                        </div>
+                        <div class="yacht_text_block">
+                            <h3 class="yacht_title">逍遙</h3>
+                            <span class="yacht_tags">近岸│包船│過夜│電音DJ│卡拉OK</span>
+                            <span class="yacht_passengers_block">
+                                <img src="./images/user-friends.png" alt="">
+                                20
+                            </span>
+                        </div>
+                    </div>
+                    <!--第五艘船「逍遙」結束-->
 
             </div>
             <!--第三章：《立即租船》結束-->
@@ -329,6 +374,26 @@
             <div class="copy_right">© 2020  Kapitan</div>
         </footer>
         <!--Footer結束-->
-
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+    <script type="text/javascript">
+        $(".banner_block").slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+        });
+    </script>
+    <script type="text/javascript">
+        $(".yachts_container").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        });
+    </script>
     </body>
 </html>
