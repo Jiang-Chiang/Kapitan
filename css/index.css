@@ -2,10 +2,24 @@
 @import "./common/header.css";
 @import "./common/footer.css";
 
+.lSAction > a.lSPrev, .lSAction > a.lSNext{
+    opacity: 1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .lSAction > a.lSPrev{
+    background-image: url('../images/left.png');
+  }
+  .lSAction > a.lSNext{
+     background-image: url('../images/right.png');
+  }
+
 .banner_block{
     min-width: 1200px;
     box-sizing: border-box;
-    overflow: -moz-hidden-unscrollable;
     font-size: 0px;
 }
 
@@ -172,6 +186,7 @@ a{
 .yachts_container{
     width: 1200px;
     height: 300px;
+    box-sizing: border-box;
     position: relative;
     margin: auto;
     padding: 0px 30px;
@@ -184,14 +199,17 @@ a{
     font-size: 16px;
     width: 325px;
     height: 300px;
+    box-sizing: border-box;
     text-align: left;
     line-height: 8px;
     position: relative;
+    display: inline-block;
 }
 
 .yacht_avatar_block{
     width: 325px;
     height: 193px;
+    box-sizing: border-box;
     overflow: hidden;
 }
 
