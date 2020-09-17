@@ -2,9 +2,10 @@
 <html lang="zh-Hant">
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <title>甲必丹遊艇城：首頁</title>
-        <li<link type="text/css" rel="stylesheet" href="./css/lightslider.css" /> nk rel="stylesheet" href="./css/index.css">
-           
+        <link rel="stylesheet" href="./css/index.css">
+        <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />         
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -12,6 +13,22 @@
         <!--Header開始-->
         <header class="header">
             <div class="top_bar">
+                <!-- 漢堡選單開始 -->
+                <div class="hamburger_menu">
+                    <input id="menu_toggle" type="checkbox">
+                    <label class="menu_btn" for="menu_toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menu_box">
+                        <li><a class="menu_item" href="./about.html">關於我們</a></li>
+                        <li><a class="menu_item" href="./news.html">最新消息</a></li>
+                        <li><a class="menu_item" href="./course.html">航海課程</a></li>
+                        <li><a class="menu_item" href="./service.html">港口服務</a></li>
+                        <li><a class="menu_item" href="./yachts.html">船艇租賃</a></li>
+                        <li><a class="menu_item" href="./store.html">碧藍商城</a></li>
+                    </ul>
+                </div>
+                <!-- 漢堡選單結束 -->
                 <a href="./index.html"><img src="./images/Logo.png" alt="" class="logo"></a>
                 <div class="sub_nav_bar">
                     <a href="./construction.html"><img src="./images/search.png" alt=""></a>
@@ -35,7 +52,7 @@
         
         <!--bn版位開始-->
 
-        <ul id="large_banner_block" class="banner_block">
+        <!-- <ul id="large_banner_block" class="banner_block">
             <li>
                 <a href="./yachts_poseidon.html"><img src="./images/bn_large_1.png" alt="" class="banner"></a>
             </li>
@@ -45,7 +62,7 @@
             <li>
                 <a href="./yachts_poseidon.html"><img src="./images/bn_large_1.png" alt="" class="banner"></a>
             </li>
-        </ul>
+        </ul> -->
 
             <!-- <div class="banner_block">
                 <a href="./yachts_poseidon.html"><img src="./images/bn_large_1.png" alt="" class="banner"></a>
