@@ -45,7 +45,7 @@
         margin-bottom: 40px;
     }
     
-    .shortcut_container{
+    .shortcut_card{
         width: 200px;
         height: 270px;
         box-sizing: border-box;
@@ -338,19 +338,24 @@
         margin-top: 160px;
     }
     
-    /* .sub_title{
+    .sub_title{
         font-size: 24px;
         line-height: 0px;
-        margin-bottom: 40px;
+    }
+
+    .chapter_1{
+        width: 100%;
+        text-align: center;
+        display: block;
     }
     
-    .shortcut_container{
+    .shortcut_card{
         width: 200px;
-        height: 270px;
+        height: 300px;
         box-sizing: border-box;
+        margin: auto;
         text-align: center;
-        margin-right: 35px;
-        display: inline-block;
+        margin-top: 50px;
     }
     
     .shortcut_avatar{
@@ -394,29 +399,26 @@
     }
     
     .service_container_bg{
-        min-width: 1200px;
-        height: 600px;
-        background-color: #189EBB;
+        width: 100%;
         position: relative;
-        z-index: 0;
+        margin-top: 80px;
     }
     
     .service_container{
-        width: 1200px;
-        height: 600px;
+        width: 100%;
         background-color: #189EBB;
         font-size: 0px;
         margin: auto;
-        display: flex;
-        flex-wrap: wrap;
+        /* display: flex;
+        flex-wrap: wrap; */
         position: relative;
-        z-index: 1;
     }
     
-    .service_img_block{
+    .service_img_block, .service_text_block1, .service_text_block2{
         width: 300px;
         height: 300px;
         position: relative;
+        margin: auto;
     }
     
     .service_img_mask{
@@ -436,6 +438,7 @@
         left: 20px;
         bottom: -5px;
         opacity: 0;
+        margin
     }
     
     .service_mask_text_right{
@@ -461,6 +464,10 @@
         font-size: 16px;
         text-align: left;
         position: relative;
+    } 
+
+    .service_title{
+        display: inline;
     }
     
     .service_text{
@@ -478,7 +485,7 @@
         background-color: #FFFCED;
     }
     
-    .yachts_container{
+    /* .yachts_container{
         width: 1200px;
         height: 300px;
         box-sizing: border-box;
@@ -613,6 +620,6 @@
     
     .shortcut_btn:hover, .prologue_btn:hover{
         background-color: #135589;
-    } */
+    } 
 
-}
+} */ 
