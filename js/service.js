@@ -12,26 +12,35 @@
         var all_mp_shooting_spot = document.querySelectorAll("a.mp_shooting_spot");
         var all_mp_shopping = document.querySelectorAll("a.mp_shopping");
         var all_mp_public = document.querySelectorAll("a.mp_public");
-        var choose_all = document.querySelectorAll("div.map_container a");
+        var all_mp_items = document.querySelectorAll("div.map_container a");
+        var all_tags = document.querySelectorAll("div.tags_bar button");
 
         tag_all_reveal.addEventListener("click", function(){
-            choose_all.forEach(function(choose_all, i){
-                choose_all.classList.add('_on');
+            all_mp_items.forEach(function(all_mp_items, i){
+                all_mp_items.classList.add('_on');
             });
+            all_tags.forEach(function(all_tags, i){
+                all_tags.classList.remove('_choosed');
+            });
+            tag_all_reveal.classList.add('_choosed');
         });
 
         tag_rides.addEventListener("click", function(){
-            choose_all.forEach(function(choose_all, i){
-                choose_all.classList.remove('_on');
+            all_mp_items.forEach(function(all_mp_items, i){
+                all_mp_items.classList.remove('_on');
             });
             all_mp_rides.forEach(function(all_mp_rides, i){
                 all_mp_rides.classList.add('_on');
             });
+            all_tags.forEach(function(all_tags, i){
+                all_tags.classList.remove('_choosed');
+            });
+            tag_rides.classList.add('_choosed');
         });
 
         tag_restaurant_and_hotel.addEventListener("click", function(){
-            choose_all.forEach(function(choose_all, i){
-                choose_all.classList.remove('_on');
+            all_mp_items.forEach(function(all_mp_items, i){
+                all_mp_items.classList.remove('_on');
             });
             all_mp_restaurant.forEach(function(all_mp_restaurant, i){
                 all_mp_restaurant.classList.add('_on');
@@ -39,37 +48,57 @@
             all_mp_hotel.forEach(function(all_mp_hotel, i){
                 all_mp_hotel.classList.add('_on');
             });
+            all_tags.forEach(function(all_tags, i){
+                all_tags.classList.remove('_choosed');
+            });
+            tag_restaurant_and_hotel.classList.add('_choosed');
         });
 
         tag_shooting_spot.addEventListener("click", function(){
-            choose_all.forEach(function(choose_all, i){
-                choose_all.classList.remove('_on');
+            all_mp_items.forEach(function(all_mp_items, i){
+                all_mp_items.classList.remove('_on');
             });
             all_mp_shooting_spot.forEach(function(all_mp_shooting_spot, i){
                 all_mp_shooting_spot.classList.add('_on');
             });
+            all_tags.forEach(function(all_tags, i){
+                all_tags.classList.remove('_choosed');
+            });
+            tag_shooting_spot.classList.add('_choosed');
         });
 
         tag_shopping.addEventListener("click", function(){
-            choose_all.forEach(function(choose_all, i){
-                choose_all.classList.remove('_on');
+            all_mp_items.forEach(function(all_mp_items, i){
+                all_mp_items.classList.remove('_on');
             });
             all_mp_shopping.forEach(function(all_mp_shopping, i){
                 all_mp_shopping.classList.add('_on');
             });
+            all_tags.forEach(function(all_tags, i){
+                all_tags.classList.remove('_choosed');
+            });
+            tag_shopping.classList.add('_choosed');
         });
 
         tag_public.addEventListener("click", function(){
-            choose_all.forEach(function(choose_all, i){
-                choose_all.classList.remove('_on');
+            all_mp_items.forEach(function(all_mp_items, i){
+                all_mp_items.classList.remove('_on');
             });
             all_mp_public.forEach(function(all_mp_public, i){
                 all_mp_public.classList.add('_on');
             });
+            all_tags.forEach(function(all_tags, i){
+                all_tags.classList.remove('_choosed');
+            });
+            tag_public.classList.add('_choosed');
         });
 
         tag_all_remove.addEventListener("click", function(){
-            choose_all.forEach(function(choose_all, i){
-                choose_all.classList.remove('_on');
+            all_mp_items.forEach(function(all_mp_items, i){
+                all_mp_items.classList.remove('_on');
             });
+            all_tags.forEach(function(all_tags, i){
+                all_tags.classList.remove('_choosed');
+            });
+            tag_all_remove.classList.add('_choosed');
         });

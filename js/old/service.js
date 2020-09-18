@@ -13,7 +13,6 @@
         var mp_shopping = document.getElementsByClassName("mp_shopping");
         var mp_public = document.getElementsByClassName("mp_public");
         var choose_all_reveal = document.getElementsByClassName("choose_all_reveal");
-        var tag = document.getElementsByClassName("tag");
 
         tag_all_reveal.addEventListener("click", function(){
             for(let a = 0; a < mp_rides.length; a++){
