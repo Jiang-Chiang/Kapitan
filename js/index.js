@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    $('#large_banner_block').lightSlider({
+    $('#large_banner_list').lightSlider({
         adaptiveHeight:true,
         item:1,
         slideMargin:0,
