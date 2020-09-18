@@ -6,162 +6,70 @@
         var tag_public = document.getElementById("tag_public");
         var tag_all_remove = document.getElementById("tag_all_remove");
 
-        var mp_rides = document.getElementsByClassName("mp_rides");
-        var mp_restaurant = document.getElementsByClassName("mp_restaurant");
-        var mp_hotel = document.getElementsByClassName("mp_hotel");
-        var mp_shooting_spot = document.getElementsByClassName("mp_shooting_spot");
-        var mp_shopping = document.getElementsByClassName("mp_shopping");
-        var mp_public = document.getElementsByClassName("mp_public");
-        var choose_all_reveal = document.getElementsByClassName("choose_all_reveal");
-        var tag = document.getElementsByClassName("tag");
+        var all_mp_rides = document.querySelectorAll("a.mp_rides");
+        var all_mp_restaurant = document.querySelectorAll("a.mp_restaurant");
+        var all_mp_hotel = document.querySelectorAll("a.mp_hotel");
+        var all_mp_shooting_spot = document.querySelectorAll("a.mp_shooting_spot");
+        var all_mp_shopping = document.querySelectorAll("a.mp_shopping");
+        var all_mp_public = document.querySelectorAll("a.mp_public");
+        var choose_all = document.querySelectorAll("div.map_container a");
 
         tag_all_reveal.addEventListener("click", function(){
-            for(let a = 0; a < mp_rides.length; a++){
-                mp_rides[a].classList.add('_on');
-            }
-            for(let b = 0; b < mp_restaurant.length; b++){
-                mp_restaurant[b].classList.add('_on');
-            }
-            for(let c = 0; c < mp_hotel.length; c++){
-                mp_hotel[c].classList.add('_on');
-            }
-            for(let d = 0; d < mp_shooting_spot.length; d++){
-                mp_shooting_spot[d].classList.add('_on');
-            }
-            for(let e = 0; e < mp_shopping.length; e++){
-                mp_shopping[e].classList.add('_on');
-            }
-            for(let f = 0; f < mp_public.length; f++){
-                mp_public[f].classList.add('_on');
-            }
+            choose_all.forEach(function(choose_all, i){
+                choose_all.classList.add('_on');
+            });
         });
 
         tag_rides.addEventListener("click", function(){
-            //▼ 這段有問題//
-            for(let z = 0; z < tag.length; z++){
-                tag[z].classList.remove('_choosed');
-            }
-            for(let a = 0; a < mp_rides.length; a++){
-                mp_rides[a].classList.add('_on');
-            }
-            for(let b = 0; b < mp_restaurant.length; b++){
-                mp_restaurant[b].classList.remove('_on');
-            }
-            for(let c = 0; c < mp_hotel.length; c++){
-                mp_hotel[c].classList.remove('_on');
-            }
-            for(let d = 0; d < mp_shooting_spot.length; d++){
-                mp_shooting_spot[d].classList.remove('_on');
-            }
-            for(let e = 0; e < mp_shopping.length; e++){
-                mp_shopping[e].classList.remove('_on');
-            }
-            for(let f = 0; f < mp_public.length; f++){
-                mp_public[f].classList.remove('_on');
-            }
+            choose_all.forEach(function(choose_all, i){
+                choose_all.classList.remove('_on');
+            });
+            all_mp_rides.forEach(function(all_mp_rides, i){
+                all_mp_rides.classList.add('_on');
+            });
         });
 
         tag_restaurant_and_hotel.addEventListener("click", function(){
-            for(let b = 0; b < mp_restaurant.length; b++){
-                mp_restaurant[b].classList.add('_on');
-            }
-            for(let c = 0; c < mp_hotel.length; c++){
-                mp_hotel[c].classList.add('_on');
-            }
-            for(let a = 0; a < mp_rides.length; a++){
-                mp_rides[a].classList.remove('_on');
-            }
-            for(let d = 0; d < mp_shooting_spot.length; d++){
-                mp_shooting_spot[d].classList.remove('_on');
-            }
-            for(let e = 0; e < mp_shopping.length; e++){
-                mp_shopping[e].classList.remove('_on');
-            }
-            for(let f = 0; f < mp_public.length; f++){
-                mp_public[f].classList.remove('_on');
-            }
+            choose_all.forEach(function(choose_all, i){
+                choose_all.classList.remove('_on');
+            });
+            all_mp_restaurant.forEach(function(all_mp_restaurant, i){
+                all_mp_restaurant.classList.add('_on');
+            });
+            all_mp_hotel.forEach(function(all_mp_hotel, i){
+                all_mp_hotel.classList.add('_on');
+            });
         });
 
         tag_shooting_spot.addEventListener("click", function(){
-            for(let d = 0; d < mp_shooting_spot.length; d++){
-                mp_shooting_spot[d].classList.add('_on');
-            }
-            for(let a = 0; a < mp_rides.length; a++){
-                mp_rides[a].classList.remove('_on');
-            }
-            for(let b = 0; b < mp_restaurant.length; b++){
-                mp_restaurant[b].classList.remove('_on');
-            }
-            for(let c = 0; c < mp_hotel.length; c++){
-                mp_hotel[c].classList.remove('_on');
-            }
-            for(let e = 0; e < mp_shopping.length; e++){
-                mp_shopping[e].classList.remove('_on');
-            }
-            for(let f = 0; f < mp_public.length; f++){
-                mp_public[f].classList.remove('_on');
-            }
+            choose_all.forEach(function(choose_all, i){
+                choose_all.classList.remove('_on');
+            });
+            all_mp_shooting_spot.forEach(function(all_mp_shooting_spot, i){
+                all_mp_shooting_spot.classList.add('_on');
+            });
         });
 
         tag_shopping.addEventListener("click", function(){
-            for(let e = 0; e < mp_shopping.length; e++){
-                mp_shopping[e].classList.add('_on');
-            }
-            for(let a = 0; a < mp_rides.length; a++){
-                mp_rides[a].classList.remove('_on');
-            }
-            for(let b = 0; b < mp_restaurant.length; b++){
-                mp_restaurant[b].classList.remove('_on');
-            }
-            for(let c = 0; c < mp_hotel.length; c++){
-                mp_hotel[c].classList.remove('_on');
-            }
-            for(let d = 0; d < mp_shooting_spot.length; d++){
-                mp_shooting_spot[d].classList.remove('_on');
-            }
-            for(let f = 0; f < mp_public.length; f++){
-                mp_public[f].classList.remove('_on');
-            }
+            choose_all.forEach(function(choose_all, i){
+                choose_all.classList.remove('_on');
+            });
+            all_mp_shopping.forEach(function(all_mp_shopping, i){
+                all_mp_shopping.classList.add('_on');
+            });
         });
 
         tag_public.addEventListener("click", function(){
-            for(let f = 0; f < mp_public.length; f++){
-                mp_public[f].classList.add('_on');
-            }
-            for(let a = 0; a < mp_rides.length; a++){
-                mp_rides[a].classList.remove('_on');
-            }
-            for(let b = 0; b < mp_restaurant.length; b++){
-                mp_restaurant[b].classList.remove('_on');
-            }
-            for(let c = 0; c < mp_hotel.length; c++){
-                mp_hotel[c].classList.remove('_on');
-            }
-            for(let d = 0; d < mp_shooting_spot.length; d++){
-                mp_shooting_spot[d].classList.remove('_on');
-            }
-            for(let e = 0; e < mp_shopping.length; e++){
-                mp_shopping[e].classList.remove('_on');
-            }
+            choose_all.forEach(function(choose_all, i){
+                choose_all.classList.remove('_on');
+            });
+            all_mp_public.forEach(function(all_mp_public, i){
+                all_mp_public.classList.add('_on');
+            });
         });
 
         tag_all_remove.addEventListener("click", function(){
-            for(let a = 0; a < mp_rides.length; a++){
-                mp_rides[a].classList.remove('_on');
-            }
-            for(let b = 0; b < mp_restaurant.length; b++){
-                mp_restaurant[b].classList.remove('_on');
-            }
-            for(let c = 0; c < mp_hotel.length; c++){
-                mp_hotel[c].classList.remove('_on');
-            }
-            for(let d = 0; d < mp_shooting_spot.length; d++){
-                mp_shooting_spot[d].classList.remove('_on');
-            }
-            for(let e = 0; e < mp_shopping.length; e++){
-                mp_shopping[e].classList.remove('_on');
-            }
-            for(let f = 0; f < mp_public.length; f++){
-                mp_public[f].classList.remove('_on');
-            }
+            choose_all.forEach(function(choose_all, i){
+                choose_all.classList.remove('_on');
+            });
         });
