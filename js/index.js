@@ -57,9 +57,9 @@ $(document).ready(function() {
                   }
             },
             {
-                breakpoint:480,
+                breakpoint:768,
                 settings: {
-                    item:2,
+                    item:1,
                     slideMove:1
                   }
             }

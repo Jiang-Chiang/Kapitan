@@ -24,7 +24,7 @@
     }
     
     main{
-        min-width: 1200px;
+        /* min-width: 1200px; */
         font-size: 0px;
         text-align: center;
     }
@@ -41,7 +41,8 @@
     
     .sub_title{
         font-size: 24px;
-        line-height: 0px;
+        /* line-height: 0px; */
+        line-height: 30px;
         margin-bottom: 40px;
     }
     
@@ -340,7 +341,7 @@
     
     .sub_title{
         font-size: 24px;
-        line-height: 0px;
+        line-height: 28px;
     }
 
     .chapter_1{
@@ -485,7 +486,7 @@
         background-color: #FFFCED;
     }
     
-    /* .yachts_container{
+    .yachts_container{
         width: 1200px;
         height: 300px;
         box-sizing: border-box;
@@ -542,7 +543,7 @@
         right: 3px;
     }
     
-    .slip_left{
+    /* .slip_left{
         position: absolute;
         left: -40px;
         top: 70px;
@@ -552,11 +553,11 @@
         position: absolute;
         right: -40px;
         top: 70px;   
-    }
+    } */
     
     .prologue_bg{
-        min-width: 1200px;
-        height: 450px;
+        width: 100%;
+        /* height: 450px; */
         background-image: url(../images/bg_sand.png);
         z-index: 0;
         margin-bottom: 130px;
@@ -622,4 +623,4 @@
         background-color: #135589;
     } 
 
-} */ 
+}
