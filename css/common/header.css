@@ -68,30 +68,34 @@
 }
 
 @media (max-width:767px){
+
     .header{
         width: 100%;
         position: sticky;
         z-index: 7;
     }
+
     .top_bar{
         height: 50px;
         position: relative;
         background-color: #189EBB;
-        display: flex;
-        justify-content: space-between;
+        text-align: center;
     }
-    img.logo{
+    
+    .logo{
         width: 42px;
         height: 45px;
     }
+
     .sub_nav_bar{
-        border: 1px solid black;
-        width: 150px;
-        height: 50px;
-        padding: 8px 10px;
-        box-sizing: border-box;
+      position: absolute;
+      right: 0px;
+      top: 5px;
+      padding: 8px 10px;
     }
+
     .sub_nav_bar img{
+        width: 20px;
         margin: 0px 5px;
     }
 
@@ -125,7 +129,7 @@
         align-items: center;
         /* position: fixed; */
         position: absolute;
-        top: 12px;
+        top: 10px;
         left: 15px;
       
         width: 26px;
