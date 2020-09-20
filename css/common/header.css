@@ -1,7 +1,6 @@
-@media (min-width:768px){
+@media (min-width:1200px){
     header{
         background-color: #189EBB;
-        min-width: 1200px;
         position: relative;
         font-family: 'Noto Sans TC';
         font-size: 0;
@@ -67,12 +66,12 @@
     }
 }
 
-@media (max-width:767px){
+@media (max-width:1199px){
 
     .header{
         width: 100%;
         position: sticky;
-        z-index: 7;
+        z-index: 10;
     }
 
     .top_bar{
@@ -81,7 +80,7 @@
         background-color: #189EBB;
         text-align: center;
     }
-    
+
     .logo{
         width: 42px;
         height: 45px;
