@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>甲必丹遊艇城：船艇租賃</title>
         <link rel="stylesheet" href="./css/yachts.css">
+        <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -27,7 +28,7 @@
             <a href="./news.html">最新消息</a>
             <a href="./course.html">航海課程</a>
             <a href="./service.html">港口服務</a>
-            <a href="./yachts.html" class="present_part">船艇租賃</a>
+            <a href="./yachts.html" id="present_part">船艇租賃</a>
             <a href="./store.html">碧藍商城</a>
         </nav>
         <!--導覽列結束-->
@@ -49,8 +50,18 @@
             </div>
 
             <!--中BN輪播版位開始-->
-            <div class="middle_bn">
-                <a href="./yachts_poseidon.html"><img src="./images/bn3.png" alt=""></a>
+            <div class="middle_banner_block">
+                <ul id="middle_banner_block">
+                    <li>
+                        <a href="./yachts_poseidon.html"><img src="./images/bn_middle_2.png" alt="" class="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#0"><img src="./images/bn_middle_2.png" alt="" class="banner"></a>
+                    </li>
+                    <li>
+                        <a href="#0"><img src="./images/bn_middle_2.png" alt="" class="banner"></a>
+                    </li>
+                </ul>
             </div>
             <!--中BN輪播版位結束-->
 
@@ -262,9 +273,9 @@
         </footer>
         <!--Footer結束-->
 
+        <script src="./js/jquery.js"></script>
+        <script src="js/lightslider.js"></script>
+        <script src="js/yachts.js"></script>
     </body>
 
-
-
-    
 </html>

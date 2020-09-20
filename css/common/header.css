@@ -51,12 +51,7 @@
         padding: 0px 10px;
         margin: 0px 23.5px;
     }
-    
-    .present_part{
-        padding-bottom: 0px;
-        border-bottom: 4px solid #152A69;
-    }
-    
+
     .nav_bar a:hover{
         background-color: #152A69;
     }
@@ -203,10 +198,10 @@
       .menu_item:hover {
         background-color: #CFD8DC;
       }
-      ._present_part{
-        color: gold;
+
+    /* 漢堡選單結束 */
     }
-      /* 漢堡選單結束 */
 
-
+#present_part, ._present_part{
+  color: gold;
 }
