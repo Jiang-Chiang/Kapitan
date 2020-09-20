@@ -55,7 +55,7 @@
     .present_part{
         padding-bottom: 0px;
         border-bottom: 4px solid #152A69;
-    } 
+    }
     
     .nav_bar a:hover{
         background-color: #152A69;
@@ -70,14 +70,14 @@
 
     .header{
         width: 100%;
-        position: sticky;
-        z-index: 10;
+        position: fixed;
+        z-index: 89;
     }
 
     .top_bar{
         height: 50px;
         position: relative;
-        background-color: #189EBB;
+        background-color: #446DA3;
         text-align: center;
     }
 
@@ -135,7 +135,7 @@
         height: 26px;
       
         cursor: pointer;
-        z-index: 10;
+        z-index: 99;
       }
       
       .menu_btn > span,
@@ -183,7 +183,7 @@
       
         transition-duration: .25s;
 
-        z-index: 9;
+        z-index: 98;
       }
       
       .menu_item {
@@ -203,6 +203,9 @@
       .menu_item:hover {
         background-color: #CFD8DC;
       }
+      ._present_part{
+        color: gold;
+    }
       /* 漢堡選單結束 */
 
 

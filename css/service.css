@@ -3,388 +3,506 @@
 @import "./common/footer.css";
 @import "./common/cover.css";
 
-main{
-    min-width: 1200px;
-    font-size: 0px;
-}
-
-.map_container{
-    border: .1px solid #707070;
-    width: 1200px;
-    height: 700px;
-    margin: auto;
-    margin-bottom: 160px;
-    margin-top: 30px;
-    background-image: url(../images/map.png);
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.tags_bar{
-    width: 1200px;
-    height: 100px;
-    box-sizing: border-box;
-    background-color: #E4E4E4;
-    margin: auto;
-    padding: 25px;
-}
-
-.tag{
-    border: none;
-    width: 120px;
-    height: 50px;
-    background-color: white;
-    color: black;
-    font-size: 18px;
-    text-align: center;
-    line-height: 50px;
-    margin-right: 15px;
-    text-decoration: none;
-    padding: 0;
-}
-
-.tag:hover{
-    background-color: #446DA3;
-    color: white;
-}
-
-._choosed{
-    background-color: #152A69;
-    color: white;
-}
-
-.mp_rides, .mp_restaurant, .mp_hotel, 
-.mp_shooting_spot, .mp_shopping, .mp_public{
-    display: none;
-    /* display: block;
-    border: none;
-    width: 30px;
-    position: absolute;
-    text-decoration: none; */
-}
-
-._on{
-    display: block;
-    border: none;
-    width: 30px;
-    position: absolute;
-    text-decoration: none;
-} 
-
-.mp_rides::before, .mp_restaurant::before, .mp_hotel::before, 
-.mp_shooting_spot::before, .mp_shopping::before, .mp_public::before{
-    display: inline-block;
-    width: 60px;
-    height: 25px;
-    border-radius: 8px;
-    border: 1.5px solid #152A69;
-    background-color: white;
-    color: black;
-    font-size: 13px;
-    font-weight: 200;
-    line-height: 25px;
-    text-align: center;
-    position: absolute;
-    bottom: 2px;
-    left: -15px;
-    z-index: 8;
-}
-
-.mp_rides::after, .mp_restaurant::after, .mp_hotel::after, 
-.mp_shooting_spot::after, .mp_shopping::after, .mp_public::after{
-    display: block;
-    width: 0;
-    height: 0;
-    border: 10px solid RED;
-    border-top-color: darkred;
-    border-left-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    content: " ";
-    position: absolute;
-    bottom: -15px;
-    left: 5px;
-    z-index: 8;
-}
-
-.mp_shooting_spot{
-    z-index: 5;
-}
-
-.mp_rides{
-    z-index: 4;
-}
-
-.mp_restaurant, .mp_hotel{
-    z-index: 3;
-}
-
-.mp_shopping{
-    z-index: 2;
-}
-
-.mp_rides:hover, .mp_restaurant:hover, .mp_hotel:hover,
-.mp_shooting_spot:hover, .mp_shopping:hover, .mp_public:hover{
-    z-index: 9;
-}
-
-/* 長版客製框開始 */
-#bamboo_rice::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-
-#senaer_village::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-
-#san_salvador_castle::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-
-#guzman_tavern::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-
-#esquivel_trail::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-
-#formosa_square::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-
-#bilan_cultural::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-
-#tourist_center_west::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-
-#tourist_center_east::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-
-#kapitan_maritime::before{
-    width: 100px;
-    height: 25px;
-    left: -35px;
-}
-/* 長版客製框結束 */
-
-/* 遊樂設施定位開始 */
-#pirate_ship{
-    top: 140px;
-    left: 400px;
-}
-
-#pirate_ship::before{
-    content: "海盜船";
-}
-
-#kraken{
-    top: 120px;
-    left: 510px;
-}
-
-#kraken::before{
-    content: "大海怪";
-}
-
-#canoe{
-    top: 240px;
-    left: 490px;
-}
-
-#canoe::before{
-    content: "獨木舟";
-}
-
-#maten_wheel{
-    top: 220px;
-    left: 560px;
-}
-
-#maten_wheel::before{
-    content: "摩天輪";
-}
-
-#roller_coaster{
-    top: 260px;
-    left: 630px;
-}
-
-#roller_coaster::before{
-    content: "雲霄飛車";
-}
-
-#carousel{
-    top: 300px;
-    left: 580px;
-}
-
-#carousel::before{
-    content: "旋轉木馬";
-}
-
-#water_skiing{
-    top: 180px;
-    left: 670px;
-}
-
-#water_skiing::before{
-    content: "高台滑水";
-}
-
-#water_warship{
-    top: 330px;
-    left: 850px;
-}
-
-#water_warship::before{
-    content: "水戰船";
-}
-
-#maelstrom{
-    top: 430px;
-    left: 810px;
-}
-
-#maelstrom::before{
-    content: "大漩渦";
-}
-/* 遊樂設施定位結束 */
-
-/* 美食住宿定位開始 */
-#bamboo_rice{
-    top: 260px;
-    left: 310px;
-}
-
-#bamboo_rice::before{
-    content: "平埔野餐區";
-}
-
-#chinese_seafood{
-    top: 340px;
-    left: 470px;
-}
-
-#chinese_seafood::before{
-    content: "閩粵海鮮";
-}
-
-#guzman_tavern{
-    top: 310px;
-    left: 740px;
-}
-
-#guzman_tavern::before{
-    content: "格司曼酒館";
-}
-
-#danhai_hotel{
-    top: 340px;
-    left: 980px;
-}
-
-#danhai_hotel::before{
-    content: "淡海飯店";
-}
-/* 美食住宿定位結束 */
-
-/* 攝影景點定位開始 */
-#san_salvador_castle{
-    top: 200px;
-    left: 710px;
-}
-
-#san_salvador_castle::before{
-    content: "聖薩爾瓦多城堡";
-}
-
-#senaer_village{
-    top: 170px;
-    left: 450px;
-}
-
-#senaer_village::before{
-    content: "圭柔社村落";
-}
-
-#esquivel_trail{
-    top: 300px;
-    left: 670px;
-}
-
-#esquivel_trail::before{
-    content: "艾斯奇維小徑";
-}
-
-#formosa_square{
-    top: 390px;
-    left: 710px;
-}
-
-#formosa_square::before{
-    content: "艾爾摩沙廣場";
-}
-/* 攝影景點定位結束 */
-
-/* 購物商城定位開始 */
-#bilan_cultural{
-    top: 300px;
-    left: 710px;
-}
-
-#bilan_cultural::before{
-    content: "碧藍文創中心";
-}
-/* 購物商城定位結束 */
-
-/* 公共機能定位開始 */
-#tourist_center_west{
-    top: 150px;
-    left: 590px;
-}
-
-#tourist_center_west::before{
-    content: "遊客中心（西）";
-}
-
-#tourist_center_east{
-    top: 350px;
-    left: 910px;
-}
-
-#tourist_center_east::before{
-    content: "遊客中心（東）";
-}
-
-#kapitan_maritime{
-    top: 590px;
-    left: 1050px;
-}
+@media(min-width:1200px){
+
+    main{
+        font-size: 0px;
+    }
+
+    .tags_bar{
+        width: 1200px;
+        height: 100px;
+        box-sizing: border-box;
+        background-color: #E4E4E4;
+        margin: auto;
+        padding: 25px;
+    }
+
+    .tag{
+        border: none;
+        width: 120px;
+        height: 50px;
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        text-align: center;
+        line-height: 50px;
+        margin-right: 15px;
+        text-decoration: none;
+        padding: 0;
+    }
+    
+    .tag:hover{
+        background-color: #446DA3;
+        color: white;
+    }
+    
+    ._choosed{
+        background-color: #152A69;
+        color: white;
+    }
+    
+    .map_container{
+        border: .1px solid #707070;
+        width: 1200px;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 160px;
+        margin-top: 30px;
+        background-image: url(../images/map.png);
+        background-repeat: no-repeat;
+        position: relative;
+    }
+
+}
+
+@media(max-width:1199px){
+
+    main{
+        font-size: 0px;
+    }
+
+    .tags_bar{
+        width: 750px;
+        box-sizing: border-box;
+        background-color: #E4E4E4;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .tag{
+        border: none;
+        width: 80px;
+        height: 40px;
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        margin: 5px;
+        text-decoration: none;
+        padding: 0;
+    }
+    
+    .tag:hover{
+        background-color: #446DA3;
+        color: white;
+    }
+    
+    ._choosed{
+        background-color: #152A69;
+        color: white;
+    }
+    
+    .map_container{
+        border: .1px solid #707070;
+        width: 100%;
+        height: 700px;
+        box-sizing: border-box;
+        margin: auto;
+        margin-bottom: 160px;
+        margin-top: 30px;
+        background-image: url(../images/map.png);
+        background-repeat: no-repeat;
+        background-attachment: local;
+        position: relative;
+        overflow: scroll;
+    }
+
+}
+
+@media(max-width:767px){
+
+    main{
+        font-size: 0px;
+    }
+
+    .tags_bar{
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #E4E4E4;
+        padding: 10px;
+    }
+
+    .tag{
+        border: none;
+        width: 80px;
+        height: 40px;
+        background-color: white;
+        color: black;
+        font-size: 16px;
+        text-align: center;
+        line-height: 40px;
+        margin: 4px;
+        text-decoration: none;
+        padding: 0;
+    }
+    
+    .tag:hover{
+        background-color: #446DA3;
+        color: white;
+    }
+    
+    ._choosed{
+        background-color: #152A69;
+        color: white;
+    }
+    
+    .map_container{
+        border: .1px solid #707070;
+        width: 100%;
+        height: 700px;
+        box-sizing: border-box;
+        margin: auto;
+        margin-bottom: 160px;
+        margin-top: 30px;
+        background-image: url(../images/map.png);
+        background-repeat: no-repeat;
+        background-attachment: local;
+        position: relative;
+        overflow: scroll;
+    }
+
+}
+
+    .mp_rides, .mp_restaurant, .mp_hotel, 
+    .mp_shooting_spot, .mp_shopping, .mp_public{
+        display: none;
+        /* display: block;
+        border: none;
+        width: 30px;
+        position: absolute;
+        text-decoration: none; */
+    }
+    
+    ._on{
+        display: block;
+        border: none;
+        width: 30px;
+        position: absolute;
+        text-decoration: none;
+    } 
+    
+    .mp_rides::before, .mp_restaurant::before, .mp_hotel::before, 
+    .mp_shooting_spot::before, .mp_shopping::before, .mp_public::before{
+        display: inline-block;
+        width: 60px;
+        height: 25px;
+        border-radius: 8px;
+        border: 1.5px solid #152A69;
+        background-color: white;
+        color: black;
+        font-size: 13px;
+        font-weight: 200;
+        line-height: 25px;
+        text-align: center;
+        position: absolute;
+        bottom: 2px;
+        left: -15px;
+        z-index: 8;
+    }
+    
+    .mp_rides::after, .mp_restaurant::after, .mp_hotel::after, 
+    .mp_shooting_spot::after, .mp_shopping::after, .mp_public::after{
+        display: block;
+        width: 0;
+        height: 0;
+        border: 10px solid RED;
+        border-top-color: darkred;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-bottom-color: transparent;
+        content: " ";
+        position: absolute;
+        bottom: -15px;
+        left: 5px;
+        z-index: 8;
+    }
+    
+    .mp_shooting_spot{
+        z-index: 5;
+    }
+    
+    .mp_rides{
+        z-index: 4;
+    }
+    
+    .mp_restaurant, .mp_hotel{
+        z-index: 3;
+    }
+    
+    .mp_shopping{
+        z-index: 2;
+    }
+    
+    .mp_rides:hover, .mp_restaurant:hover, .mp_hotel:hover,
+    .mp_shooting_spot:hover, .mp_shopping:hover, .mp_public:hover{
+        z-index: 9;
+    }
+    
+    /* 長版客製框開始 */
+    #bamboo_rice::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    
+    #senaer_village::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    
+    #san_salvador_castle::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    
+    #guzman_tavern::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    
+    #esquivel_trail::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    
+    #formosa_square::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    
+    #bilan_cultural::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    
+    #tourist_center_west::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    
+    #tourist_center_east::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    
+    #kapitan_maritime::before{
+        width: 100px;
+        height: 25px;
+        left: -35px;
+    }
+    /* 長版客製框結束 */
+    
+    /* 遊樂設施定位開始 */
+    #pirate_ship{
+        top: 140px;
+        left: 400px;
+    }
+    
+    #pirate_ship::before{
+        content: "海盜船";
+    }
+    
+    #kraken{
+        top: 120px;
+        left: 510px;
+    }
+    
+    #kraken::before{
+        content: "大海怪";
+    }
+    
+    #canoe{
+        top: 240px;
+        left: 490px;
+    }
+    
+    #canoe::before{
+        content: "獨木舟";
+    }
+    
+    #maten_wheel{
+        top: 220px;
+        left: 560px;
+    }
+    
+    #maten_wheel::before{
+        content: "摩天輪";
+    }
+    
+    #roller_coaster{
+        top: 260px;
+        left: 630px;
+    }
+    
+    #roller_coaster::before{
+        content: "雲霄飛車";
+    }
+    
+    #carousel{
+        top: 300px;
+        left: 580px;
+    }
+    
+    #carousel::before{
+        content: "旋轉木馬";
+    }
+    
+    #water_skiing{
+        top: 180px;
+        left: 670px;
+    }
+    
+    #water_skiing::before{
+        content: "高台滑水";
+    }
+    
+    #water_warship{
+        top: 330px;
+        left: 850px;
+    }
+    
+    #water_warship::before{
+        content: "水戰船";
+    }
+    
+    #maelstrom{
+        top: 430px;
+        left: 810px;
+    }
+    
+    #maelstrom::before{
+        content: "大漩渦";
+    }
+    /* 遊樂設施定位結束 */
+    
+    /* 美食住宿定位開始 */
+    #bamboo_rice{
+        top: 260px;
+        left: 310px;
+    }
+    
+    #bamboo_rice::before{
+        content: "平埔野餐區";
+    }
+    
+    #chinese_seafood{
+        top: 340px;
+        left: 470px;
+    }
+    
+    #chinese_seafood::before{
+        content: "閩粵海鮮";
+    }
+    
+    #guzman_tavern{
+        top: 310px;
+        left: 740px;
+    }
+    
+    #guzman_tavern::before{
+        content: "格司曼酒館";
+    }
+    
+    #danhai_hotel{
+        top: 340px;
+        left: 980px;
+    }
+    
+    #danhai_hotel::before{
+        content: "淡海飯店";
+    }
+    /* 美食住宿定位結束 */
+    
+    /* 攝影景點定位開始 */
+    #san_salvador_castle{
+        top: 200px;
+        left: 710px;
+    }
+    
+    #san_salvador_castle::before{
+        content: "聖薩爾瓦多城堡";
+    }
+    
+    #senaer_village{
+        top: 170px;
+        left: 450px;
+    }
+    
+    #senaer_village::before{
+        content: "圭柔社村落";
+    }
+    
+    #esquivel_trail{
+        top: 300px;
+        left: 670px;
+    }
+    
+    #esquivel_trail::before{
+        content: "艾斯奇維小徑";
+    }
+    
+    #formosa_square{
+        top: 390px;
+        left: 710px;
+    }
+    
+    #formosa_square::before{
+        content: "艾爾摩沙廣場";
+    }
+    /* 攝影景點定位結束 */
+    
+    /* 購物商城定位開始 */
+    #bilan_cultural{
+        top: 300px;
+        left: 710px;
+    }
+    
+    #bilan_cultural::before{
+        content: "碧藍文創中心";
+    }
+    /* 購物商城定位結束 */
+    
+    /* 公共機能定位開始 */
+    #tourist_center_west{
+        top: 150px;
+        left: 590px;
+    }
+    
+    #tourist_center_west::before{
+        content: "遊客中心（西）";
+    }
+    
+    #tourist_center_east{
+        top: 350px;
+        left: 910px;
+    }
+    
+    #tourist_center_east::before{
+        content: "遊客中心（東）";
+    }
+    
+    #kapitan_maritime{
+        top: 590px;
+        left: 1050px;
+    }
+    
+    #kapitan_maritime::before{
+        content: "甲必丹海洋學院";
+    }
+    /* 公共機能定位結束 */
+
+}
+
+@media(max-width:767px){
 
-#kapitan_maritime::before{
-    content: "甲必丹海洋學院";
 }
-/* 公共機能定位結束 */

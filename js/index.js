@@ -73,7 +73,7 @@ $(document).ready(function() {
                 settings: {
                     item:1,
                     slideMove:1,
-                    slideMargin:6,
+                    slideMargin:0,
                   }
             },
             {
@@ -99,15 +99,15 @@ $(document).ready(function() {
         speed:1500,
         responsive : [
             {
-                breakpoint:800,
+                breakpoint:1199,
                 settings: {
-                    item:3,
+                    item:1,
                     slideMove:1,
-                    slideMargin:6,
+                    slideMargin:0,
                   }
             },
             {
-                breakpoint:768,
+                breakpoint:767,
                 settings: {
                     item:1,
                     slideMove:1
