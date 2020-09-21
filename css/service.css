@@ -3,167 +3,9 @@
 @import "./common/footer.css";
 @import "./common/cover.css";
 
-@media(min-width:1200px){
-
     main{
         font-size: 0px;
     }
-
-    .tags_bar{
-        width: 1200px;
-        height: 100px;
-        box-sizing: border-box;
-        background-color: #E4E4E4;
-        margin: auto;
-        padding: 25px;
-    }
-
-    .tag{
-        border: none;
-        width: 120px;
-        height: 50px;
-        background-color: white;
-        color: black;
-        font-size: 18px;
-        text-align: center;
-        line-height: 50px;
-        margin-right: 15px;
-        text-decoration: none;
-        padding: 0;
-    }
-    
-    .tag:hover{
-        background-color: #446DA3;
-        color: white;
-    }
-    
-    ._choosed{
-        background-color: #152A69;
-        color: white;
-    }
-    
-    .map_container{
-        border: .1px solid #707070;
-        width: 1200px;
-        height: 700px;
-        margin: auto;
-        margin-bottom: 160px;
-        margin-top: 30px;
-        background-image: url(../images/map.png);
-        background-repeat: no-repeat;
-        position: relative;
-    }
-
-}
-
-@media(max-width:1199px){
-
-    main{
-        font-size: 0px;
-    }
-
-    .tags_bar{
-        width: 750px;
-        box-sizing: border-box;
-        background-color: #E4E4E4;
-        padding: 10px;
-        margin: auto;
-    }
-
-    .tag{
-        border: none;
-        width: 80px;
-        height: 40px;
-        background-color: white;
-        color: black;
-        font-size: 16px;
-        text-align: center;
-        line-height: 40px;
-        margin: 5px;
-        text-decoration: none;
-        padding: 0;
-    }
-    
-    .tag:hover{
-        background-color: #446DA3;
-        color: white;
-    }
-    
-    ._choosed{
-        background-color: #152A69;
-        color: white;
-    }
-    
-    .map_container{
-        border: .1px solid #707070;
-        width: 100%;
-        height: 700px;
-        box-sizing: border-box;
-        margin: auto;
-        margin-bottom: 160px;
-        margin-top: 30px;
-        background-image: url(../images/map.png);
-        background-repeat: no-repeat;
-        background-attachment: local;
-        position: relative;
-        overflow: scroll;
-    }
-
-}
-
-@media(max-width:767px){
-
-    main{
-        font-size: 0px;
-    }
-
-    .tags_bar{
-        width: 100%;
-        box-sizing: border-box;
-        background-color: #E4E4E4;
-        padding: 10px;
-    }
-
-    .tag{
-        border: none;
-        width: 80px;
-        height: 40px;
-        background-color: white;
-        color: black;
-        font-size: 16px;
-        text-align: center;
-        line-height: 40px;
-        margin: 4px;
-        text-decoration: none;
-        padding: 0;
-    }
-    
-    .tag:hover{
-        background-color: #446DA3;
-        color: white;
-    }
-    
-    ._choosed{
-        background-color: #152A69;
-        color: white;
-    }
-    
-    .map_container{
-        border: .1px solid #707070;
-        width: 100%;
-        height: 700px;
-        box-sizing: border-box;
-        margin: auto;
-        margin-bottom: 160px;
-        margin-top: 30px;
-        background-image: url(../images/map.png);
-        background-repeat: no-repeat;
-        background-attachment: local;
-        position: relative;
-        overflow: scroll;
-    }
-
-}
 
     .mp_rides, .mp_restaurant, .mp_hotel, 
     .mp_shooting_spot, .mp_shopping, .mp_public{
@@ -554,4 +396,156 @@
     }
     /* 公共機能定位結束 */
 
-
+    @media(min-width:1200px){
+    
+        .tags_bar{
+            width: 1200px;
+            height: 100px;
+            box-sizing: border-box;
+            background-color: #E4E4E4;
+            margin: auto;
+            padding: 25px;
+        }
+    
+        .tag{
+            border: none;
+            width: 120px;
+            height: 50px;
+            background-color: white;
+            color: black;
+            font-size: 18px;
+            text-align: center;
+            line-height: 50px;
+            margin-right: 15px;
+            text-decoration: none;
+            padding: 0;
+        }
+        
+        .tag:hover{
+            background-color: #446DA3;
+            color: white;
+        }
+        
+        ._choosed{
+            background-color: #152A69;
+            color: white;
+        }
+        
+        .map_container{
+            border: .1px solid #707070;
+            width: 1200px;
+            height: 700px;
+            margin: auto;
+            margin-bottom: 160px;
+            margin-top: 30px;
+            background-image: url(../images/map.png);
+            background-repeat: no-repeat;
+            position: relative;
+        }
+    
+    }
+    
+    @media(max-width:1199px){
+    
+        main{
+            font-size: 0px;
+        }
+    
+        .tags_bar{
+            width: 750px;
+            box-sizing: border-box;
+            background-color: #E4E4E4;
+            padding: 10px;
+            margin: auto;
+        }
+    
+        .tag{
+            border: none;
+            width: 80px;
+            height: 40px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            text-align: center;
+            line-height: 40px;
+            margin: 5px;
+            text-decoration: none;
+            padding: 0;
+        }
+        
+        .tag:hover{
+            background-color: #446DA3;
+            color: white;
+        }
+        
+        ._choosed{
+            background-color: #152A69;
+            color: white;
+        }
+        
+        .map_container{
+            border: .1px solid #707070;
+            width: 100%;
+            height: 700px;
+            box-sizing: border-box;
+            margin: auto;
+            margin-bottom: 160px;
+            margin-top: 30px;
+            background-image: url(../images/map.png);
+            background-repeat: no-repeat;
+            background-attachment: local;
+            position: relative;
+            overflow: scroll;
+        }
+    
+    }
+    
+    @media(max-width:767px){
+    
+        .tags_bar{
+            width: 100%;
+            box-sizing: border-box;
+            background-color: #E4E4E4;
+            padding: 10px;
+        }
+    
+        .tag{
+            border: none;
+            width: 80px;
+            height: 40px;
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            text-align: center;
+            line-height: 40px;
+            margin: 4px;
+            text-decoration: none;
+            padding: 0;
+        }
+        
+        .tag:hover{
+            background-color: #446DA3;
+            color: white;
+        }
+        
+        ._choosed{
+            background-color: #152A69;
+            color: white;
+        }
+        
+        .map_container{
+            border: .1px solid #707070;
+            width: 100%;
+            height: 700px;
+            box-sizing: border-box;
+            margin: auto;
+            margin-bottom: 160px;
+            margin-top: 30px;
+            background-image: url(../images/map.png);
+            background-repeat: no-repeat;
+            background-attachment: local;
+            position: relative;
+            overflow: scroll;
+        }
+    
+    }
