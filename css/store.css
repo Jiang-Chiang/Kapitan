@@ -113,7 +113,7 @@ main{
     color: white;
 }
 
-@media(min-width:1200px){
+@media(min-width:1219px){
 
     .middle_banner_block{
         border: 1px solid black;
@@ -185,7 +185,7 @@ main{
 
 }
 
-@media(min-width:768px) and (max-width:1199px){
+@media(min-width:768px) and (max-width:1218px){
 
     .middle_banner_block{
         width: 100%;

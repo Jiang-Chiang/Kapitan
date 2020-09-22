@@ -96,7 +96,7 @@ h4{
     color: #446DA3;
 }
 
-@media(min-width:1200px){
+@media(min-width:1219px){
     
     .chapter_text{
         width: 550px;
@@ -215,7 +215,7 @@ h4{
     }
     
     .chapter4{
-        width: 1200px;
+        width: 1180px;
         height: 530px;
         box-sizing: border-box;
         margin: auto;
@@ -227,7 +227,7 @@ h4{
     }
     
     .services_container{
-        width: 1200px;
+        width: 1180px;
         height: 380px;
         box-sizing: border-box;
         margin-top: 80px;
@@ -264,7 +264,7 @@ h4{
 
 }
 
-@media(min-width:768px) and (max-width:1199px){
+@media(min-width:768px) and (max-width:1218px){
 
     .main_title, .sub_title{
         text-align: center;
@@ -419,7 +419,7 @@ h4{
     }
     
     .chapter1, .chapter2, .chapter3{
-        width: 550px;
+        width: 500px;
         height: auto;
         box-sizing: border-box;
         margin: auto;

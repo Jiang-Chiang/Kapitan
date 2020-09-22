@@ -396,7 +396,7 @@
     }
     /* 公共機能定位結束 */
 
-    @media(min-width:1200px){
+    @media(min-width:1219px){
     
         .tags_bar{
             width: 1200px;
@@ -445,7 +445,7 @@
     
     }
     
-    @media(max-width:1199px){
+    @media(min-width:768px) and (max-width:1218px){
     
         main{
             font-size: 0px;

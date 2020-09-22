@@ -104,6 +104,7 @@
     .service_img_block{
         width: 300px;
         height: 300px;
+        box-sizing: border-box;
         position: relative;
     }
     
@@ -211,7 +212,7 @@
         right: 3px;
     }
     
-@media(min-width:1200px){
+@media(min-width:1219px){
 
     .service_container_bg{
         width: 100%;
@@ -224,6 +225,7 @@
     .service_container{
         width: 1200px;
         height: 600px;
+        box-sizing: border-box;
         background-color: #189EBB;
         font-size: 0px;
         margin: auto;
@@ -304,7 +306,7 @@
 
 }
 
-@media(min-width:768px) and (max-width:1199px){
+@media(min-width:768px) and (max-width:1218px){
 
    .chapter_1{
        width: 750px;
