@@ -12,12 +12,31 @@
         <!--Header開始-->
         <header class="header">
             <div class="top_bar">
+
                 <a href="./index.html"><img src="./images/Logo.png" alt="" class="logo"></a>
+
+                <!-- 漢堡選單開始 -->
+                <div class="hamburger_menu">
+                    <input id="menu_toggle" type="checkbox">
+                    <label class="menu_btn" for="menu_toggle">
+                      <span></span>
+                    </label>
+                    <ul class="menu_box">
+                        <li><a class="menu_item" href="./about.html">關於我們</a></li>
+                        <li><a class="menu_item" href="./news.html">最新消息</a></li>
+                        <li><a class="menu_item" href="./course.html">航海課程</a></li>
+                        <li><a class="menu_item" href="./service.html">港口服務</a></li>
+                        <li><a class="menu_item _present_part" href="./yachts.html">船艇租賃</a></li>
+                        <li><a class="menu_item" href="./store.html">碧藍商城</a></li>
+                    </ul>
+                </div>
+                <!-- 漢堡選單結束 -->
+
                 <div class="sub_nav_bar">
                     <a href="./construction.html"><img src="./images/search.png" alt=""></a>
-                     <a href="./construction.html"><img src="./images/shopping-cart.png" alt=""></a>
+                    <a href="./construction.html"><img src="./images/shopping-cart.png" alt=""></a>
                     <a href="./construction.html"><img src="./images/user.png" alt=""></a>
-                </div>>
+                </div>
             </div>
         </header>
         <!--Header結束-->
@@ -53,13 +72,13 @@
             <div class="middle_banner_block">
                 <ul id="middle_banner_block">
                     <li>
-                        <a href="./yachts_poseidon.html"><img src="./images/bn_middle_2.png" alt="" class="banner"></a>
+                        <a href="./yachts_poseidon.html"><img src="./images/bn_middle_2.png" alt="" class="middle_banner"></a>
                     </li>
                     <li>
-                        <a href="#0"><img src="./images/bn_middle_2.png" alt="" class="banner"></a>
+                        <a href="#0"><img src="./images/bn_middle_2.png" alt="" class="middle_banner"></a>
                     </li>
                     <li>
-                        <a href="#0"><img src="./images/bn_middle_2.png" alt="" class="banner"></a>
+                        <a href="#0"><img src="./images/bn_middle_2.png" alt="" class="middle_banner"></a>
                     </li>
                 </ul>
             </div>
@@ -67,59 +86,64 @@
 
             <!--服務標籤開始-->
             <div class="tags_bar">
-                <div class="select_block">
-                    預算：<select name="budget" id="">
-                        <option value="">--請選擇預算--</option>
-                        <option value="">10萬（新台幣）以上</option>
-                        <option value="">5-10萬（新台幣）</option>
-                        <option value="">2-5萬（新台幣）</option>
-                        <option value="">1-2萬（新台幣）</option>
-                        <option value="">1萬（新台幣）以下</option>
-                    </select>
-                    人數：<select name="people" id="">
-                        <option value="">--請選擇人數--</option>
-                        <option value="">20人以上</option>
-                        <option value="">10-20人</option>
-                        <option value="">5-10人</option>
-                        <option value="">3-5人</option>
-                        <option value="">2人</option>
-                    </select>
-                    排列方式：<select name="arrangement" id="">
-                        <option value="">--最相關--</option>
-                        <option value="">最惠售價</option>
-                        <option value="">最多人數</option>
-                        <option value="">最多服務</option>
-                    </select>
-                </div>
-                <div class="checkbox_block">
-                <span>服務：</span>
-                    <div class="checkbox">
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">包船</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">遠航</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">近岸</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">過夜</label><br>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">卡拉OK</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">適合家庭</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">無限暢飲</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">隨船大廚</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">電音DJ</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">專職領隊</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">海上飯店</label><br>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">烤肉架</label>
-                        <input type="checkbox" name="service_type[]">
-                        <label for="service_type" class="checkbox_text">橡皮艇</label>
+                <div class="tags_container">
+                    <div class="select_block">
+                        <span class="select_title">預算：</span>
+                        <select name="budget" id="">
+                            <option value="">--請選擇預算--</option>
+                            <option value="">10萬（新台幣）以上</option>
+                            <option value="">5-10萬（新台幣）</option>
+                            <option value="">2-5萬（新台幣）</option>
+                            <option value="">1-2萬（新台幣）</option>
+                            <option value="">1萬（新台幣）以下</option>
+                        </select>
+                        <span class="select_title">人數：</span>
+                        <select name="people" id="">
+                            <option value="">--請選擇人數--</option>
+                            <option value="">20人以上</option>
+                            <option value="">10-20人</option>
+                            <option value="">5-10人</option>
+                            <option value="">3-5人</option>
+                            <option value="">2人</option>
+                        </select>
+                        <span class="select_title">排列方式：</span>
+                        <select name="arrangement" id="">
+                            <option value="">--最相關--</option>
+                            <option value="">最惠售價</option>
+                            <option value="">最多人數</option>
+                            <option value="">最多服務</option>
+                        </select>
+                    </div>
+                    <div class="checkbox_block">
+                    <span class="checkbox_title">服務：</span>
+                        <div class="checkbox">
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">包船</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">遠航</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">近岸</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">過夜</label><br>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">卡拉OK</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">適合家庭</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">無限暢飲</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">隨船大廚</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">電音DJ</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">專職領隊</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">海上飯店</label><br>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">烤肉架</label>
+                            <input type="checkbox" name="service_type[]">
+                            <label for="service_type" class="checkbox_text">橡皮艇</label>
+                        </div>
                     </div>
                 </div>
             </div>
