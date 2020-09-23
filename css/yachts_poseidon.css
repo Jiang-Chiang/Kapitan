@@ -424,7 +424,6 @@ main{
     
     .information_container{
         width: 750px;
-        /* height: 2100px; */
         box-sizing: border-box;
         border: 1px solid black;
         margin: auto;
@@ -464,7 +463,6 @@ main{
     .plan_itinerary_for_mobile{
         display: block;
         font-size: 16px;
-        border: 1px solid red;
         width: 435px;
         box-sizing: border-box;
         margin: auto;

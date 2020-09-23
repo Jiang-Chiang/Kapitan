@@ -2,12 +2,13 @@
 $(document).ready(function() {
     $('#large_banner_list').lightSlider({
         item:1,
-        auto:true,
+        // auto:true,
         loop:true,
         pauseOnHover:true,
         slideMove:1,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
         speed:1500,
+        adaptiveHeight:true,
         responsive : [
             {
                 breakpoint:1199,
@@ -15,6 +16,7 @@ $(document).ready(function() {
                     item:1,
                     slideMove:1,
                     slideMargin:0,
+                    adaptiveHeight:true
                   }
             },
             {

@@ -22,9 +22,11 @@
     .lSAction > a.lSNext{
          background-image: url('../images/right.png');
     }
-    
+
     .large_banner{
         width: 100%;
+        height: 400px;
+        object-fit: cover;
     }
     
     main{
@@ -106,6 +108,10 @@
         height: 300px;
         box-sizing: border-box;
         position: relative;
+    }
+
+    .service_text{
+        width: 230px;
     }
     
     .service_img_mask{
@@ -323,18 +329,6 @@
         margin-top: 80px;
         z-index: 0;
     }
-    
-    .service_container{
-        width: 600px;
-        height: auto;
-        background-color: #189EBB;
-        font-size: 0px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-        z-index: 1;
-    }
 
     .yachts_container{
         width: 100%;
@@ -405,6 +399,34 @@
 
 }
 
+@media(min-width:618px) and (max-width:1218px){
+
+    .service_container{
+        width: 600px;
+        height: auto;
+        background-color: #189EBB;
+        font-size: 0px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        z-index: 1;
+    }
+
+}
+
+@media(min-width:552px) and (max-width:617px){
+
+    .service_container{
+        background-color: #189EBB;
+        margin: auto;
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+    }
+
+}
+
 @media(min-width:552px) and (max-width:767px){
 
     .chapter_1{
@@ -418,15 +440,6 @@
         background-color: #189EBB;
         position: relative;
         z-index: 0;
-    }
-    
-    .service_container{
-        height: 600px;
-        background-color: #189EBB;
-        margin: auto;
-        display: inline-block;
-        position: relative;
-        z-index: 1;
     }
  
     .yachts_container{
@@ -526,9 +539,8 @@
         position: relative;
         z-index: 0;
     }
-    
+
     .service_container{
-        height: 600px;
         background-color: #189EBB;
         margin: auto;
         display: inline-block;

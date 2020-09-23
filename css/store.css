@@ -65,6 +65,10 @@ main{
     opacity: 1;
 }
 
+.track_btn:hover, .buy_btn:hover{
+    opacity: 0;
+}
+
 .product_card:hover>.track_and_buy_block{
     opacity: 85%;
     bottom: 120px;
