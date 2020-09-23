@@ -87,7 +87,7 @@
             <!--服務標籤開始-->
             <div class="tags_bar">
                 <div class="tags_container">
-                    <div class="select_block">
+                    <div class="select_section">
                         <span class="select_title">預算：</span>
                         <select name="budget" id="">
                             <option value="">--請選擇預算--</option>
@@ -114,35 +114,45 @@
                             <option value="">最多服務</option>
                         </select>
                     </div>
-                    <div class="checkbox_block">
+                    <div class="checkbox_section">
                     <span class="checkbox_title">服務：</span>
-                        <div class="checkbox">
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">包船</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">遠航</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">近岸</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">過夜</label><br>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">卡拉OK</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">適合家庭</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">無限暢飲</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">隨船大廚</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">電音DJ</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">專職領隊</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">海上飯店</label><br>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">烤肉架</label>
-                            <input type="checkbox" name="service_type[]">
-                            <label for="service_type" class="checkbox_text">橡皮艇</label>
+                        <div class="checkbox_block">
+                            <div class="main_checkbox">
+                                <input type="checkbox" name="service_type[]">
+                                <label for="service_type" class="checkbox_text">包船</label>
+                                <input type="checkbox" name="service_type[]">
+                                <label for="service_type" class="checkbox_text">遠航</label>
+                                <input type="checkbox" name="service_type[]">
+                                <label for="service_type" class="checkbox_text">近岸</label>
+                                <input type="checkbox" name="service_type[]">
+                                <label for="service_type" class="checkbox_text">過夜</label>
+                            </div>
+                            <div class="sub_checkbox">
+                                <div class="sub_checkbox_child">
+                                    <input type="checkbox" name="service_type[]">
+                                    <label for="service_type" class="checkbox_text">卡拉OK</label>
+                                    <input type="checkbox" name="service_type[]">
+                                    <label for="service_type" class="checkbox_text">適合家庭</label>
+                                    <input type="checkbox" name="service_type[]">
+                                    <label for="service_type" class="checkbox_text">無限暢飲</label>
+                                </div>
+                                <div class="sub_checkbox_child">
+                                    <input type="checkbox" name="service_type[]">
+                                    <label for="service_type" class="checkbox_text">隨船大廚</label>
+                                    <input type="checkbox" name="service_type[]">
+                                    <label for="service_type" class="checkbox_text">電音DJ</label>
+                                    <input type="checkbox" name="service_type[]">
+                                    <label for="service_type" class="checkbox_text">專職領隊</label>
+                                </div>
+                                <div class="sub_checkbox_child">
+                                    <input type="checkbox" name="service_type[]">
+                                    <label for="service_type" class="checkbox_text">海上飯店</label>
+                                    <input type="checkbox" name="service_type[]">
+                                    <label for="service_type" class="checkbox_text">烤肉架</label>
+                                    <input type="checkbox" name="service_type[]">
+                                    <label for="service_type" class="checkbox_text">橡皮艇</label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -156,17 +166,25 @@
 
                     <!--焦點船「大員」開始-->
                     <div class="recommended_yacht_card">
-                        <div class="yacht_avatar_block">
+                        <div class="yacht_avatar_block" id="avatar_block_of_taiwan">
                             <a href="./construction.html">
                                 <img src="./images/junk2.png" alt="" class="yacht_avatar">
                             </a>
                         </div>
                         <div class="yacht_text_block">
-                            <h2 class="recommended_yacht_title">大員</h2>
+                            <h2 class="yacht_title">大員</h2>
                             <span class="yacht_tags">
                                 製造商：魯容<br>
                                 遠航│包船│過夜│海上飯店│隨船大廚│專職領隊</span>
                             <span class="recommended_yacht_passengers_block">
+                                <img src="./images/user-friends.png" alt="">
+                                16
+                            </span>
+                        </div>
+                        <div class="recommended_yacht_text_block_for_mobile">
+                            <h3 class="yacht_title">大員</h3>
+                            <span class="yacht_tags">遠航│包船│過夜│海上飯店<br><br><br>隨船大廚│專職領隊</span>
+                            <span class="yacht_passengers_block">
                                 <img src="./images/user-friends.png" alt="">
                                 16
                             </span>
