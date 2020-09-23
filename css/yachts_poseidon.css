@@ -3,104 +3,17 @@
 @import "./common/footer.css";
 @import "./common/cover.css";
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 main{
-    min-width: 1200px;
     font-size: 0px;
-}
-
-.yacht_order_block{
-    width: 960px;
-    height: 400px;
-    font-size: 16px;
-    margin: auto;
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-}
-
-.yacht_order_avatar_block{
-    width: 480px;
-    height: 300px; 
-    overflow: hidden;
-}
-
-.yacht_avatar{
-    max-width: 480px;
-}
-
-.yacht_details_block{
-    width: 400px;
-    height: 300px;
-}
-
-.yacht_name_title{
-    font-size: 28px;
-    font-weight: bold;
-    color: #152A69;
-    line-height: 5px;
-}
-
-.yacht_type_title{
-    font-size: 16px;
-    color: grey;
-    line-height: 0px;
-}
-
-.plan_price{
-    font-size: 18px;
-    font-weight: bold;
-    color: #9A0303;
-}
-
-.order_now_btn{
-    width: 150px;
-    height: 40px;
-    border-radius: 40px;
-    background-color: #152A69;
-    color: white;
-    font-size: 18px;
-    text-align: center;
-    line-height: 40px;
-    position: absolute;
-    right: 0;
 }
 
 .order_now_btn:hover{
     background-color: #135589;
-}
-
-.slip_left_s{
-    position: absolute;
-    top: 130px;
-    left: -5px;
-}
-
-.slip_right_s{
-    position: absolute;
-    top: 130px;
-    left: 505px;
-}
-
-.tabs_group{
-    width: 1000px;
-    height: 40px;
-    box-sizing: border-box;
-    font-size: 18px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.tab_btn_present, .tab_btn{
-    border: 1px solid black;
-    border-radius: 0 10px 0 0;
-    border-right-style: none;
-    width: 333.33px;
-    height: 40px;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 5px 0px;
-    font-size: 18px;
 }
 
 .tab_btn{
@@ -115,20 +28,6 @@ main{
 #precautions_tab{
     border-right: 1px solid black;
     border-radius: 0 10px 0 0;
-}
-
-.tabs_group a{
-    text-decoration: none;
-    color: black;
-}
-
-.information_container{
-    width: 1000px;
-    height: 2100px;
-    box-sizing: border-box;
-    border: 1px solid black;
-    margin: auto;
-    text-align: center;
 }
 
 .chapter_title{
@@ -147,114 +46,6 @@ main{
     margin-bottom: 50px;
 }
 
-.chapter1{
-    width: 960px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.plan_details_block{
-    width: 480px;
-    height: 730px;
-    font-size: 16px;
-    text-align: left;
-    position: relative;
-}
-
-.plan_text_block{
-    position: absolute;
-    left: 30px;
-    bottom: 60px;
-}
-
-.plan_title{
-    font-size: 20px;
-    font-weight: 600;
-    color: #152A69;
-    line-height: 10px;
-}
-
-.plan_itinerary{
-    width: 435px;
-    height: 730px;
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
-.itinerary_avatar{
-    float: left;
-    margin-right: 10px;
-}
-
-.itinerary_block{
-    width: 100%;
-    height: 100px;
-    box-sizing: border-box;
-    text-align: left;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 100px;
-}
-
-.chapter2{
-    width: 885px;
-    height: 400px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.yacht_type_block{
-    width: 180px;
-    height: 200px;
-    box-sizing: border-box;
-    font-size: 16px;
-    text-align: left;
-    margin-top: 10%;
-}
-
-.yacht_type_title2{
-    font-size: 20px;
-    font-weight: bold;
-    margin: 0;
-    line-height: 40px;
-}
-
-.chapter3{
-    width: 850px;
-    height: 300px;
-    margin: auto;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-}
-
-.captain_information_block{
-    width: 160px;
-    box-sizing: border-box;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 20px 0px;
-}
-
-.captain_name{
-    font-size: 22px;
-    font-weight: bold;
-    margin: 0;
-    line-height: 50px;
-}
-
-.captain_story{
-    width: 650px;
-    box-sizing: border-box;
-    font-size: 16px;
-    text-align: left;
-    padding: 15px 0px;
-}
-
 .keyword{
     font-weight: 700;
     color: #152A69;
@@ -267,13 +58,12 @@ main{
     margin-top: 80px;
 }
 
-.relative_yachts_container{
-    width: 1200px;
-    height: 300px;
-    position: relative;
-    margin: auto;
-    margin-bottom: 160px;
-    display: flex;
+.plan_itinerary_for_mobile{
+    display: none;
+}
+
+.yacht_type_block_for_mobile{
+    display: none;
 }
 
 .yacht_card{
@@ -312,4 +102,977 @@ main{
     position: absolute;
     top: -3px;
     right: 3px;
+}
+
+@media(min-width:1219px){
+    
+    .yacht_order_block{
+        width: 960px;
+        height: 400px;
+        font-size: 16px;
+        margin: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .order_now_btn{
+        width: 150px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: #152A69;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        line-height: 40px;
+        position: absolute;
+        right: 0;
+    }
+    
+    .yacht_order_avatar_block{
+        width: 480px;
+        height: 300px; 
+        overflow: hidden;
+    }
+    
+    .yacht_avatar{
+        width: 100%;
+    }
+    
+    .yacht_details_block{
+        width: 400px;
+        height: 300px;
+    }
+    
+    .yacht_name_title{
+        font-size: 28px;
+        font-weight: bold;
+        color: #152A69;
+        line-height: 5px;
+    }
+    
+    .yacht_type_title{
+        font-size: 16px;
+        color: grey;
+        line-height: 0px;
+    }
+    
+    .plan_price{
+        font-size: 18px;
+        font-weight: bold;
+        color: #9A0303;
+    }
+    
+    .tabs_group{
+        width: 1000px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .tab_btn_present, .tab_btn{
+        border: 1px solid black;
+        border-radius: 0 10px 0 0;
+        border-right-style: none;
+        width: 333.33px;
+        height: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 5px 0px;
+        font-size: 18px;
+    }
+    
+    .information_container{
+        width: 1000px;
+        height: 2100px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .chapter1{
+        width: 960px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .plan_details_block{
+        width: 480px;
+        height: 730px;
+        font-size: 16px;
+        text-align: left;
+        position: relative;
+    }
+    
+    .plan_text_block{
+        position: absolute;
+        left: 30px;
+        bottom: 60px;
+    }
+    
+    .plan_title{
+        font-size: 20px;
+        font-weight: 600;
+        color: #152A69;
+        line-height: 10px;
+    }
+    
+    .plan_itinerary{
+        width: 435px;
+        height: 730px;
+        box-sizing: border-box;
+        text-align: left;
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    
+    .itinerary_avatar{
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .itinerary_block{
+        width: 100%;
+        height: 100px;
+        box-sizing: border-box;
+        text-align: left;
+        display: inline-block;
+        font-size: 16px;
+        line-height: 100px;
+    }
+    
+    .chapter2{
+        width: 885px;
+        height: 400px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .yacht_type_block{
+        width: 180px;
+        height: 200px;
+        box-sizing: border-box;
+        font-size: 16px;
+        text-align: left;
+        margin-top: 10%;
+    }
+    
+    .yacht_type_title2{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 40px;
+    }
+    
+    .chapter3{
+        width: 850px;
+        height: 300px;
+        margin: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    
+    .captain_information_block{
+        width: 160px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 20px 0px;
+    }
+    
+    .captain_name{
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 50px;
+    }
+    
+    .captain_story{
+        width: 650px;
+        box-sizing: border-box;
+        font-size: 16px;
+        text-align: left;
+        padding: 15px 0px;
+    }
+    
+    .relative_yachts_container{
+        width: 1200px;
+        height: 300px;
+        position: relative;
+        margin: auto;
+        margin-bottom: 160px;
+        display: flex;
+    }
+    
+    .yacht_card{
+        font-size: 16px;
+        width: 325px;
+        height: 300px;
+        text-align: left;
+        line-height: 8px;
+        position: relative;
+        margin-right: 30px;
+    }
+    
+    .yacht_avatar_block{
+        width: 325px;
+        height: 193px;
+        overflow: hidden;
+    }
+    
+    .yacht_avatar{
+        width: 100%;
+    }
+    
+    .yacht_passengers_block{
+        position: absolute;
+        top: -3px;
+        right: 3px;
+    }
+
+}
+
+@media(min-width:768px) and (max-width:1218px){
+    
+    .yacht_order_block{
+        width: 750px;
+        height: auto;
+        font-size: 16px;
+        margin: auto;
+        margin-bottom: 120px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .order_now_btn{
+        width: 150px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: #152A69;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        line-height: 40px;
+        margin: 30px 0px 0px 165px;
+    }
+    
+    .yacht_order_avatar_block{
+        width: 480px;
+        height: 300px; 
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .yacht_avatar{
+        width: 100%;
+    }
+    
+    .yacht_details_block{
+        width: 330px;
+        margin: auto;
+    }
+    
+    .yacht_name_title{
+        font-size: 28px;
+        font-weight: bold;
+        color: #152A69;
+        line-height: 5px;
+    }
+    
+    .yacht_type_title{
+        font-size: 16px;
+        color: grey;
+        line-height: 0px;
+    }
+    
+    .plan_price{
+        font-size: 18px;
+        font-weight: bold;
+        color: #9A0303;
+    }
+    
+    .tabs_group{
+        width: 750px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .tab_btn_present, .tab_btn{
+        border: 1px solid black;
+        border-radius: 0 10px 0 0;
+        border-right-style: none;
+        width: 249.5px;
+        height: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 7px 0px;
+        font-size: 18px;
+    }
+    
+    .information_container{
+        width: 750px;
+        /* height: 2100px; */
+        box-sizing: border-box;
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .chapter1{
+        width: 750px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .plan_details_block{
+        width: 480px;
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        margin: auto;    
+    }
+    
+    .plan_text_block{
+        margin: auto;
+    }
+    
+    .plan_title{
+        font-size: 20px;
+        font-weight: 600;
+        color: #152A69;
+        line-height: 10px;
+    }
+    
+    .plan_itinerary{
+        display: none;
+    }
+
+    .plan_itinerary_for_mobile{
+        display: block;
+        font-size: 16px;
+        border: 1px solid red;
+        width: 435px;
+        box-sizing: border-box;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .itinerary_avatar{
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .itinerary_block{
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .chapter2{
+        width: 750px;
+    }
+    
+    .yacht_type_block{
+        display: none;
+    }
+
+    .chapter2 img{
+        margin: auto;
+    }
+
+    .yacht_type_block_for_mobile{
+        display: block;
+        width: 180px;
+        box-sizing: border-box;
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .yacht_type_title2{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 40px;
+    }
+    
+    .chapter3{
+        width: 750px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .captain_information_block{
+        width: 160px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 20px 0px;
+    }
+    
+    .captain_name{
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 50px;
+    }
+    
+    .captain_story{
+        width: 650px;
+        box-sizing: border-box;
+        font-size: 16px;
+        text-align: left;
+        padding: 15px 0px;
+    }
+    
+    .relative_yachts_container{
+        width: 750px;
+        height: 300px;
+        position: relative;
+        margin: auto;
+        margin-bottom: 160px;
+        display: flex;
+    }
+    
+    .yacht_card{
+        font-size: 16px;
+        width: 325px;
+        height: 300px;
+        text-align: left;
+        line-height: 8px;
+        position: relative;
+        margin-right: 30px;
+    }
+    
+    .yacht_avatar_block{
+        width: 325px;
+        height: 193px;
+        overflow: hidden;
+    }
+    
+    .yacht_avatar{
+        width: 100%;
+    }
+    
+    .yacht_passengers_block{
+        position: absolute;
+        top: -3px;
+        right: 3px;
+    }
+
+}
+
+@media(min-width:552px) and (max-width:767px){
+    
+    .yacht_order_block{
+        width: 510px;
+        height: auto;
+        font-size: 16px;
+        margin: auto;
+        margin-bottom: 120px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .order_now_btn{
+        width: 150px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: #152A69;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        line-height: 40px;
+        margin: 30px 0px 0px 165px;
+    }
+    
+    .yacht_order_avatar_block{
+        width: 480px;
+        height: 300px; 
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    
+    .yacht_avatar{
+        width: 100%;
+    }
+    
+    .yacht_details_block{
+        width: 330px;
+        margin: auto;
+    }
+    
+    .yacht_name_title{
+        font-size: 28px;
+        font-weight: bold;
+        color: #152A69;
+        line-height: 5px;
+    }
+    
+    .yacht_type_title{
+        font-size: 16px;
+        color: grey;
+        line-height: 0px;
+    }
+    
+    .plan_price{
+        font-size: 18px;
+        font-weight: bold;
+        color: #9A0303;
+    }
+    
+    .tabs_group{
+        width: 510px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .tab_btn_present, .tab_btn{
+        border: 1px solid black;
+        border-radius: 0 10px 0 0;
+        border-right-style: none;
+        width: 169.5px;
+        height: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 7px 0px;
+        font-size: 18px;
+    }
+    
+    .information_container{
+        width: 510px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .chapter1{
+        width: 510px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .plan_details_block{
+        width: 480px;
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        margin: auto;    
+    }
+    
+    .plan_text_block{
+        margin: auto;
+    }
+    
+    .plan_title{
+        font-size: 20px;
+        font-weight: 600;
+        color: #152A69;
+        line-height: 10px;
+    }
+    
+    .plan_itinerary{
+        display: none;
+    }
+
+    .plan_itinerary_for_mobile{
+        display: block;
+        font-size: 16px;
+        width: 435px;
+        box-sizing: border-box;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .itinerary_avatar{
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .itinerary_block{
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .chapter2{
+        width: 510px;
+    }
+    
+    .yacht_type_block{
+        display: none;
+    }
+
+    .chapter2 img{
+        width: 90%;
+        margin: auto;
+    }
+
+    .yacht_type_block_for_mobile{
+        display: block;
+        width: 180px;
+        box-sizing: border-box;
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .yacht_type_title2{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 40px;
+    }
+    
+    .chapter3{
+        width: 510px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .captain_information_block{
+        width: 160px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 20px 0px;
+    }
+    
+    .captain_name{
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 50px;
+    }
+    
+    .captain_story{
+        width: 480px;
+        box-sizing: border-box;
+        font-size: 16px;
+        text-align: left;
+        padding: 15px 0px;
+    }
+    
+    .relative_yachts_container{
+        width: 510px;
+        position: relative;
+        margin: auto;
+        margin-bottom: 160px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .yacht_card{
+        font-size: 16px;
+        width: 325px;
+        height: 300px;
+        text-align: left;
+        line-height: 8px;
+        position: relative;
+        margin-right: 30px;
+        margin: auto;
+    }
+    
+    .yacht_avatar_block{
+        width: 325px;
+        height: 193px;
+        overflow: hidden;
+    }
+    
+    .yacht_avatar{
+        width: 100%;
+    }
+    
+    .yacht_passengers_block{
+        position: absolute;
+        top: -3px;
+        right: 3px;
+    }
+
+}
+
+@media(max-width:551px){
+    
+    .yacht_order_block{
+        width: 320px;
+        height: auto;
+        font-size: 16px;
+        margin: auto;
+        margin-bottom: 120px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .order_now_btn{
+        width: 150px;
+        height: 40px;
+        border-radius: 40px;
+        background-color: #152A69;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        line-height: 40px;
+        margin: 30px 0px 0px 165px;
+    }
+    
+    .yacht_order_avatar_block{
+        width: 480px;
+        overflow: hidden;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .yacht_avatar{
+        width: 100%;
+    }
+    
+    .yacht_details_block{
+        width: 320px;
+        margin: auto;
+    }
+    
+    .yacht_name_title{
+        font-size: 28px;
+        font-weight: bold;
+        color: #152A69;
+        line-height: 5px;
+    }
+    
+    .yacht_type_title{
+        font-size: 16px;
+        color: grey;
+        line-height: 0px;
+    }
+    
+    .plan_price{
+        font-size: 18px;
+        font-weight: bold;
+        color: #9A0303;
+    }
+    
+    .tabs_group{
+        width: 320px;
+        height: 40px;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .tab_btn_present, .tab_btn{
+        border: 1px solid black;
+        border-radius: 0 10px 0 0;
+        border-right-style: none;
+        width: 106px;
+        height: 40px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 7px 0px;
+        font-size: 18px;
+    }
+    
+    .information_container{
+        width: 320px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .chapter1{
+        width: 320px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .plan_details_block{
+        width: 320px;
+        font-size: 16px;
+        text-align: center;
+        position: relative;
+        margin: auto;    
+    }
+
+    .plan_avatar img{
+        width: 90%;
+    }
+    
+    .plan_text_block{
+        margin: auto;
+    }
+    
+    .plan_title{
+        font-size: 20px;
+        font-weight: 600;
+        color: #152A69;
+        line-height: 10px;
+    }
+    
+    .plan_itinerary{
+        display: none;
+    }
+
+    .plan_itinerary_for_mobile{
+        display: block;
+        font-size: 16px;
+        width: 320px;
+        box-sizing: border-box;
+        margin: auto;
+        text-align: center;
+    }
+    
+    .itinerary_avatar{
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .itinerary_block{
+        width: 100px;
+        height: 100px;
+        box-sizing: border-box;
+        display: block;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    
+    .chapter2{
+        width: 320px;
+    }
+    
+    .yacht_type_block{
+        display: none;
+    }
+
+    .chapter2 img{
+        width: 90%;
+        margin: auto;
+    }
+
+    .yacht_type_block_for_mobile{
+        display: block;
+        width: 180px;
+        box-sizing: border-box;
+        font-size: 16px;
+        text-align: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+    
+    .yacht_type_title2{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 40px;
+    }
+    
+    .chapter3{
+        width: 320px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    
+    .captain_information_block{
+        width: 160px;
+        box-sizing: border-box;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 20px 0px;
+    }
+    
+    .captain_name{
+        font-size: 22px;
+        font-weight: bold;
+        margin: 0;
+        line-height: 50px;
+    }
+    
+    .captain_story{
+        width: 300px;
+        box-sizing: border-box;
+        font-size: 16px;
+        text-align: left;
+        padding: 15px 0px;
+    }
+    
+    .relative_yachts_container{
+        width: 320px;
+        position: relative;
+        margin: auto;
+        margin-bottom: 160px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .yacht_card{
+        font-size: 16px;
+        width: 325px;
+        height: 300px;
+        text-align: left;
+        line-height: 8px;
+        position: relative;
+        margin-right: 30px;
+        margin: auto;
+    }
+    
+    .yacht_avatar_block{
+        width: 325px;
+        height: 193px;
+        overflow: hidden;
+    }
+    
+    .yacht_avatar{
+        width: 100%;
+    }
+    
+    .yacht_passengers_block{
+        position: absolute;
+        top: -3px;
+        right: 3px;
+    }
+
 }
