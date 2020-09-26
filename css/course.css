@@ -21,6 +21,29 @@ main{
     display: none;
 }
 
+.subject_divider{
+    width: 100%;
+    height: 50px;
+    box-sizing: border-box;
+    font-size: 24px;
+    margin: auto;
+    margin-bottom: 60px;
+    display: flex;
+    padding: 0px 10px;
+}
+
+.subject{
+    margin-right: 50px;
+}
+
+.line{
+    border: .5px solid black;
+    width: calc(100% - 360px);
+    height: 0px;
+    padding: 0;
+    margin-top: 20px;
+}
+
 .course_card{
     border: 1px solid #2E2E2E;
     width: 300px;
@@ -139,14 +162,6 @@ main{
         display: flex;
     }
     
-    .line{
-        border: 1px solid black;
-        width: calc(100% - 320px - 50px);
-        height: 0;
-        margin-top: 20px;
-        margin-left: 50px;
-    }
-    
     .courses_container{
         width: 1000px;
         height: 1000px;
@@ -158,7 +173,7 @@ main{
 
 }
 
-@media(min-width:768px) and (max-width:1218px){
+@media(min-width:992px) and (max-width:1218px){
     
     .middle_banner_block{
         width: 100%;
@@ -207,22 +222,7 @@ main{
     }
     
     .subject_divider{
-        width: 100%;
-        height: 50px;
-        box-sizing: border-box;
-        font-size: 24px;
-        margin: auto;
-        margin-bottom: 60px;
-        display: flex;
-        padding: 0px 10px;
-    }
-    
-    .line{
-        border: 1px solid black;
-        width: 70%;
-        height: 0;
-        margin-top: 20px;
-        margin-left: 10px;
+        padding: 0px 30px;
     }
 
     .courses_container{
@@ -239,71 +239,7 @@ main{
 
 }
 
-@media(min-width:768px) and (max-width:991px){
-
-    .middle_banner_block{
-        width: 100%;
-        margin-bottom: 60px;
-    }
-
-    .banner{
-        width: 100%;
-    }
-
-    .tags_bar{
-        width: 100%;
-        height: 80px;
-        box-sizing: border-box;
-        background-color: #E4E4E4;
-        font-size: 18px;
-        margin: auto;
-        margin-bottom: 60px;
-        padding: 25px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    
-    .tag1, .tag2, .tag3, .tag4{
-        display: none;
-    }
-    
-    .tags_for_mobile{
-        display: block;
-    }
-
-    .tags_for_mobile select{
-        width: 200px;
-        height: 40px;
-        padding: 5px 10px;
-        margin: 0 5px;
-    }
-
-    .middle_banner_block{
-        width: 100%;
-        margin-bottom: 60px;
-    }
-
-    .subject_divider{
-        width: 100%;
-        height: 50px;
-        box-sizing: border-box;
-        font-size: 24px;
-        margin: auto;
-        margin-bottom: 60px;
-        display: flex;
-        padding: 0px 10px;
-    }
-    
-    .line{
-        border: 1px solid black;
-        width: 55%;
-        height: 0;
-        margin-top: 20px;
-        margin-left: 10px;
-    }
-} 
-
-@media(max-width:767px){
+@media(min-width:767px) and (max-width:991px){
 
     .middle_banner_block{
         width: 100%;
@@ -346,19 +282,93 @@ main{
         width: 100%;
         height: 50px;
         box-sizing: border-box;
-        font-size: 17px;
+        font-size: 18px;
         margin: auto;
         margin-bottom: 60px;
         display: flex;
-        padding: 0px 10px;
+        padding: 0px 30px;
+    }
+
+    .subject{
+        margin-right: 20px;
     }
     
     .line{
-        border: 1px solid black;
-        width: 40%;
-        height: 0;
-        margin-top: 15px;
-        margin-left: 15px;
+        width: calc(100% - 280px);
+        margin-top: 16px;
+    }
+    
+    .courses_container{
+        width: 700px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .course_card{
+        margin-bottom: 80px;
+    }
+
+}
+
+@media(min-width:552px) and (max-width:766px){
+
+    .middle_banner_block{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .tags_bar{
+        width: 100%;
+        height: 80px;
+        box-sizing: border-box;
+        background-color: #E4E4E4;
+        font-size: 18px;
+        margin: auto;
+        margin-bottom: 60px;
+        padding: 25px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tag1, .tag2, .tag3, .tag4{
+        display: none;
+    }
+    
+    .tags_for_mobile{
+        display: block;
+    }
+
+    .tags_for_mobile select{
+        width: 200px;
+        height: 40px;
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+    
+    .subject_divider{
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        font-size: 18px;
+        margin: auto;
+        margin-bottom: 60px;
+        display: flex;
+        padding: 0px 30px;
+    }
+
+    .subject{
+        margin-right: 20px;
+    }
+    
+    .line{
+        width: calc(100% - 220px);
+        margin-top: 16px;
     }
     
     .courses_container{
@@ -370,6 +380,85 @@ main{
     }
 
     .course_card{
+        margin-bottom: 80px;
+    }
+
+}
+
+@media(max-width:551px){
+
+    .middle_banner_block{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .banner{
+        width: 100%;
+    }
+
+    .tags_bar{
+        width: 100%;
+        height: 120px;
+        box-sizing: border-box;
+        background-color: #E4E4E4;
+        font-size: 18px;
+        margin: auto;
+        margin-bottom: 60px;
+        padding: 25px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .tag1, .tag2, .tag3, .tag4{
+        display: none;
+    }
+    
+    .tags_for_mobile{
+        display: block;
+    }
+
+    .tags_for_mobile select{
+        width: 200px;
+        height: 40px;
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+    
+    .subject_divider{
+        width: 100%;
+        height: 50px;
+        box-sizing: border-box;
+        font-size: 16px;
+        margin: auto;
+        margin-bottom: 60px;
+        display: flex;
+        padding: 0px 30px;
+    }
+
+    .subject{
+        margin-right: 20px;
+    }
+    
+    .line{
+        width: calc(100% - 220px);
+        margin-top: 13px;
+    }
+    
+    .courses_container{
+        width: 300px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .course_card{
+        border: 1px solid #2E2E2E;
+        width: 300px;
+        height: 400px;
+        font-size: 16px;
+        line-height: 10px;
+        text-align: center;
         margin-bottom: 80px;
     }
 
