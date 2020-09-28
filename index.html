@@ -5,8 +5,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <title>甲必丹遊艇城：首頁</title>
         <link rel="stylesheet" href="./css/index.css">
-        <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />         
+        <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />
+        <link rel="stylesheet" href="./css/common/animate.min.css"/>         
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
+        
+        <script src="./js/jquery.js"></script>
+        <script src="js/lightslider.js"></script>
+        <script src="js/carousels.js"></script>
+        <script src="js/index.js"></script>
+
+       
+
     </head>
     <body>
 
@@ -76,13 +91,17 @@
         <!--主要內容開始-->
         <main class="main">
 
-            <h2 class="title">全臺唯一的海陸樂園</h2>
+            <h2 class="title" id="point1">全臺唯一的海陸樂園</h2>
             <h3 class="sub_title">大小朋友都為之瘋狂，快跟柴柴船長一起出航吧！</h3>
             <!--第一章：《五大快捷按鈕》開始-->
-            <div class="chapter_1">    
+            <!-- <div class="chapter_1" data-aos="fade-up" data-aos-offset="-300" data-aos-duration="1000">     -->
+            
+            
+            <!-- <div id="point1"></div> -->
+            <section class="chapter_1 section02">    
 
                 <!--「遊艇租賃」捷徑開始-->
-                <div class="shortcut_card">
+                <div class="shortcut_card mg mv01">
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-1.png" alt="">
                     </div>
@@ -96,7 +115,7 @@
                 <!--「遊艇租賃」捷徑結束-->
 
                 <!--「紅毛樂園」捷徑開始-->
-                <div class="shortcut_card">
+                <div class="shortcut_card mg mv02">
                     <a href="./service.html">
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-2.png" alt="">
@@ -111,7 +130,7 @@
                 <!--「紅毛樂園」捷徑結束-->
 
                 <!--「淡海飯店」捷徑開始-->
-                <div class="shortcut_card">
+                <div class="shortcut_card mg mv03">
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-3.png" alt="">
                     </div>
@@ -125,7 +144,7 @@
                 <!--「淡海飯店」捷徑結束-->
 
                 <!--「認證課程」捷徑開始-->
-                <div class="shortcut_card">
+                <div class="shortcut_card mg mv04">
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-4.png" alt="">
                     </div>
@@ -139,7 +158,7 @@
                 <!--「認證課程」捷徑結束-->
 
                 <!--「碧藍文創」捷徑開始-->
-                <div class="shortcut_card">
+                <div class="shortcut_card mg mv05">
                     <div class="shortcut_avatar">
                         <img src="./images/shortcut-5.png" alt="">
                     </div>
@@ -155,18 +174,18 @@
                 </div>
                 <!--第一章：《五大快捷按鈕》結束-->
 
-            </div>
+            </section>
 
-            <h2 class="title">灑脫不凡的頂級享受</h2>
+            <h2 class="title" id="point2">灑脫不凡的頂級享受</h2>
             <h3 class="sub_title">精心拔選的專業團隊，為您留下精彩絕妙的回憶</h3>
             <!--第二章：《服務內容》開始-->
-            <div class="chapter_2">
+            <section class="chapter_2">
 
                 <div class="service_container_bg">
 
-                    <div class="service_container">
+                    <div class="service_container section02">
                         <!--「朗文大師」服務開始-->
-                        <div class="service_img_block">
+                        <div class="service_img_block mg1 mv02">
                             <!-- <a href="#"> -->
                                 <img src="./images/chef.png" alt="" class="sevice_img">
                                 <div class="service_img_mask">
@@ -178,7 +197,7 @@
                         <!--「朗文大師」服務結束-->
 
                         <!--「極致體驗」說明開始-->
-                        <div class="service_text_block1">
+                        <div class="service_text_block1 mg1 mv02">
                             <div class="service_text">
                             <span class="service_title">極致體驗</span>
                             <p>
@@ -213,7 +232,7 @@
                         <!--「超強DJ」服務結束-->
 
                         <!--「南國調酒」服務開始-->
-                        <div class="service_img_block">
+                        <div class="service_img_block mg1 mv02">
                             <!-- <a href=""> -->
                                 <img src="./images/Bartending.png" alt="">
                                 <div class="service_img_mask">
@@ -224,7 +243,7 @@
                         <!--「南國調酒」服務結束-->
 
                         <!--「誠摯微笑」服務開始-->
-                        <div class="service_img_block">
+                        <div class="service_img_block mg1 mv02">
                             <!-- <a href=""> -->
                                 <img src="./images/waiter.png" alt="">
                                 <div class="service_img_mask">
@@ -261,7 +280,7 @@
 
                 </div>
 
-            </div>
+            </section>
             <!--第二章：《服務內容》結束-->
 
             <h2 class="title">現在就成為一位甲必丹</h2>
@@ -431,10 +450,12 @@
             <div class="copy_right">© 2020  Kapitan</div>
         </footer>
         <!--Footer結束-->
+
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+
     
-    <script src="./js/jquery.js"></script>
-    <script src="js/lightslider.js"></script>
-    <script src="js/carousels.js"></script>
-    <script src="js/index.js"></script>
+    <!-- <script>
+        AOS.init();
+      </script> -->
     </body>
 </html>
