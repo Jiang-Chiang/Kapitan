@@ -83,6 +83,21 @@
     }
 
     .mp_details_card{
+        /* border: 1px solid black;
+        width: 300px;
+        height: 100px;
+        border-radius: 15px;
+        box-sizing: border-box;
+        background-color: white;
+        overflow: hidden;
+        font-size: 13px;
+        display: flex;
+        position: absolute;
+        z-index: 10; */
+        display: none;
+    }
+
+    ._show{
         border: 1px solid black;
         width: 300px;
         height: 100px;
@@ -94,22 +109,17 @@
         display: flex;
         position: absolute;
         z-index: 10;
-        display: none;
     }
-
-    /* ._show{
-        visibility: visible;
-    } */
 
     .mp_details_avatar_block{
         width: 100px;
         height: 100px;
-        box-sizing: border-box;
         overflow: hidden;
     }
 
     .mp_details_avatar{
         height: 100%;
+        margin: auto;
     }
 
     .mp_details_avatar_text{
@@ -307,6 +317,11 @@
     #guzman_tavern::before{
         content: "格司曼酒館";
     }
+
+    #details_guzman_tavern{
+        top: 210px;
+        left: 590px;
+    }
     
     #danhai_hotel{
         top: 340px;
@@ -316,6 +331,12 @@
     #danhai_hotel::before{
         content: "淡海飯店";
     }
+
+    #details_danhai_hotel{
+        top: 240px;
+        left: 840px;
+    }
+
     /* 美食住宿定位結束 */
     
     /* 攝影景點定位開始 */

@@ -6,10 +6,12 @@
         <title>甲必丹遊艇城：港口服務</title>
         <link rel="stylesheet" href="./css/service.css">
         <link rel="stylesheet" href="./css/common/back_tot_top.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <script src="./js/jquery.js"></script>
         <script src="js/back_tot_top.js"></script>
         <script src="./js/service.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     </head>
     <body>
         
@@ -102,10 +104,13 @@
                 <!--「遊樂設施」結束-->
 
                 <!--「美食住宿」開始-->
-                <a href="#0" class="mp_restaurant _on" id="bamboo_rice"><img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
+                <a href="#0" class="mp mp_restaurant _on" id="bamboo_rice">
+                    <img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
                     <div class="mp_details_card" id="details_bamboo_rice">
                         <div class="mp_details_avatar_block">
-                            <a href="#0"><img src="./images/mp_avatar_bamboo_rice.jpg" alt="" class="mp_details_avatar" id="bamboo_rice_avatar"></a>
+                            <a href="./images/mp_avatar_bamboo_rice.jpg" data-fancybox="gallery">
+                                <img src="./images/mp_avatar_bamboo_rice.jpg" alt="" class="mp_details_avatar" id="bamboo_rice_avatar">
+                            </a>
                         </div>
                         <div class="mp_details_avatar_text">
                             <span class="mp_details_title">▌平埔野餐區</span><br>
@@ -114,10 +119,13 @@
                     </div>
                 </a>
 
-                <a href="#0" class="mp mp_restaurant _on" id="chinese_seafood"><img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
+                <a href="#0" class="mp mp_restaurant _on" id="chinese_seafood">
+                    <img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
                     <div class="mp_details_card" id="details_chinese_seafood">
                         <div class="mp_details_avatar_block">
-                            <a href="#0"><img src="./images/mp_avatar_chinese_seafood.jpg" alt="" class="mp_details_avatar" id="chinese_seafood_avatar"></a>
+                            <a href="./images/mp_avatar_chinese_seafood.jpg" data-fancybox="gallery">
+                                <img src="./images/mp_avatar_chinese_seafood.jpg" alt="" class="mp_details_avatar" id="chinese_seafood_avatar">
+                            </a>
                         </div>
                         <div class="mp_details_avatar_text">
                             <span class="mp_details_title">▌閩粵海鮮</span><br>
@@ -126,8 +134,36 @@
                     </div>
                 </a>
 
-                <a href="#0" class="mp_restaurant _on" id="guzman_tavern"><img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on"></a>
-                <a href="#0" class="mp_hotel _on" id="danhai_hotel"><img src="./images/mp_hotel.png" alt="" class="mp_hotel _on"></a>
+                <a href="#0" class="mp mp_restaurant _on" id="guzman_tavern">
+                    <img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
+                    <div class="mp_details_card" id="details_guzman_tavern">
+                        <div class="mp_details_avatar_block">
+                            <a href="./images/mp_avatar_guzman_tavern.jpg" data-fancybox="gallery">
+                                <img src="./images/mp_avatar_guzman_tavern.jpg" alt="" class="mp_details_avatar" id="guzman_tavern_avatar">
+                            </a>
+                        </div>
+                        <div class="mp_details_avatar_text">
+                            <span class="mp_details_title">▌格司曼酒館</span><br>
+                            <span>這是格司曼酒館的說明這是格司曼酒館的說明這是格司曼酒館的說明</span>
+                        </div>
+                    </div>
+                </a>
+
+
+                <a href="#0" class="mp mp_hotel _on" id="danhai_hotel">
+                    <img src="./images/mp_hotel.png" alt="" class="mp_hotel _on">
+                    <div class="mp_details_card" id="details_danhai_hotel">
+                        <div class="mp_details_avatar_block">
+                            <a href="./images/mp_avatar_danhai_hotel.jpg" data-fancybox="gallery">
+                                <img src="./images/mp_avatar_danhai_hotel.jpg" alt="" class="mp_details_avatar" id="danhai_hotel_avatar">
+                            </a>
+                        </div>
+                        <div class="mp_details_avatar_text">
+                            <span class="mp_details_title">▌淡海飯店</span><br>
+                            <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                        </div>
+                    </div>
+                </a>
                 <!--「美食住宿」結束-->
 
                 <!--「拍攝景點」開始-->
