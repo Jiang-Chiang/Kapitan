@@ -5,23 +5,18 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
         <title>甲必丹遊艇城：首頁</title>
         <link rel="stylesheet" href="./css/index.css">
-        <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />
-        <link rel="stylesheet" href="./css/common/animate.min.css"/>         
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="./css/common/back_tot_top.css">
+        <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />         
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
-        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>       
         <script src="./js/jquery.js"></script>
         <script src="js/lightslider.js"></script>
         <script src="js/carousels.js"></script>
         <script src="js/index.js"></script>
-
-       
-
+        <script src="js/back_tot_top.js"></script>
     </head>
     <body>
 
@@ -68,8 +63,7 @@
         </nav>
         <!--導覽列結束-->
         
-        <!--bn版位開始-->
-
+        <!--大bn版位開始-->
         <div class="large_banner_block">
             <ul id="large_banner_list">
                 <li>
@@ -86,7 +80,11 @@
                 </li>
             </ul>
         </div>
-        <!--bn版位結束-->
+        <!--大bn版位結束-->
+
+        <!-- 返回頂層按鈕開始 -->
+        <a href="#" id="scroll" style="display: none;"><span></span></a>
+        <!-- 返回頂層按鈕結束 -->
         
         <!--主要內容開始-->
         <main class="main">
@@ -94,80 +92,86 @@
             <h2 class="title" id="point1">全臺唯一的海陸樂園</h2>
             <h3 class="sub_title">大小朋友都為之瘋狂，快跟柴柴船長一起出航吧！</h3>
             <!--第一章：《五大快捷按鈕》開始-->
-            <!-- <div class="chapter_1" data-aos="fade-up" data-aos-offset="-300" data-aos-duration="1000">     -->
             
-            
-            <!-- <div id="point1"></div> -->
-            <section class="chapter_1 section02">    
+            <section class="chapter01 section02">    
 
                 <!--「遊艇租賃」捷徑開始-->
                 <div class="shortcut_card mg mv01">
-                    <div class="shortcut_avatar">
-                        <img src="./images/shortcut-1.png" alt="">
-                    </div>
-                    <a href="./yachts.html">
-                        <div class="button_area">
-                            <div class="shortcut_btn">遊艇租賃</div>
-                            <div class="button_decoration"></div>
+                        <div class="shortcut_avatar_block">
+                            <a href="./yachts.html">
+                                <img src="./images/shortcut-1.png" alt="" class="shortcut_avatar">
+                            </a>
                         </div>
-                    </a>
+                        <div class="button_area">
+                            <a href="./yachts.html">
+                                <div class="shortcut_btn">遊艇租賃</div>
+                                <div class="button_decoration"></div>
+                            </a>
+                        </div>
                 </div>
                 <!--「遊艇租賃」捷徑結束-->
 
                 <!--「紅毛樂園」捷徑開始-->
-                <div class="shortcut_card mg mv02">
-                    <a href="./service.html">
-                    <div class="shortcut_avatar">
-                        <img src="./images/shortcut-2.png" alt="">
-                    </div>
-                    <a href="./service.html">
-                        <div class="button_area">
-                            <div class="shortcut_btn">紅毛樂園</div>
-                            <div class="button_decoration"></div>
+                <div class="shortcut_card mg mv01">
+                        <div class="shortcut_avatar_block">
+                            <a href="./service.html">
+                                <img src="./images/shortcut-2.png" alt="" class="shortcut_avatar">
+                            </a>
                         </div>
-                    </a>
+                        <div class="button_area">
+                            <a href="./service.html">
+                                <div class="shortcut_btn">紅毛樂園</div>
+                                <div class="button_decoration"></div>
+                            </a>
+                        </div>
                 </div>
                 <!--「紅毛樂園」捷徑結束-->
 
                 <!--「淡海飯店」捷徑開始-->
-                <div class="shortcut_card mg mv03">
-                    <div class="shortcut_avatar">
-                        <img src="./images/shortcut-3.png" alt="">
+                <div class="shortcut_card mg mv01">
+                    <div class="shortcut_avatar_block">
+                        <a href="./service.html">
+                            <img src="./images/shortcut-3.png" alt="" class="shortcut_avatar">
+                        </a>
                     </div>
-                    <a href="./service.html">
-                        <div class="button_area">
+                    <div class="button_area">
+                        <a href="./service.html">
                             <div class="shortcut_btn">淡海飯店</div>
                             <div class="button_decoration"></div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>    
                 </div>
                 <!--「淡海飯店」捷徑結束-->
 
                 <!--「認證課程」捷徑開始-->
-                <div class="shortcut_card mg mv04">
-                    <div class="shortcut_avatar">
-                        <img src="./images/shortcut-4.png" alt="">
+                <div class="shortcut_card mg mv01">
+                    <div class="shortcut_avatar_block">
+                        <a href="./course.html">
+                            <img src="./images/shortcut-4.png" alt="" class="shortcut_avatar">
+                        </a>
                     </div>
-                    <a href="./course.html">
                         <div class="button_area">
-                            <div class="shortcut_btn">認證課程</div>
-                            <div class="button_decoration"></div>
+                            <a href="./course.html">
+                                <div class="shortcut_btn">認證課程</div>
+                                <div class="button_decoration"></div>
+                            </a>
                         </div>
-                    </a>
                 </div>
                 <!--「認證課程」捷徑結束-->
 
                 <!--「碧藍文創」捷徑開始-->
-                <div class="shortcut_card mg mv05">
-                    <div class="shortcut_avatar">
-                        <img src="./images/shortcut-5.png" alt="">
+                <div class="shortcut_card mg mv01">
+                    <div class="shortcut_avatar_block">
+                        <a href="./store.html">
+                            <img src="./images/shortcut-5.png" alt="" class="shortcut_avatar">
+                        </a>
                     </div>
-                    <a href="./store.html">
                         <div class="button_area">
-                            <div class="shortcut_btn">碧藍文創</div>
-                            <div class="button_decoration"></div>
+                            <a href="./store.html">
+                                <div class="shortcut_btn">碧藍文創</div>
+                                <div class="button_decoration"></div>
+                            </a>
                         </div>
-                    </a>
                 </div>
                 <!--「碧藍文創」捷徑結束-->
                    
@@ -179,7 +183,7 @@
             <h2 class="title" id="point2">灑脫不凡的頂級享受</h2>
             <h3 class="sub_title">精心拔選的專業團隊，為您留下精彩絕妙的回憶</h3>
             <!--第二章：《服務內容》開始-->
-            <section class="chapter_2">
+            <section class="chapter02">
 
                 <div class="service_container_bg">
 
@@ -210,7 +214,7 @@
                         <!--「極致體驗」說明結束-->
 
                         <!--「熱血教練」服務開始-->
-                        <div class="service_img_block">
+                        <div class="service_img_block mg2 mv03">
                             <!-- <a href=""> -->
                                 <img src="./images/coach.png" alt="">
                                 <div class="service_img_mask">
@@ -221,7 +225,7 @@
                         <!--「熱血教練」服務結束-->
 
                         <!--「超強DJ」服務開始-->
-                        <div class="service_img_block">
+                        <div class="service_img_block mg2 mv03">
                             <!-- <a href=""> -->
                                 <img src="./images/DJ.png" alt="">
                                 <div class="service_img_mask">
@@ -232,7 +236,7 @@
                         <!--「超強DJ」服務結束-->
 
                         <!--「南國調酒」服務開始-->
-                        <div class="service_img_block mg1 mv02">
+                        <div class="service_img_block mg3 mv04">
                             <!-- <a href=""> -->
                                 <img src="./images/Bartending.png" alt="">
                                 <div class="service_img_mask">
@@ -243,7 +247,7 @@
                         <!--「南國調酒」服務結束-->
 
                         <!--「誠摯微笑」服務開始-->
-                        <div class="service_img_block mg1 mv02">
+                        <div class="service_img_block mg3 mv04">
                             <!-- <a href=""> -->
                                 <img src="./images/waiter.png" alt="">
                                 <div class="service_img_mask">
@@ -254,7 +258,7 @@
                         <!--「誠摯微笑」服務結束-->
 
                         <!--「起錨揚帆」說明開始-->
-                        <div class="service_text_block2">
+                        <div class="service_text_block2 mg4 mv05">
                             <div class="service_text">
                             <span class="service_title">起錨揚帆</span>
                             <p>
@@ -267,7 +271,7 @@
                         <!--「起錨揚帆」說明結束-->
 
                         <!--「浪漫煙火」服務開始-->
-                        <div class="service_img_block">
+                        <div class="service_img_block mg4 mv05">
                             <!-- <a href=""> -->
                                 <img src="./images/fireworks.png" alt="">
                                 <div class="service_img_mask">
@@ -286,7 +290,7 @@
             <h2 class="title">現在就成為一位甲必丹</h2>
             <h3 class="sub_title">5～50人皆能成團│客製化加價項目│頂級團隊專業服務</h3>
             <!--第三章：《立即租船》開始-->
-            <div class="chapter_3">
+            <div class="chapter03">
             
                 <div class="yachts_container">
 
@@ -393,7 +397,7 @@
             <h2 class="title">追逐您的航海夢</h2>
             <h3 class="sub_title">不知道從何開始？請讓我們一步步為您介紹...</h3>
             <!--第四章：《導覽楔子》開始-->
-            <div class="chapter_4">
+            <div class="chapter04">
                 
                 <div class="prologue_bg">
 
@@ -451,11 +455,5 @@
         </footer>
         <!--Footer結束-->
 
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
-
-    
-    <!-- <script>
-        AOS.init();
-      </script> -->
     </body>
 </html>

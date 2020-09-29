@@ -2,12 +2,13 @@
 $(document).ready(function() {
     $('#large_banner_list').lightSlider({
         item:1,
-        // auto:true,
+        auto:true,
         loop:true,
         pauseOnHover:true,
         slideMove:1,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-        speed:1500,
+        speed:2000,
+        pause:5000,
         adaptiveHeight:true,
         responsive : [
             {
@@ -39,7 +40,8 @@ $(document).ready(function() {
         pauseOnHover:true,
         slideMove:1,
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-        speed:1500,
+        speed:2000,
+        pause:5000,
         controls:false,
         pager:false,
         responsive : [
@@ -70,8 +72,10 @@ $(document).ready(function() {
         loop:true,
         pauseOnHover:true,
         slideMove:1,
+        mode:'fade',
         easing: 'cubic-bezier(0.25, 0, 0.25, 1)',
-        speed:1500,
+        speed:2000,
+        pause:5000,
         controls:false,
         responsive : [
             {
