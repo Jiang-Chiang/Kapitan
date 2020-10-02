@@ -170,7 +170,7 @@
         left: -35px;
     }
     
-    #formosa_square::before{
+    #hermosa_square::before{
         width: 100px;
         height: 25px;
         left: -35px;
@@ -208,7 +208,7 @@
     }
     
     #pirate_ship::before{
-        content: "海盜船";
+        content: "荷蘭船";
     }
     
     #details_pirate_ship{
@@ -264,7 +264,7 @@
     }
     
     #roller_coaster::before{
-        content: "雲霄飛車";
+        content: "飛天鳳梨";
     }
 
     #details_roller_coaster{
@@ -432,16 +432,16 @@
         left: 520px;
     }
     
-    #formosa_square{
+    #hermosa_square{
         top: 390px;
         left: 710px;
     }
     
-    #formosa_square::before{
+    #hermosa_square::before{
         content: "艾爾摩沙廣場";
     }
 
-    #details_formosa_square{
+    #details_hermosa_square{
         top: 290px;
         left: 560px;
     }
