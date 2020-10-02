@@ -207,6 +207,11 @@
         content: "海盜船";
     }
     
+    #details_pirate_ship{
+        top: 40px;
+        left: 250px;
+    }
+
     #kraken{
         top: 120px;
         left: 510px;
@@ -214,6 +219,11 @@
     
     #kraken::before{
         content: "大海怪";
+    }
+
+    #details_kraken{
+        top: 20px;
+        left: 360px;
     }
     
     #canoe{
@@ -224,6 +234,11 @@
     #canoe::before{
         content: "獨木舟";
     }
+
+    #details_canoe{
+        top: 140px;
+        left: 340px;
+    }
     
     #maten_wheel{
         top: 220px;
@@ -232,6 +247,11 @@
     
     #maten_wheel::before{
         content: "摩天輪";
+    }
+
+    #details_maten_wheel{
+        top: 120px;
+        left: 410px;
     }
     
     #roller_coaster{
@@ -242,6 +262,11 @@
     #roller_coaster::before{
         content: "雲霄飛車";
     }
+
+    #details_roller_coaster{
+        top: 160px;
+        left: 480px;
+    }
     
     #carousel{
         top: 300px;
@@ -250,6 +275,11 @@
     
     #carousel::before{
         content: "旋轉木馬";
+    }
+
+    #details_carousel{
+        top: 200px;
+        left: 430px;
     }
     
     #water_skiing{
@@ -260,6 +290,11 @@
     #water_skiing::before{
         content: "高台滑水";
     }
+
+    #details_water_skiing{
+        top: 80px;
+        left: 520px;
+    }
     
     #water_warship{
         top: 330px;
@@ -269,6 +304,11 @@
     #water_warship::before{
         content: "水戰船";
     }
+
+    #details_water_warship{
+        top: 230px;
+        left: 700px;
+    }
     
     #maelstrom{
         top: 430px;
@@ -277,6 +317,12 @@
     
     #maelstrom::before{
         content: "大漩渦";
+    }
+
+    #details_maelstrom{
+        top: 330px;
+        left: 660px;
+
     }
     /* 遊樂設施定位結束 */
     
@@ -348,6 +394,11 @@
     #san_salvador_castle::before{
         content: "聖薩爾瓦多城堡";
     }
+
+    #details_san_salvador_castle{
+        top: 100px;
+        left: 560px;
+    }
     
     #senaer_village{
         top: 170px;
@@ -356,6 +407,11 @@
     
     #senaer_village::before{
         content: "圭柔社村落";
+    }
+
+    #details_senaer_village{
+        top: 70px;
+        left: 300px;
     }
     
     #esquivel_trail{
@@ -366,6 +422,11 @@
     #esquivel_trail::before{
         content: "艾斯奇維小徑";
     }
+
+    #details_esquivel_trail{
+        top: 200px;
+        left: 520px;
+    }
     
     #formosa_square{
         top: 390px;
@@ -374,6 +435,11 @@
     
     #formosa_square::before{
         content: "艾爾摩沙廣場";
+    }
+
+    #details_formosa_square{
+        top: 290px;
+        left: 560px;
     }
     /* 攝影景點定位結束 */
     
@@ -386,6 +452,11 @@
     #bilan_cultural::before{
         content: "碧藍文創中心";
     }
+
+    #details_bilan_cultural{
+        top: 200px;
+        left: 560px;
+    }
     /* 購物商城定位結束 */
     
     /* 公共機能定位開始 */
@@ -397,6 +468,11 @@
     #tourist_center_west::before{
         content: "遊客中心（西）";
     }
+
+    #details_tourist_center_west{
+        top: 50px;
+        left: 440px;
+    }
     
     #tourist_center_east{
         top: 350px;
@@ -406,14 +482,24 @@
     #tourist_center_east::before{
         content: "遊客中心（東）";
     }
+
+    #details_tourist_center_east{
+        top: 250px;
+        left: 760px;
+    }
     
     #kapitan_maritime{
-        top: 590px;
-        left: 1050px;
+        top: 600px;
+        left: 1030px;
     }
     
     #kapitan_maritime::before{
         content: "甲必丹海洋學院";
+    }
+
+    #details_kapitan_maritime{
+        top: 500px;
+        left: 880px;
     }
     /* 公共機能定位結束 */
 

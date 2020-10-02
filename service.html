@@ -1,211 +1,469 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-        <title>甲必丹遊艇城：港口服務</title>
-        <link rel="stylesheet" href="./css/service.css">
-        <link rel="stylesheet" href="./css/common/back_tot_top.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-        <script src="./js/jquery.js"></script>
-        <script src="js/back_tot_top.js"></script>
-        <script src="./js/service.js"></script>
-        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
-    </head>
-    <body>
-        
-        <!--Header開始-->
-        <header class="header">
-            <div class="top_bar">
 
-                <a href="./index.html"><img src="./images/Logo.png" alt="" class="logo"></a>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>甲必丹遊艇城：港口服務</title>
+    <link rel="stylesheet" href="./css/service.css">
+    <link rel="stylesheet" href="./css/common/back_tot_top.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <script src="./js/jquery.js"></script>
+    <script src="js/back_tot_top.js"></script>
+    <script src="./js/service.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</head>
 
-                <!-- 漢堡選單開始 -->
-                <div class="hamburger_menu">
-                    <input id="menu_toggle" type="checkbox">
-                    <label class="menu_btn" for="menu_toggle">
-                      <span></span>
-                    </label>
-                    <ul class="menu_box">
-                        <li><a class="menu_item" href="./about.html">關於我們</a></li>
-                        <li><a class="menu_item" href="./news.html">最新消息</a></li>
-                        <li><a class="menu_item" href="./course.html">航海課程</a></li>
-                        <li><a class="menu_item _present_part" href="./service.html">港口服務</a></li>
-                        <li><a class="menu_item" href="./yachts.html">船艇租賃</a></li>
-                        <li><a class="menu_item" href="./store.html">碧藍商城</a></li>
-                    </ul>
+<body>
+
+    <!--Header開始-->
+    <header class="header">
+        <div class="top_bar">
+
+            <a href="./index.html"><img src="./images/Logo.png" alt="" class="logo"></a>
+
+            <!-- 漢堡選單開始 -->
+            <div class="hamburger_menu">
+                <input id="menu_toggle" type="checkbox">
+                <label class="menu_btn" for="menu_toggle">
+                    <span></span>
+                </label>
+                <ul class="menu_box">
+                    <li><a class="menu_item" href="./about.html">關於我們</a></li>
+                    <li><a class="menu_item" href="./news.html">最新消息</a></li>
+                    <li><a class="menu_item" href="./course.html">航海課程</a></li>
+                    <li><a class="menu_item _present_part" href="./service.html">港口服務</a></li>
+                    <li><a class="menu_item" href="./yachts.html">船艇租賃</a></li>
+                    <li><a class="menu_item" href="./store.html">碧藍商城</a></li>
+                </ul>
+            </div>
+            <!-- 漢堡選單結束 -->
+
+            <div class="sub_nav_bar">
+                <a href="./construction.html"><img src="./images/search.png" alt=""></a>
+                <a href="./construction.html"><img src="./images/shopping-cart.png" alt=""></a>
+                <a href="./construction.html"><img src="./images/user.png" alt=""></a>
+            </div>
+        </div>
+    </header>
+    <!--Header結束-->
+
+    <!--導覽列開始-->
+    <nav class="nav_bar">
+        <a href="./about.html">關於我們</a>
+        <a href="./news.html">最新消息</a>
+        <a href="./course.html">航海課程</a>
+        <a href="./service.html" id="present_part">港口服務</a>
+        <a href="./yachts.html">船艇租賃</a>
+        <a href="./store.html">碧藍商城</a>
+    </nav>
+    <!--導覽列結束-->
+
+    <!--cover開始-->
+    <div class="cover"></div>
+    <!--cover結束-->
+
+    <!-- 返回頂層按鈕開始 -->
+    <a href="#" id="scroll" style="display: none;"><span></span></a>
+    <!-- 返回頂層按鈕結束 -->
+
+    <!--主要內容開始-->
+    <main class="main">
+        <div class="topic_block">
+            <h2 class="topic">港口服務</h2>
+            <div class="breadcrumb">
+                <a href="./index.html">首頁</a>＞
+                <a href="./about.html">港口服務</a>
+            </div>
+        </div>
+
+        <!--簡易標籤開始-->
+        <div class="tags_bar">
+            <button class="tag _choosed" id="tag_all_reveal">全部顯示</button>
+            <button class="tag" id="tag_rides">遊樂設施</button>
+            <button class="tag" id="tag_restaurant_and_hotel">美食住宿</button>
+            <button class="tag" id="tag_shooting_spot">攝影景點</button>
+            <button class="tag" id="tag_shopping">購物商城</button>
+            <button class="tag" id="tag_public">公共機能</button>
+            <button class="tag" id="tag_all_remove">全部清除</button>
+        </div>
+        <!--簡易標籤結束-->
+
+        <div class="map_container">
+            <!--地圖圖釘開始-->
+
+            <!--「遊樂設施」開始-->
+
+            <a href="#0" class="mp mp_rides _on" id="pirate_ship">
+                <img src="./images/mp_rides.png" alt="" class="mp_rides _on">
+                <div class="mp_details_card" id="details_pirate_ship">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="pirate_ship_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌海盜船</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
+                    </div>
                 </div>
-                <!-- 漢堡選單結束 -->
+            </a>
 
-                <div class="sub_nav_bar">
-                    <a href="./construction.html"><img src="./images/search.png" alt=""></a>
-                    <a href="./construction.html"><img src="./images/shopping-cart.png" alt=""></a>
-                    <a href="./construction.html"><img src="./images/user.png" alt=""></a>
+            <a href="#0" class="mp mp_rides _on" id="kraken">
+                <img src="./images/mp_rides.png" alt="" class="mp_rides _on">
+                <div class="mp_details_card" id="details_kraken">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="kraken_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌大海怪</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
+                    </div>
                 </div>
-            </div>
-        </header>
-        <!--Header結束-->
+            </a>
 
-        <!--導覽列開始-->
-        <nav class="nav_bar">
-            <a href="./about.html">關於我們</a>
-            <a href="./news.html">最新消息</a>
-            <a href="./course.html">航海課程</a>
-            <a href="./service.html" id="present_part">港口服務</a>
-            <a href="./yachts.html">船艇租賃</a>
-            <a href="./store.html">碧藍商城</a>
-        </nav>
-        <!--導覽列結束-->
-
-        <!--cover開始-->
-        <div class="cover"></div>
-        <!--cover結束-->
-
-        <!-- 返回頂層按鈕開始 -->
-        <a href="#" id="scroll" style="display: none;"><span></span></a>
-        <!-- 返回頂層按鈕結束 -->
-
-        <!--主要內容開始-->
-        <main class="main">
-            <div class="topic_block">
-                <h2 class="topic">港口服務</h2>
-                <div class="breadcrumb">
-                    <a href="./index.html">首頁</a>＞
-                    <a href="./about.html">港口服務</a>
+            <a href="#0" class="mp mp_rides _on" id="canoe">
+                <img src="./images/mp_rides.png" alt="" class="mp_rides _on">
+                <div class="mp_details_card" id="details_canoe">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="canoe_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌獨木舟</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
+                    </div>
                 </div>
-            </div>
+            </a>
 
-            <!--簡易標籤開始-->
-            <div class="tags_bar">
-                <button class="tag _choosed" id="tag_all_reveal">全部顯示</button>
-                <button class="tag" id="tag_rides">遊樂設施</button>
-                <button class="tag" id="tag_restaurant_and_hotel">美食住宿</button>
-                <button class="tag" id="tag_shooting_spot">攝影景點</button>
-                <button class="tag" id="tag_shopping">購物商城</button>
-                <button class="tag" id="tag_public">公共機能</button>
-                <button class="tag" id="tag_all_remove">全部清除</button>
-            </div>
-            <!--簡易標籤結束-->
-
-            <div class="map_container">
-                <!--地圖圖釘開始-->
-
-                <!--「遊樂設施」開始-->
-                <a href="#0" class="mp_rides _on" id="pirate_ship"><img src="./images/mp_rides.png" alt="" class="mp_rides _on"></a>
-                <a href="#0" class="mp_rides _on" id="kraken"><img src="./images/mp_rides.png" alt="" class="mp_rides _on"></a>
-                <a href="#0" class="mp_rides _on" id="canoe"><img src="./images/mp_rides.png" alt="" class="mp_rides _on"></a>
-                <a href="#0" class="mp_rides _on" id="maten_wheel"><img src="./images/mp_rides.png" alt="" class="mp_rides _on"></a>
-                <a href="#0" class="mp_rides _on" id="roller_coaster"><img src="./images/mp_rides.png" alt="" class="mp_rides _on"></a>
-                <a href="#0" class="mp_rides _on" id="carousel"><img src="./images/mp_rides.png" alt="" class="mp_rides _on"></a>
-                <a href="#0" class="mp_rides _on" id="water_skiing"><img src="./images/mp_rides.png" alt="" class="mp_rides _on"></a>
-                <a href="#0" class="mp_rides _on" id="water_warship""><img src="./images/mp_rides.png" alt="" class="mp_rides _on"></a>
-                <a href="#0" class="mp_rides _on" id="maelstrom"><img src="./images/mp_rides.png" alt="" class="mp_rides _on"></a>
-                <!--「遊樂設施」結束-->
-
-                <!--「美食住宿」開始-->
-                <a href="#0" class="mp mp_restaurant _on" id="bamboo_rice">
-                    <img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
-                    <div class="mp_details_card" id="details_bamboo_rice">
-                        <div class="mp_details_avatar_block">
-                            <a href="./images/mp_avatar_bamboo_rice.jpg" data-fancybox="gallery">
-                                <img src="./images/mp_avatar_bamboo_rice.jpg" alt="" class="mp_details_avatar" id="bamboo_rice_avatar">
-                            </a>
-                        </div>
-                        <div class="mp_details_avatar_text">
-                            <span class="mp_details_title">▌平埔野餐區</span><br>
-                            <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
-                        </div>
+            <a href="#0" class="mp mp_rides _on" id="maten_wheel">
+                <img src="./images/mp_rides.png" alt="" class="mp_rides _on">
+                <div class="mp_details_card" id="details_maten_wheel">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="maten_wheel_avatar">
+                        </a>
                     </div>
-                </a>
-
-                <a href="#0" class="mp mp_restaurant _on" id="chinese_seafood">
-                    <img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
-                    <div class="mp_details_card" id="details_chinese_seafood">
-                        <div class="mp_details_avatar_block">
-                            <a href="./images/mp_avatar_chinese_seafood.jpg" data-fancybox="gallery">
-                                <img src="./images/mp_avatar_chinese_seafood.jpg" alt="" class="mp_details_avatar" id="chinese_seafood_avatar">
-                            </a>
-                        </div>
-                        <div class="mp_details_avatar_text">
-                            <span class="mp_details_title">▌閩粵海鮮</span><br>
-                            <span>這是閩粵海鮮的說明這是閩粵海鮮的說明這是閩粵海鮮的說明</span>
-                        </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌摩天輪</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
                     </div>
-                </a>
+                </div>
+            </a>
 
-                <a href="#0" class="mp mp_restaurant _on" id="guzman_tavern">
-                    <img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
-                    <div class="mp_details_card" id="details_guzman_tavern">
-                        <div class="mp_details_avatar_block">
-                            <a href="./images/mp_avatar_guzman_tavern.jpg" data-fancybox="gallery">
-                                <img src="./images/mp_avatar_guzman_tavern.jpg" alt="" class="mp_details_avatar" id="guzman_tavern_avatar">
-                            </a>
-                        </div>
-                        <div class="mp_details_avatar_text">
-                            <span class="mp_details_title">▌格司曼酒館</span><br>
-                            <span>這是格司曼酒館的說明這是格司曼酒館的說明這是格司曼酒館的說明</span>
-                        </div>
+            <a href="#0" class="mp mp_rides _on" id="roller_coaster">
+                <img src="./images/mp_rides.png" alt="" class="mp_rides _on">
+                <div class="mp_details_card" id="details_roller_coaster">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="roller_coaster_avatar">
+                        </a>
                     </div>
-                </a>
-
-
-                <a href="#0" class="mp mp_hotel _on" id="danhai_hotel">
-                    <img src="./images/mp_hotel.png" alt="" class="mp_hotel _on">
-                    <div class="mp_details_card" id="details_danhai_hotel">
-                        <div class="mp_details_avatar_block">
-                            <a href="./images/mp_avatar_danhai_hotel.jpg" data-fancybox="gallery">
-                                <img src="./images/mp_avatar_danhai_hotel.jpg" alt="" class="mp_details_avatar" id="danhai_hotel_avatar">
-                            </a>
-                        </div>
-                        <div class="mp_details_avatar_text">
-                            <span class="mp_details_title">▌淡海飯店</span><br>
-                            <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
-                        </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌雲霄飛車</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
                     </div>
-                </a>
-                <!--「美食住宿」結束-->
+                </div>
+            </a>
 
-                <!--「拍攝景點」開始-->
-                <a href="#0" class="mp_shooting_spot _on" id="san_salvador_castle"><img src="./images/mp_shooting_spot.png" alt="" class="mp_shooting_spot _on"></a>
-                <a href="#0" class="mp_shooting_spot _on" id="senaer_village"><img src="./images/mp_shooting_spot.png" alt="" class="mp_shooting_spot _on"></a>
-                <a href="#0" class="mp_shooting_spot _on" id="esquivel_trail"><img src="./images/mp_shooting_spot.png" alt="" class="mp_shooting_spot _on"></a>
-                <a href="#0" class="mp_shooting_spot _on" id="formosa_square"><img src="./images/mp_shooting_spot.png" alt="" class="mp_shooting_spot _on"></a>
-                <!--「拍攝景點」結束-->
+            <a href="#0" class="mp mp_rides _on" id="carousel">
+                <img src="./images/mp_rides.png" alt="" class="mp_rides _on">
+                <div class="mp_details_card" id="details_carousel">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="carousel_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌旋轉木馬</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
+                    </div>
+                </div>
+            </a>
 
-                <!--「購物商城」開始-->
-                <a href="#0" class="mp_shopping _on" id="bilan_cultural"><img src="./images/mp_shopping.png" alt="" class="mp_shopping _on"></a>
-                <!--「購物商城」結束-->
+            <a href="#0" class="mp mp_rides _on" id="water_skiing">
+                <img src="./images/mp_rides.png" alt="" class="mp_rides _on">
+                <div class="mp_details_card" id="details_water_skiing">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="water_skiing_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌高台滑水</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
+                    </div>
+                </div>
+            </a>
 
-                <!--「行政機能」開始-->
-                <a href="#0" class="mp_public _on" id="tourist_center_west"><img src="./images/mp_public.png" alt="" class="mp_public _on"></a>
-                <a href="#0" class="mp_public _on" id="tourist_center_east"><img src="./images/mp_public.png" alt="" class="mp_public _on"></a>
-                <a href="#0" class="mp_public _on" id="kapitan_maritime"><img src="./images/mp_public.png" alt="" class="mp_public _on"></a>
-                <!--「行政機能」結束-->
+            <a href="#0" class="mp mp_rides _on" id="water_warship"">
+                <img src=" ./images/mp_rides.png" alt="" class="mp_rides _on">
+                <div class="mp_details_card" id="details_water_warship">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="water_warship_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌水戰船</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
+                    </div>
+                </div>
+            </a>
 
-                <!--地圖圖釘結束-->
-            </div>
+            <a href="#0" class="mp mp_rides _on" id="maelstrom">
+                <img src="./images/mp_rides.png" alt="" class="mp_rides _on">
+                <div class="mp_details_card" id="details_maelstrom">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="maelstrom_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌大漩渦</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
+                    </div>
+                </div>
+            </a>
 
-        </main>
-        <!--主要內容結束-->
+            <!--「遊樂設施」結束-->
 
-        <!--Footer開始-->
-        <footer class="footer">
-            <a href="./index.html"><img src="./images/kapitan.png" alt="" class="sub_logo"></a>
-            <div class="social_platform">
+            <!--「美食住宿」開始-->
+
+            <a href="#0" class="mp mp_restaurant _on" id="bamboo_rice">
+                <img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
+                <div class="mp_details_card" id="details_bamboo_rice">
+                    <div class="mp_details_avatar_block">
+                        <a href="./images/mp_avatar_bamboo_rice.jpg" data-fancybox="gallery">
+                            <img src="./images/mp_avatar_bamboo_rice.jpg" alt="" class="mp_details_avatar"
+                                id="bamboo_rice_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌平埔野餐區</span><br>
+                        <span>這是竹筒飯的說明這是竹筒飯的說明這是竹筒飯的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#0" class="mp mp_restaurant _on" id="chinese_seafood">
+                <img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
+                <div class="mp_details_card" id="details_chinese_seafood">
+                    <div class="mp_details_avatar_block">
+                        <a href="./images/mp_avatar_chinese_seafood.jpg" data-fancybox="gallery">
+                            <img src="./images/mp_avatar_chinese_seafood.jpg" alt="" class="mp_details_avatar"
+                                id="chinese_seafood_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌閩粵海鮮</span><br>
+                        <span>這是閩粵海鮮的說明這是閩粵海鮮的說明這是閩粵海鮮的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#0" class="mp mp_restaurant _on" id="guzman_tavern">
+                <img src="./images/mp_restaurant.png" alt="" class="mp_restaurant _on">
+                <div class="mp_details_card" id="details_guzman_tavern">
+                    <div class="mp_details_avatar_block">
+                        <a href="./images/mp_avatar_guzman_tavern.jpg" data-fancybox="gallery">
+                            <img src="./images/mp_avatar_guzman_tavern.jpg" alt="" class="mp_details_avatar"
+                                id="guzman_tavern_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌格司曼酒館</span><br>
+                        <span>這是格司曼酒館的說明這是格司曼酒館的說明這是格司曼酒館的說明</span>
+                    </div>
+                </div>
+            </a>
+
+
+            <a href="#0" class="mp mp_hotel _on" id="danhai_hotel">
+                <img src="./images/mp_hotel.png" alt="" class="mp_hotel _on">
+                <div class="mp_details_card" id="details_danhai_hotel">
+                    <div class="mp_details_avatar_block">
+                        <a href="./images/mp_avatar_danhai_hotel.jpg" data-fancybox="gallery">
+                            <img src="./images/mp_avatar_danhai_hotel.jpg" alt="" class="mp_details_avatar"
+                                id="danhai_hotel_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌淡海飯店</span><br>
+                        <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <!--「美食住宿」結束-->
+
+            <!--「拍攝景點」開始-->
+
+            <a href="#0" class="mp mp_shooting_spot _on" id="san_salvador_castle">
+                <img src="./images/mp_shooting_spot.png" alt="" class="mp_shooting_spot _on">
+                <div class="mp_details_card" id="details_san_salvador_castle">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="san_salvador_castle_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌聖薩爾瓦多城堡</span><br>
+                        <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#0" class="mp mp_shooting_spot _on" id="senaer_village">
+                <img src="./images/mp_shooting_spot.png" alt="" class="mp_shooting_spot _on">
+                <div class="mp_details_card" id="details_senaer_village">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="senaer_village_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌桂柔社村落</span><br>
+                        <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#0" class="mp mp_shooting_spot _on" id="esquivel_trail">
+                <img src="./images/mp_shooting_spot.png" alt="" class="mp_shooting_spot _on">
+                <div class="mp_details_card" id="details_esquivel_trail">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="esquivel_trail_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌艾斯奇維小徑</span><br>
+                        <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#0" class="mp mp_shooting_spot _on" id="formosa_square">
+                <img src="./images/mp_shooting_spot.png" alt="" class="mp_shooting_spot _on">
+                <div class="mp_details_card" id="details_formosa_square">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="formosa_square_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌艾爾摩沙廣場</span><br>
+                        <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <!--「拍攝景點」結束-->
+
+            <!--「購物商城」開始-->
+
+            <a href="#0" class="mp mp_shopping _on" id="bilan_cultural">
+                <img src="./images/mp_shopping.png" alt="" class="mp_shopping _on">
+                <div class="mp_details_card" id="details_bilan_cultural">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="bilan_cultural_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌碧藍文創中心</span><br>
+                        <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <!--「購物商城」結束-->
+
+            <!--「行政機能」開始-->
+
+            <a href="#0" class="mp mp_public _on" id="tourist_center_west">
+                <img src="./images/mp_public.png" alt="" class="mp_public _on">
+                <div class="mp_details_card" id="details_tourist_center_west">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="tourist_center_west_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌遊客中心（西）</span><br>
+                        <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#0" class="mp mp_public _on" id="tourist_center_east">
+                <img src="./images/mp_public.png" alt="" class="mp_public _on">
+                <div class="mp_details_card" id="details_tourist_center_east">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="tourist_center_east_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌遊客中心（東）</span><br>
+                        <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="#0" class="mp mp_public _on" id="kapitan_maritime">
+                <img src="./images/mp_public.png" alt="" class="mp_public _on">
+                <div class="mp_details_card" id="details_kapitan_maritime">
+                    <div class="mp_details_avatar_block">
+                        <a href="" data-fancybox="gallery">
+                            <img src="" alt="" class="mp_details_avatar" id="kapitan_maritime_avatar">
+                        </a>
+                    </div>
+                    <div class="mp_details_avatar_text">
+                        <span class="mp_details_title">▌甲必丹海洋學院</span><br>
+                        <span>這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明這是淡海飯店的說明</span>
+                    </div>
+                </div>
+            </a>
+
+            <!--「行政機能」結束-->
+
+            <!--地圖圖釘結束-->
+        </div>
+
+    </main>
+    <!--主要內容結束-->
+
+    <!--Footer開始-->
+    <footer class="footer">
+        <a href="./index.html"><img src="./images/kapitan.png" alt="" class="sub_logo"></a>
+        <div class="social_platform">
             <a href="#"><img src="./images/twitter.png" alt=""></a>
             <a href="#"><img src="./images/instagram.png" alt=""></a>
             <a href="#"><img src="./images/facebook.png" alt=""></a>
-            </div>
-                <div class="address">251 新北市淡水區觀海路201號</div>
-            <div class="contact_us">
-                <a href="#"><img src="./images/email.png" alt=""></a><div class="email">service@Kapitan.com</div>
-                <a href="#"><img src="./images/phone.png" alt=""></a><div class="phone_number">(886)2-3345-6789</div>
-            </div>
-            <div class="copy_right">© 2020  Kapitan</div>
-        </footer>
-        <!--Footer結束-->
+        </div>
+        <div class="address">251 新北市淡水區觀海路201號</div>
+        <div class="contact_us">
+            <a href="mailto:service@Kapitan.com">
+                <img src="./images/email.png" alt="" class="email_icon">
+                <div class="email">service@Kapitan.com</div>
+            </a>
+            <br class="break_for_mobile">
+            <a href="tel:886233456789">
+                <img src="./images/phone.png" alt="" class="phone_icon">
+                <div class="phone_number">(886)2-3345-6789</div>
+            </a>
+        </div>
+        <div class="copy_right">© 2020 Kapitan</div>
+    </footer>
+    <!--Footer結束-->
 
-    </body>
-    
+</body>
+
 </html>

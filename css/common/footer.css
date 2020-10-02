@@ -1,92 +1,72 @@
-@media (min-width:768px){
-    .footer{
-        height: 410px;
-        background-color: #446DA3;
-        text-align: center;
-    }
-    
-    .sub_logo{
-        margin-top: 60px;
-        margin-bottom: 5px;
-    }
-    
-    .social_platform a{
-        margin: 20px 10px;
-    }
-    
-    .address{
-        font-size: 24px;
-        font-family: 'Noto Sans TC';
-        color: #ffffff;
-        line-height: 60px;
-    }
-    
-    .contact_us div{
-        display: inline-block;
-        line-height: 40px;
-        font-family: 'Noto Sans TC';
-    }
-    
-    .email, .phone_number{
-        font-size: 18px;
-        font-family: 'Noto Sans TC';
-        color: #ffffff;
-        vertical-align: top;
-        margin-left: 5px;
-        margin-right: 10px;
-    }
-    
-    .copy_right{
-        color: #ffffff;
-        font-size: 20px;
-        font-family: 'Noto Sans TC';
-        margin-top: 40px;
-    }
+a{
+    text-decoration: none;
 }
 
-@media (max-width:767px){
+.footer{
+    height: 410px;
+    background-color: #446DA3;
+    text-align: center;
+}
+
+.sub_logo{
+    margin-top: 60px;
+    margin-bottom: 5px;
+}
+
+.social_platform a{
+    margin: 20px 10px;
+}
+
+.address{
+    font-size: 24px;
+    color: #ffffff;
+    line-height: 60px;
+}
+
+.contact_us div{
+    display: inline-block;
+    line-height: 40px;
+}
+
+.email, .phone_number{
+    font-size: 18px;
+    color: #ffffff;
+    vertical-align: top;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+
+.break_for_mobile{
+    display: none;
+}
+
+.copy_right{
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+@media (max-width:450px){
+
     .footer{
-        border: 1px solid red;
-        height: 410px;
-        background-color: #446DA3;
-        text-align: center;
+        height: 510px;
+    }
+
+    .break_for_mobile{
+        display: block;
+    }
+
+    .email_icon, .email,
+    .phone_icon, .phone_number{
+        margin: 20px 0 0 0;
     }
     
-    .sub_logo{
-        margin-top: 60px;
-        margin-bottom: 5px;
-    }
-    
-    .social_platform a{
-        margin: 20px 10px;
-    }
-    
+}
+
+@media(max-width:350px){
+
     .address{
-        font-size: 24px;
-        font-family: 'Noto Sans TC';
-        color: #ffffff;
-        line-height: 60px;
+        font-size: 22px;
     }
-    
-    .contact_us div{
-        display: inline-block;
-        line-height: 40px;
-        font-family: 'Noto Sans TC';
-    }
-    
-    .email, .phone_number{
-        font-size: 18px;
-        font-family: 'Noto Sans TC';
-        color: #ffffff;
-        vertical-align: top;
-        margin-left: 5px;
-        margin-right: 10px;
-    }
-    
-    .copy_right{
-        color: #ffffff;
-        font-size: 20px;
-        font-family: 'Noto Sans TC';
-        margin-top: 40px;
-    }
+
 }
