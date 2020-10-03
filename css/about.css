@@ -18,6 +18,10 @@ main{
     margin-bottom: 30px;
 }
 
+.dot{
+    display: none;
+}
+
 h3{
     font-size: 32px;
 }
@@ -97,6 +101,14 @@ h4{
 }
 
 @media(min-width:1219px){
+
+    .main_slogan br{
+        display: none;
+    }
+
+    .dot{
+        display: inline-block;
+    }
     
     .chapter_text{
         width: 550px;
@@ -188,7 +200,7 @@ h4{
     }
     
     .chapter03_text_block{
-        width: 550px;
+        width: 650px;
         margin-top: 70px;
     }
     
@@ -265,6 +277,10 @@ h4{
         color: #446DA3;
     }
 
+    .service_phone_number br{
+        display: none;
+    }
+
 }
 
 @media(min-width:768px) and (max-width:1218px){
@@ -272,9 +288,17 @@ h4{
     .main_title, .sub_title{
         text-align: center;
     }
+
+    .main_slogan br{
+        display: none;
+    }
+
+    .dot{
+        display: inline-block;
+    }
     
     .chapter_text{
-        width: 550px;
+        width: 650px;
         font-size: 18px;
         text-align: left;
         margin: auto;
@@ -309,7 +333,7 @@ h4{
     }
     
     .chapter02_text_block{
-        width: 550px;
+        width: 650px;
         margin: auto;
         margin-bottom: 50px;
     }
@@ -344,7 +368,7 @@ h4{
     }
     
     .chapter03_text_block{
-        width: 550px;
+        width: 650px;
         margin-top: 70px;
         margin: auto;
         display: block;
@@ -404,7 +428,11 @@ h4{
     .service_text{
         font-size: 16px;
         color: black;
-    } 
+    }
+    
+    .service_phone_number br{
+        display: none;
+    }
 
 }
 
@@ -549,7 +577,7 @@ h4{
 
 }
 
-@media(max-width:551px){
+@media(min-width:340px) and (max-width:551px){
 
     .main_title, .sub_title{
         text-align: center;
@@ -687,5 +715,160 @@ h4{
         font-size: 16px;
         color: black;
     } 
+
+}
+
+@media(max-width:339px){
+
+    .main_title, .sub_title{
+        text-align: center;
+    }
+
+    h3{
+        font-size: 28px;
+    }
+    
+    h4{
+        font-size: 20px;
+        font-weight: 400;
+        color: #152A69;
+    }
+    
+    .chapter_text{
+        width: 290px;
+        font-size: 18px;
+        text-align: left;
+        margin: auto;
+    }
+    
+    .chapter01, .chapter02, .chapter03{
+        width: 290px;
+        height: auto;
+        box-sizing: border-box;
+        margin: auto;
+        margin-top: 120px;
+    }
+    
+    .chapter01_img{
+        width: 290px;
+        margin-top: 50px;
+    }
+    
+    .upper_chapter02{
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .upper_chapter02_img{
+        display: none;
+    }
+
+    .upper_chapter02_img_for_mobile{
+        border: 0.4px solid #707070;
+        width: 290px;
+        margin-bottom: 20px;
+    }
+    
+    .chapter02_text_block{
+        width: 290px;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    
+    .downer_chapter02{
+        width: 290px;
+        box-sizing: border-box;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .downer_chapter02_img_block{
+        border: 0.4px solid #707070;
+        overflow: hidden;
+    }
+    
+    .downer_chapter02_img_block, .downer_chapter02_img{
+        width: 220px;
+        height: 120px;
+    }
+
+    .downer_chapter02_img_block{
+        margin: 5px auto;
+    }
+    
+    .downer_chapter02_img_block{
+        box-sizing: border-box;
+        overflow: hidden;
+        align-self: flex-end;
+    }
+    
+    .chapter03_text_block{
+        width: 290px;
+        margin-top: 70px;
+        margin: auto;
+        display: block;
+    }
+    
+    .icons_container{
+        width: 290px;
+        margin: auto;
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 30px;
+    }
+    
+    .icons_container_right, .icons_container_left{
+        width: 150px;
+        height: 400px;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    
+    .icon_block{
+        margin-top: 15px;
+    }
+    
+    .chapter04{
+        width: 290px;
+        box-sizing: border-box;
+        margin: auto;
+        margin-top: 120px;
+    }
+    
+    .main_title_middle, .sub_title_middle{
+        text-align: center;
+    }
+    
+    .services_container{
+        width: 290px;
+        box-sizing: border-box;
+        margin: auto;
+        margin-top: 80px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+    .service_block{
+        width: 200px;
+        font-size: 28px;
+    }
+    
+    .service_title{
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 10px;
+    }
+    
+    .service_text{
+        font-size: 16px;
+        color: black;
+    }
+
+    .service_phone h3,.service_phone span{
+        font-size: 26px;
+    }
 
 }
