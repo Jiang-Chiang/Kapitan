@@ -7,10 +7,17 @@
     <title>波賽頓│甲必丹遊艇城：船艇租賃</title>
     <link rel="stylesheet" href="./css/yachts_poseidon.css">
     <link rel="stylesheet" href="./css/common/back_tot_top.css">
+    <link type="text/css" rel="stylesheet" href="./css/lightslider.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"></script>
     <script src="./js/jquery.js"></script>
+    <script src="js/lightslider.js"></script>
+    <script src="js/carousels.js"></script>
     <script src="/js/common_effects.js"></script>
     <script src="/js/yachts_poseidon.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
@@ -84,7 +91,17 @@
 
         <div class="yacht_order_block">
             <div class="yacht_order_avatar_block">
-                <img src="./images/Hanse458.jpg" alt="" class="yacht_avatar">
+                <ul id="yacht_order_avatar_list">
+                    <li class="yacht_order_avatar_item">
+                        <img src="./images/Hanse458.jpg" alt="" class="yacht_avatar">
+                    </li>
+                    <li class="yacht_order_avatar_item">
+                        <img src="./images/Hanse458_1.jpg" alt="" class="yacht_avatar">
+                    </li>
+                    <li class="yacht_order_avatar_item">
+                        <img src="./images/Hanse458_2.jpg" alt="" class="yacht_avatar">
+                    </li>
+                </ul>
             </div>
             <div class="yacht_details_block">
                 <h3 class="yacht_name_title">波賽頓</h3>
@@ -132,7 +149,33 @@
                     </div>
                 </a>
             </div>
+
+            <div class="tabs_for_mobile">
+                <a href="#tab01" id="plan_tab">
+                    <div class="tab_btn _present">
+                        <img src="./images/service_selected.png" alt="" class="selected_icon"
+                            id="default_selected_for_mobile">
+                        <img src="./images/service.png" alt="" class="normal_icon" id="default_disappear_for_mobile">
+                        方案內容
+                    </div>
+                </a>
+                <a href="#tab02" id="yacht_tab">
+                    <div class="tab_btn">
+                        <img src="./images/notebook_selected.png" alt="" class="selected_icon">
+                        <img src="./images/notebook.png" alt="" class="normal_icon">
+                        船隻資訊
+                    </div>
+                </a>
+                <a href="#tab03" id="precautions_tab">
+                    <div class="tab_btn">
+                        <img src="./images/alert_selected.png" alt="" class="selected_icon">
+                        <img src="./images/alert.png" alt="" class="normal_icon">
+                        注意事項
+                    </div>
+                </a>
+            </div>
             <!-- 頁籤列結束 -->
+
 
             <!-- 頁籤內容開始 -->
             <ul class="tabs_content">
@@ -145,7 +188,9 @@
                     <!--第一章：「行程與服務」開始-->
                     <section class="chapter01">
                         <div class="plan_details_block">
-                            <div class="plan_avatar"><img src="./images/guishan_iIsland_avatar.png" alt=""></div>
+                            <div class="plan_avatar">
+                                <img src="./images/guishan_iIsland_avatar.png" alt="">
+                            </div>
                             <h5 class="plan_title">│牛奶海烤肉趴！龜山島半日遊│</h5>
                             <div class="plan_text_block">
                                 <p>
@@ -158,13 +203,13 @@
                                 </p>
                                 <p>
                                     ☆ 服務包含：<br>
-                                    　- 專業船長、水手各一名<br>
-                                    　- 冰箱、微波爐、烤箱、瓦斯爐<br>
-                                    　- 無限暢飲：飲用水、軟性飲料、啤酒<br>
-                                    　- 水上充氣玩具、SUP立式划槳<br>
-                                    　- 船外機橡皮小艇<br>
-                                    　- AROPEC進口救生衣、漂浮用具、魚雷浮標<br>
-                                    　- 航程中乘客意外安全保險
+                                    <span class="symbols_for_widescreen">　- </span>專業船長、水手各一名<br>
+                                    <span class="symbols_for_widescreen">　- </span>冰箱、微波爐、烤箱、瓦斯爐<br>
+                                    <span class="symbols_for_widescreen">　- </span>無限暢飲：飲用水、軟性飲料、啤酒<br>
+                                    <span class="symbols_for_widescreen">　- </span>水上充氣玩具、SUP立式划槳<br>
+                                    <span class="symbols_for_widescreen">　- </span>船外機橡皮小艇<br>
+                                    <span class="symbols_for_widescreen">　- </span>AROPEC進口救生衣、漂浮用具、魚雷浮標<br>
+                                    <span class="symbols_for_widescreen">　- </span>航程中乘客意外安全保險
                                 </p>
                             </div>
                         </div>
@@ -354,7 +399,7 @@
 
                 <!--頁籤03：「注意事項」開始-->
                 <li class="information_container" id="precautions_information">
-                    <h4>航海規定</h4>
+                    <h3>航海規定</h3>
                     <ol>
                         <li>旅客應了解自身健康狀況是否適行，並攜帶自身所需要品。航程中身體不適者請務必主動告知船長。</li>
                         <li>進行水上活動時，免費提供面鏡使用，請旅客結伴同行並注意自身安全。</li>
@@ -365,13 +410,13 @@
                         <li>不得進行一切非法活動，如因違法行為致使行程終止，違法者要負全責，包括航行費用及船長連帶的一切經濟損失。</li>
                         <li>旅客攜帶來之財物，應自行負責及保管，於船上如有失竊一概恕不負責。</li>
                     </ol>
-                    <h4>愛護海洋</h4>
+                    <h3>愛護海洋</h3>
                     <ol>
                         <li>請與我們一起協力保護海洋，登船請攜帶防曬衣物代替防曬乳，減低防曬乳對海洋的傷害。</li>
                         <li>國家公園範圍內請勿餵食或採捕與垂釣。</li>
                         <li>船上請勿隨意丟棄垃圾至海上。</li>
                     </ol>
-                    <h4>貼心小建議</h4>
+                    <h3>貼心小建議</h3>
                     <ul>
                         <li>海面上日照及陽光折射較高，建議可準備太陽眼鏡、遮陽帽防曬，準備下水衣物下水前可在船艙房間內更換。</li>
                         <li>非常建議您穿搭海洋風格的服飾前來拍出無違和感的照片分享給親友。</li>
