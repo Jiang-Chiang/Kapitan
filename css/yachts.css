@@ -577,7 +577,7 @@ main{
         width: 100%;
         background-color: #E4E4E4;
         box-sizing: border-box;
-        padding: 20px 50px;
+        padding: 20px 10px;
         margin: auto;
         margin-bottom: 60px;
         font-size: 18px;
@@ -595,7 +595,7 @@ main{
 
     select{
         border: 1px solid black;
-        width: 150px;
+        width: 220px;
         height: 50px;
         background-color: white;
         font-size: 16px;
