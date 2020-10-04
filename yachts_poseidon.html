@@ -7,10 +7,13 @@
     <title>波賽頓│甲必丹遊艇城：船艇租賃</title>
     <link rel="stylesheet" href="./css/yachts_poseidon.css">
     <link rel="stylesheet" href="./css/common/back_tot_top.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <script src="./js/jquery.js"></script>
     <script src="/js/common_effects.js"></script>
+    <script src="/js/yachts_poseidon.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </head>
 
 <body>
@@ -108,20 +111,23 @@
             <!-- 頁籤列開始 -->
             <div class="tabs">
                 <a href="#tab01" id="plan_tab">
-                    <div class="tab_btn_present">
-                        <img src="./images/service.png" alt="">
+                    <div class="tab_btn _present">
+                        <img src="./images/service_selected.png" alt="" class="selected_icon" id="default_selected">
+                        <img src="./images/service.png" alt="" class="normal_icon" id="default_disappear">
                         方案內容
                     </div>
                 </a>
                 <a href="#tab02" id="yacht_tab">
                     <div class="tab_btn">
-                        <img src="./images/notebook.png" alt="">
+                        <img src="./images/notebook_selected.png" alt="" class="selected_icon">
+                        <img src="./images/notebook.png" alt="" class="normal_icon">
                         船隻資訊
                     </div>
                 </a>
                 <a href="#tab03" id="precautions_tab">
                     <div class="tab_btn">
-                        <img src="./images/alert.png" alt="">
+                        <img src="./images/alert_selected.png" alt="" class="selected_icon">
+                        <img src="./images/alert.png" alt="" class="normal_icon">
                         注意事項
                     </div>
                 </a>
@@ -137,7 +143,7 @@
                     <div class="title_decoration"></div>
 
                     <!--第一章：「行程與服務」開始-->
-                    <section class="chapter1">
+                    <section class="chapter01">
                         <div class="plan_details_block">
                             <div class="plan_avatar"><img src="./images/guishan_iIsland_avatar.png" alt=""></div>
                             <h5 class="plan_title">│牛奶海烤肉趴！龜山島半日遊│</h5>
@@ -225,7 +231,7 @@
                     <div class="title_decoration"></div>
 
                     <!--第二章：「船型概覽」開始-->
-                    <section class="chapter2">
+                    <section class="chapter02">
                         <div class="yacht_type_block">
                             <h6 class="yacht_type_title2">HANSE458</h6>
                             長寬：14.04*4.38 m<br>
@@ -248,7 +254,7 @@
                     <div class="title_decoration"></div>
 
                     <!--第三章：「甲必丹」開始-->
-                    <section class="chapter3">
+                    <section class="chapter03">
                         <div class="captain_information_block">
                             <div class="captain_avatar">
                                 <img src="./images/captain_luo.png" alt="">
@@ -283,67 +289,97 @@
 
                 <!--頁籤02：「船隻資訊」開始-->
                 <li class="information_container" id="yacht_information">
-                    <div class="information_img_block">
-                        <img src="./images/HANSE_508_02.jpg" alt="">
+
+                    <h2>革新、獨有的、舒適─HANSE 458</h2>
+                    <span>將在45呎同類型帆船中設定新標準，引領行業潮流。</span>
+
+                    <div class="db_information_img_block">
+                        <div class="information_img_block">
+                            <a href="./images/HANSE458_01.jpg" data-fancybox="gallery">
+                                <img src="./images/HANSE458_01.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="information_img_block">
+                            <a href="./images/HANSE458_02.jpg" data-fancybox="gallery">
+                                <img src="./images/HANSE458_02.jpg" alt="">
+                            </a>
+                        </div>
                     </div>
-                    <h4>最新款的HANSE508-最高等級 速度性 穩定性 安全性</h4>
-                    <p>
-                        有剛勁的船體線條，卓越的速度，高桅杆，大面帆，可選雙前帆，這些特點都設定了同級別的最高標準，十分驚豔。
-                        HANSE508是由世界上最優秀最有經驗的設計公司judel / vrolijk & co設計的，水準佈局與預平衡舵的相互作用，保證了驚人的速度性能、穩定性和安全性。
-                    </p>
+
+                    <h3>HANSE458保留一貫的特色：輕鬆駕駛，高速巡航</h3>
+                    <span>亦在原有的基礎上做出了創新。駕駛座椅可選配BBQ和盥洗池。舷梯旁增加了2個玻璃窗戶，大大提高了室內的透光性。<br>
+                        同時，艙頂的天窗也採用了4個玻璃窗戶，在艙內及時不開燈，也足夠明亮通透。</span>
+
+
+                    <div class="db_information_img_block">
+                        <div class="information_img_block">
+                            <a href="./images/HANSE458_03.jpg" data-fancybox="gallery">
+                                <img src="./images/HANSE458_03.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="information_img_block">
+                            <a href="./images/HANSE458_04.jpg" data-fancybox="gallery">
+                                <img src="./images/HANSE458_04.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <h3>船艙裡的生活空間</h3>
+                    <span>寬敞的艙內空間，新型的傢俱類型和軟裝裝飾。櫥櫃設計，牆板鑲板，低調而時尚，提高了室內空間的設計感和舒適感。<br>
+                        高雅地優質沙發，可選配升級餐桌，轉換成床，巧妙的設計，增加了空間改變的可能，從而變得生動有趣。</span>
 
                     <div class="information_img_block">
-                        <img src="./images/HANSE_508_03.jpg" alt="">
+                        <a href="./images/HANSE458_05.jpg" data-fancybox="gallery">
+                            <img src="./images/HANSE458_05.jpg" alt="">
+                        </a>
                     </div>
-                    <span>HANSE508沿襲了漢斯首創的特點：<b>輕鬆駕駛</b>。</span>
 
+                    <span>現代化的L型廚房，設備齊全，配有爐灶，水槽，冰箱，以及充足的儲物櫃。</span>
                     <div class="information_img_block">
-                        <img src="./images/HANSE_508_04.jpg" alt="">
+                        <a href="./images/HANSE458_06.jpg" data-fancybox="gallery">
+                            <img src="./images/HANSE458_06.jpg" alt="">
+                        </a>
                     </div>
-                    <div class="information_img_block">
-                        <img src="./images/HANSE_508_05.jpg" alt="">
-                    </div>
-                    <span>在舵手位置使用2個絞盤，配合自動調整前帆系統，便可輕鬆完成收帆，換帆等一系列動作。</span>
 
+                    <span>船艙大型的雙人床，大量的衣櫃和儲物空間。<br>
+                        透光性極好的艙頂窗戶，還有兩側的舷窗，船艙擁有了自然的太陽光線和通風性，讓船主擁有了完美的海上私密空間。</span>
                     <div class="information_img_block">
-                        <img src="./images/HANSE_508_06.jpg" alt="">
+                        <a href="./images/HANSE458_07.jpg" data-fancybox="gallery">
+                            <img src="./images/HANSE458_07.jpg" alt="">
+                        </a>
                     </div>
-                    <h4>隱藏式的繩索</h4>
-                    <span>保證了甲板的乾淨和整潔，您可以盡情享受無敵視野和超大的放鬆空間。現代航海，精益求精，舒適自在。</span>
-
-                    <div class="information_img_block">
-                        <img src="./images/HANSE_508_07.jpg" alt="">
-                    </div>
-                    <span>液壓游泳平臺，<b>輕鬆收放</b>。</span>
-
-                    <div class="information_img_block">
-                        <img src="./images/HANSE_508_08.jpg" alt="">
-                    </div>
-                    <span>駕駛區水吧，帶水槽，燒烤和冰箱。可選升降桌。</span>
-
-                    <div class="information_img_block">
-                        <img src="./images/HANSE_508_10.jpg" alt="">
-                    </div>
-                    <h4>全新的內飾空間佈局 設計先進 科學合理</h4>
-                    <p>一面式的廚房，佈局合理，令客廳空間更加寬敞。超多的儲物空間，可分類放置各種用品。
-                        全景玻璃天窗，增加了更多的自然光線，艙內更加通透明亮。</p>
-
-                    <div class="information_img_block">
-                        <img src="./images/HANSE_508_11.jpg" alt="">
-                    </div>
-                    <span>靜音主艙，超大的雙人床，現代簡潔的設計，獨享安靜的舒適的私密空間。</span>
-
-                    <div class="information_img_block">
-                        <img src="./images/HANSE_508_12.jpg" alt="">
-                    </div>
-                    <span>尾艙可做小孩房或客房。</span>
 
                 </li>
                 <!--頁籤02：「船隻資訊」結束-->
 
                 <!--頁籤03：「注意事項」開始-->
                 <li class="information_container" id="precautions_information">
-                    阿呆阿瓜
+                    <h4>航海規定</h4>
+                    <ol>
+                        <li>旅客應了解自身健康狀況是否適行，並攜帶自身所需要品。航程中身體不適者請務必主動告知船長。</li>
+                        <li>進行水上活動時，免費提供面鏡使用，請旅客結伴同行並注意自身安全。</li>
+                        <li>敬請有孩童隨行的旅客，應全權負責並維護孩童之安全。</li>
+                        <li>船上之飲食，工作人員僅協助處理，食品安全衛生仍須由旅客自行注意。</li>
+                        <li>如預天候不佳或不可抗拒之因素時，船長有權變便航海行程，包括更改航線、目的地及取消行程。</li>
+                        <li>請遵守船長指示使用設施，禁止在船上追逐嬉鬧，避免危險行為發生。</li>
+                        <li>不得進行一切非法活動，如因違法行為致使行程終止，違法者要負全責，包括航行費用及船長連帶的一切經濟損失。</li>
+                        <li>旅客攜帶來之財物，應自行負責及保管，於船上如有失竊一概恕不負責。</li>
+                    </ol>
+                    <h4>愛護海洋</h4>
+                    <ol>
+                        <li>請與我們一起協力保護海洋，登船請攜帶防曬衣物代替防曬乳，減低防曬乳對海洋的傷害。</li>
+                        <li>國家公園範圍內請勿餵食或採捕與垂釣。</li>
+                        <li>船上請勿隨意丟棄垃圾至海上。</li>
+                    </ol>
+                    <h4>貼心小建議</h4>
+                    <ul>
+                        <li>海面上日照及陽光折射較高，建議可準備太陽眼鏡、遮陽帽防曬，準備下水衣物下水前可在船艙房間內更換。</li>
+                        <li>非常建議您穿搭海洋風格的服飾前來拍出無違和感的照片分享給親友。</li>
+                        <li>穿著容易穿脫的鞋子、涼鞋或脫鞋前往，因上船前需脫鞋維持船上整潔。</li>
+                        <li>易暈車船的乘客自於乘船前30分使用暈船藥。</li>
+                        <li>3-4月及9-10月海上風力、氣溫較低，建議可以多備輕薄外套上船。</li>
+                    </ul>
+
                 </li>
                 <!--頁籤03：「注意事項」結束-->
 

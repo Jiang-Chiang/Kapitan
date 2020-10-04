@@ -8,7 +8,7 @@ a{
     color: black;
 }
 
-li{
+.tabs_content > li{
     list-style: none;
 }
 
@@ -24,7 +24,19 @@ main{
     background-color: lightgrey;
 }
 
-.tab_btn_present{
+.selected_icon{
+    display: none;
+}
+
+#default_selected{
+    display: inline-block;
+}
+
+#default_disappear{
+    display: none;
+}
+
+._present{
     background-color: #135589;
     color: white;
 }
@@ -34,9 +46,9 @@ main{
     border-radius: 0 10px 0 0;
 }
 
-/* #yacht_information, #precautions_information{
-    visibility: hidden;
-} */
+#yacht_information, #precautions_information{
+    display: none;
+}
 
 .tabs_content{
     padding: 0;
@@ -54,7 +66,7 @@ main{
     text-align: center
 }
 
-#yacht_information{
+#yacht_information, #precautions_information{
     font-size: 16px;
     padding: 30px;
 }
@@ -91,8 +103,23 @@ main{
     display: none;
 }
 
+#yacht_information h2,
+#yacht_information h3{
+    margin-bottom: 0;
+}
+
+.db_information_img_block,
 .information_img_block{
-    /* border: 1px solid red; */
+    margin: 20px 0px;
+}
+
+.db_information_img_block{
+    width: 720px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.information_img_block{
     width: 350px;
     height: 250px;
     position: relative;
@@ -218,7 +245,7 @@ main{
         justify-content: space-between;
     }
     
-    .tab_btn_present, .tab_btn{
+    ._present, .tab_btn{
         border: 1px solid black;
         border-radius: 0 10px 0 0;
         border-right-style: none;
@@ -230,7 +257,7 @@ main{
         font-size: 18px;
     }
     
-    .chapter1{
+    .chapter01{
         width: 960px;
         margin: auto;
         display: flex;
@@ -282,7 +309,7 @@ main{
         line-height: 100px;
     }
     
-    .chapter2{
+    .chapter02{
         width: 885px;
         height: 400px;
         margin: auto;
@@ -306,7 +333,7 @@ main{
         line-height: 40px;
     }
     
-    .chapter3{
+    .chapter03{
         width: 850px;
         height: 300px;
         margin: auto;
@@ -446,7 +473,7 @@ main{
         justify-content: space-between;
     }
     
-    .tab_btn_present, .tab_btn{
+    ._present, .tab_btn{
         border: 1px solid black;
         border-radius: 0 10px 0 0;
         border-right-style: none;
@@ -462,7 +489,7 @@ main{
         width: 750px;
     }
     
-    .chapter1{
+    .chapter01{
         width: 750px;
         margin: auto;
         display: flex;
@@ -516,7 +543,7 @@ main{
         margin-bottom: 10px;
     }
     
-    .chapter2{
+    .chapter02{
         width: 750px;
     }
     
@@ -524,7 +551,7 @@ main{
         display: none;
     }
 
-    .chapter2 img{
+    .chapter02 img{
         margin: auto;
     }
 
@@ -545,7 +572,7 @@ main{
         line-height: 40px;
     }
     
-    .chapter3{
+    .chapter03{
         width: 750px;
         margin: auto;
         display: flex;
@@ -575,6 +602,19 @@ main{
         font-size: 16px;
         text-align: left;
         padding: 15px 0px;
+    }
+
+    .db_information_img_block{
+        width: 690px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .information_img_block{
+        width: 330px;
+        height: 230px;
+        position: relative;
+        overflow: hidden;
     }
     
     .relative_yachts_container{
@@ -685,7 +725,7 @@ main{
         justify-content: space-between;
     }
     
-    .tab_btn_present, .tab_btn{
+    ._present, .tab_btn{
         border: 1px solid black;
         border-radius: 0 10px 0 0;
         border-right-style: none;
@@ -701,7 +741,7 @@ main{
         width: 510px;
     }
     
-    .chapter1{
+    .chapter01{
         width: 510px;
         margin: auto;
         display: flex;
@@ -755,7 +795,7 @@ main{
         margin-bottom: 10px;
     }
     
-    .chapter2{
+    .chapter02{
         width: 510px;
     }
     
@@ -763,7 +803,7 @@ main{
         display: none;
     }
 
-    .chapter2 img{
+    .chapter02 img{
         width: 90%;
         margin: auto;
     }
@@ -785,7 +825,7 @@ main{
         line-height: 40px;
     }
     
-    .chapter3{
+    .chapter03{
         width: 510px;
         margin: auto;
         display: flex;
@@ -815,6 +855,20 @@ main{
         font-size: 16px;
         text-align: left;
         padding: 15px 0px;
+    }
+
+    .db_information_img_block{
+        width: 400px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    
+    .information_img_block{
+        width: 330px;
+        height: 230px;
+        position: relative;
+        overflow: hidden;
     }
     
     .relative_yachts_container{
@@ -925,7 +979,7 @@ main{
         justify-content: space-between;
     }
     
-    .tab_btn_present, .tab_btn{
+    ._present, .tab_btn{
         border: 1px solid black;
         border-radius: 0 10px 0 0;
         border-right-style: none;
@@ -941,7 +995,7 @@ main{
         width: 320px;
     }
     
-    .chapter1{
+    .chapter01{
         width: 320px;
         margin: auto;
         display: flex;
@@ -999,7 +1053,7 @@ main{
         margin-bottom: 10px;
     }
     
-    .chapter2{
+    .chapter02{
         width: 320px;
     }
     
@@ -1007,7 +1061,7 @@ main{
         display: none;
     }
 
-    .chapter2 img{
+    .chapter02 img{
         width: 90%;
         margin: auto;
     }
@@ -1029,7 +1083,7 @@ main{
         line-height: 40px;
     }
     
-    .chapter3{
+    .chapter03{
         width: 320px;
         margin: auto;
         display: flex;
@@ -1059,6 +1113,20 @@ main{
         font-size: 16px;
         text-align: left;
         padding: 15px 0px;
+    }
+
+    .db_information_img_block{
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+    
+    .information_img_block{
+        width: 270px;
+        height: 180px;
+        position: relative;
+        overflow: hidden;
     }
     
     .relative_yachts_container{
