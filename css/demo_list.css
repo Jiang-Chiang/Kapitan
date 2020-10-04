@@ -4,38 +4,38 @@
 @import "./common/cover.css";
 
 main{
-    min-width: 1200px;
     font-size: 0px;
     text-align: center;
 }
 
-.content_container{
-    min-width: 1200px;
-    height: 500px;
-    margin: auto;
-    text-align: center;
-}
-
-h2{
+.topic{
     font-size: 72px;
-    margin-top: 160px; 
+    margin-top: 120px; 
     color: #152A69;
     text-align: center;
-}
-
-.topic{
-    margin-bottom: 160px;
-    line-height: 40px;
 }
 
 h3{
     font-size: 48px;
     line-height: 10px;
-    margin-bottom: 160px;
     color: #189EBB;
     text-align: center;
 }
 
-.construction{
-    width: 300px;
+.desctription01{
+    margin: 0px 0px 80px 0px;
+}
+
+.list_container{
+    width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+li{
+    font-size: 18px;
+}
+
+.desctription02{
+    margin: 80px 0px 160px 0px;
 }
