@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
     <script src="./js/jquery.js"></script>
-    <script src="js/back_tot_top.js"></script>
+    <script src="/js/common_effects.js"></script>
 </head>
 
 <body>
@@ -102,176 +102,256 @@
             </div>
         </div>
 
-        <div class="tabs_group" role="group" id="tabs">
-            <a href="#0" id="plan_tab">
-                <div class="tab_btn_present">
-                    <img src="./images/service.png" alt="">
-                    方案內容
-                </div>
-            </a>
-            <a href="#0" id="yacht_tab">
-                <div class="tab_btn">
-                    <img src="./images/notebook.png" alt="">
-                    船隻資訊
-                </div>
-            </a>
-            <a href="#0" id="precautions_tab">
-                <div class="tab_btn">
-                    <img src="./images/alert.png" alt="">
-                    注意事項
-                </div>
-            </a>
+        <!-- 頁籤面板開始 -->
+        <div id="tab_panel">
+
+            <!-- 頁籤列開始 -->
+            <div class="tabs">
+                <a href="#tab01" id="plan_tab">
+                    <div class="tab_btn_present">
+                        <img src="./images/service.png" alt="">
+                        方案內容
+                    </div>
+                </a>
+                <a href="#tab02" id="yacht_tab">
+                    <div class="tab_btn">
+                        <img src="./images/notebook.png" alt="">
+                        船隻資訊
+                    </div>
+                </a>
+                <a href="#tab03" id="precautions_tab">
+                    <div class="tab_btn">
+                        <img src="./images/alert.png" alt="">
+                        注意事項
+                    </div>
+                </a>
+            </div>
+            <!-- 頁籤列結束 -->
+
+            <!-- 頁籤內容開始 -->
+            <ul class="tabs_content">
+
+                <!--頁籤01：「方案內容」開始-->
+                <li class="information_container active" id="plan_information">
+                    <h5 class="chapter_title">行程與服務</h5>
+                    <div class="title_decoration"></div>
+
+                    <!--第一章：「行程與服務」開始-->
+                    <section class="chapter1">
+                        <div class="plan_details_block">
+                            <div class="plan_avatar"><img src="./images/guishan_iIsland_avatar.png" alt=""></div>
+                            <h5 class="plan_title">│牛奶海烤肉趴！龜山島半日遊│</h5>
+                            <div class="plan_text_block">
+                                <p>
+                                    ★ 目的地：宜蘭縣龜山島週邊<br>
+                                    ★ 出發地：甲必丹12號分港（宜蘭烏石）<br>
+                                    ★ 成團人數：5-8<br>
+                                    ★ 行程時間：4小時<br>
+                                    ★ 方案計價：4,500元 / 人<br>
+
+                                </p>
+                                <p>
+                                    ☆ 服務包含：<br>
+                                    　- 專業船長、水手各一名<br>
+                                    　- 冰箱、微波爐、烤箱、瓦斯爐<br>
+                                    　- 無限暢飲：飲用水、軟性飲料、啤酒<br>
+                                    　- 水上充氣玩具、SUP立式划槳<br>
+                                    　- 船外機橡皮小艇<br>
+                                    　- AROPEC進口救生衣、漂浮用具、魚雷浮標<br>
+                                    　- 航程中乘客意外安全保險
+                                </p>
+                            </div>
+                        </div>
+                        <div class="plan_itinerary">
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan1.png" alt="" class="itinerary_avatar">
+                                1. 行前安全宣導
+                            </div>
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan2.png" alt="" class="itinerary_avatar">
+                                2. 出航前往龜山島牛奶海域
+                            </div>
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan3.png" alt="" class="itinerary_avatar">
+                                3. 親自體驗操作主帆前帆樂趣
+                            </div>
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan4.png" alt="" class="itinerary_avatar">
+                                4. 於平靜水域下海玩SUP及各類水上充氣玩具
+                            </div>
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan5.png" alt="" class="itinerary_avatar">
+                                5. 後花園水域內烤肉吃喝
+                            </div>
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan6.png" alt="" class="itinerary_avatar">
+                                6. 返航回12號分港
+                            </div>
+                        </div>
+                        <div class="plan_itinerary_for_mobile">
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan1.png" alt="" class="itinerary_avatar">
+                            </div>1. 行前安全宣導
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan2.png" alt="" class="itinerary_avatar">
+                            </div>2. 出航前往龜山島牛奶海域
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan3.png" alt="" class="itinerary_avatar">
+                            </div>3. 親自體驗操作主帆前帆樂趣
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan4.png" alt="" class="itinerary_avatar">
+                            </div>4. 於平靜水域下海玩SUP及各類水上充氣玩具
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan5.png" alt="" class="itinerary_avatar">
+                            </div>5. 後花園水域內烤肉吃喝
+
+                            <div class="itinerary_block">
+                                <img src="images/guishan_island_plan6.png" alt="" class="itinerary_avatar">
+                            </div>6. 返航回12號分港
+                        </div>
+                    </section>
+                    <!--第一章：「行程與服務」結束-->
+
+                    <h5 class="chapter_title">船型概覽</h5>
+                    <div class="title_decoration"></div>
+
+                    <!--第二章：「船型概覽」開始-->
+                    <section class="chapter2">
+                        <div class="yacht_type_block">
+                            <h6 class="yacht_type_title2">HANSE458</h6>
+                            長寬：14.04*4.38 m<br>
+                            發動機：57hp<br>
+                            認證級別：A<br>
+                            設計：Judel/Vrolijk&Co<br>
+                        </div>
+                        <img src="./images/poseidon_perspective.png" alt="">
+                        <div class="yacht_type_block_for_mobile">
+                            <h6 class="yacht_type_title2">HANSE458</h6>
+                            長寬：14.04*4.38 m<br>
+                            發動機：57hp<br>
+                            認證級別：A<br>
+                            設計：Judel/Vrolijk&Co<br>
+                        </div>
+                    </section>
+                    <!--第二章：「船型概覽」結束-->
+
+                    <h5 class="chapter_title">甲必丹</h5>
+                    <div class="title_decoration"></div>
+
+                    <!--第三章：「甲必丹」開始-->
+                    <section class="chapter3">
+                        <div class="captain_information_block">
+                            <div class="captain_avatar">
+                                <img src="./images/captain_luo.png" alt="">
+                            </div>
+                            <h5 class="captain_name">駱海仁</h5>
+                            <img src="./images/rating_stars.png" alt=""><br>
+                            （4,956）
+                        </div>
+                        <div class="captain_story">
+                            <p>
+                                不說您可能不知道，駱船長起初是一位立法委員。
+                                2028年立委選舉前，他曾允諾：敵對政黨若在臺北市8席全上（俗稱八仙過海），便將跳海。
+                                結果對造真的達標，自己也不幸落選，駱遂於建築中的甲必丹外港，騎乘水上摩托車出海，並縱身跳入冷冽汪洋。
+                            </p>
+
+                            <p>
+                                這次經歷使駱的名聲更喧，且觸動他深埋心底已久、對海洋的無限憧憬。
+                                事後，駱加入了甲必丹，並成為一艘HANSE458的船長。
+                                基於長年問政和選民服務的經驗，駱的口條犀利且善於應付各階層的遊客，他的人氣不斷攀升，並在2033年榮獲<span
+                                    class="keyword">「甲必丹年度業績先鋒」</span>獎章。
+                            </p>
+
+                            <p>
+                                駱船長的座艦是<span class="keyword">「波賽頓」</span>號。基礎服務項目有：「遠洋」、「無限暢飲」和「橡皮艇」，亦可加價客製化。
+                                駱船長有時會演奏小提琴，且不介意遊客在船上吸菸和談論政治。
+                            </p>
+                        </div>
+                    </section>
+                    <!--第三章：「甲必丹」結束-->
+                </li>
+                <!--頁籤01：「方案內容」結束-->
+
+                <!--頁籤02：「船隻資訊」開始-->
+                <li class="information_container" id="yacht_information">
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_02.jpg" alt="">
+                    </div>
+                    <h4>最新款的HANSE508-最高等級 速度性 穩定性 安全性</h4>
+                    <p>
+                        有剛勁的船體線條，卓越的速度，高桅杆，大面帆，可選雙前帆，這些特點都設定了同級別的最高標準，十分驚豔。
+                        HANSE508是由世界上最優秀最有經驗的設計公司judel / vrolijk & co設計的，水準佈局與預平衡舵的相互作用，保證了驚人的速度性能、穩定性和安全性。
+                    </p>
+
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_03.jpg" alt="">
+                    </div>
+                    <span>HANSE508沿襲了漢斯首創的特點：<b>輕鬆駕駛</b>。</span>
+
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_04.jpg" alt="">
+                    </div>
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_05.jpg" alt="">
+                    </div>
+                    <span>在舵手位置使用2個絞盤，配合自動調整前帆系統，便可輕鬆完成收帆，換帆等一系列動作。</span>
+
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_06.jpg" alt="">
+                    </div>
+                    <h4>隱藏式的繩索</h4>
+                    <span>保證了甲板的乾淨和整潔，您可以盡情享受無敵視野和超大的放鬆空間。現代航海，精益求精，舒適自在。</span>
+
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_07.jpg" alt="">
+                    </div>
+                    <span>液壓游泳平臺，<b>輕鬆收放</b>。</span>
+
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_08.jpg" alt="">
+                    </div>
+                    <span>駕駛區水吧，帶水槽，燒烤和冰箱。可選升降桌。</span>
+
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_10.jpg" alt="">
+                    </div>
+                    <h4>全新的內飾空間佈局 設計先進 科學合理</h4>
+                    <p>一面式的廚房，佈局合理，令客廳空間更加寬敞。超多的儲物空間，可分類放置各種用品。
+                        全景玻璃天窗，增加了更多的自然光線，艙內更加通透明亮。</p>
+
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_11.jpg" alt="">
+                    </div>
+                    <span>靜音主艙，超大的雙人床，現代簡潔的設計，獨享安靜的舒適的私密空間。</span>
+
+                    <div class="information_img_block">
+                        <img src="./images/HANSE_508_12.jpg" alt="">
+                    </div>
+                    <span>尾艙可做小孩房或客房。</span>
+
+                </li>
+                <!--頁籤02：「船隻資訊」結束-->
+
+                <!--頁籤03：「注意事項」開始-->
+                <li class="information_container" id="precautions_information">
+                    阿呆阿瓜
+                </li>
+                <!--頁籤03：「注意事項」結束-->
+
+            </ul>
+            <!-- 頁籤內容結束 -->
+
         </div>
-
-        <!--頁籤內容開始-->
-        <div class="information_container">
-            <h5 class="chapter_title">行程與服務</h5>
-            <div class="title_decoration"></div>
-
-            <!--第一章：「行程與服務」開始-->
-            <div class="chapter1">
-                <div class="plan_details_block">
-                    <div class="plan_avatar"><img src="./images/guishan_iIsland_avatar.png" alt=""></div>
-                    <h5 class="plan_title">│牛奶海烤肉趴！龜山島半日遊│</h5>
-                    <div class="plan_text_block">
-                        <p>
-                            ★ 目的地：宜蘭縣龜山島週邊<br>
-                            ★ 出發地：甲必丹12號分港（宜蘭烏石）<br>
-                            ★ 成團人數：5-8<br>
-                            ★ 行程時間：4小時<br>
-                            ★ 方案計價：4,500元 / 人<br>
-
-                        </p>
-                        <p>
-                            ☆ 服務包含：<br>
-                            　- 專業船長、水手各一名<br>
-                            　- 冰箱、微波爐、烤箱、瓦斯爐<br>
-                            　- 無限暢飲：飲用水、軟性飲料、啤酒<br>
-                            　- 水上充氣玩具、SUP立式划槳<br>
-                            　- 船外機橡皮小艇<br>
-                            　- AROPEC進口救生衣、漂浮用具、魚雷浮標<br>
-                            　- 航程中乘客意外安全保險
-                        </p>
-                    </div>
-                </div>
-                <div class="plan_itinerary">
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan1.png" alt="" class="itinerary_avatar">
-                        1. 行前安全宣導
-                    </div>
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan2.png" alt="" class="itinerary_avatar">
-                        2. 出航前往龜山島牛奶海域
-                    </div>
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan3.png" alt="" class="itinerary_avatar">
-                        3. 親自體驗操作主帆前帆樂趣
-                    </div>
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan4.png" alt="" class="itinerary_avatar">
-                        4. 於平靜水域下海玩SUP及各類水上充氣玩具
-                    </div>
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan5.png" alt="" class="itinerary_avatar">
-                        5. 後花園水域內烤肉吃喝
-                    </div>
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan6.png" alt="" class="itinerary_avatar">
-                        6. 返航回12號分港
-                    </div>
-                </div>
-                <div class="plan_itinerary_for_mobile">
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan1.png" alt="" class="itinerary_avatar">
-                    </div>1. 行前安全宣導
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan2.png" alt="" class="itinerary_avatar">
-                    </div>2. 出航前往龜山島牛奶海域
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan3.png" alt="" class="itinerary_avatar">
-                    </div>3. 親自體驗操作主帆前帆樂趣
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan4.png" alt="" class="itinerary_avatar">
-                    </div>4. 於平靜水域下海玩SUP及各類水上充氣玩具
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan5.png" alt="" class="itinerary_avatar">
-                    </div>5. 後花園水域內烤肉吃喝
-
-                    <div class="itinerary_block">
-                        <img src="images/guishan_island_plan6.png" alt="" class="itinerary_avatar">
-                    </div>6. 返航回12號分港
-                </div>
-            </div>
-            <!--第一章：「行程與服務」結束-->
-
-            <h5 class="chapter_title">船型概覽</h5>
-            <div class="title_decoration"></div>
-
-            <!--第二章：「船型概覽」開始-->
-            <div class="chapter2">
-                <div class="yacht_type_block">
-                    <h6 class="yacht_type_title2">HANSE458</h6>
-                    長寬：14.04*4.38 m<br>
-                    發動機：57hp<br>
-                    認證級別：A<br>
-                    設計：Judel/Vrolijk&Co<br>
-                </div>
-                <img src="./images/poseidon_perspective.png" alt="">
-                <div class="yacht_type_block_for_mobile">
-                    <h6 class="yacht_type_title2">HANSE458</h6>
-                    長寬：14.04*4.38 m<br>
-                    發動機：57hp<br>
-                    認證級別：A<br>
-                    設計：Judel/Vrolijk&Co<br>
-                </div>
-            </div>
-            <!--第二章：「船型概覽」結束-->
-
-            <h5 class="chapter_title">甲必丹</h5>
-            <div class="title_decoration"></div>
-
-            <!--第三章：「甲必丹」開始-->
-            <div class="chapter3">
-                <div class="captain_information_block">
-                    <div class="captain_avatar">
-                        <img src="./images/captain_luo.png" alt="">
-                    </div>
-                    <h5 class="captain_name">駱海仁</h5>
-                    <img src="./images/rating_stars.png" alt=""><br>
-                    （4,956）
-                </div>
-                <div class="captain_story">
-                    <p>
-                        不說您可能不知道，駱船長起初是一位立法委員。
-                        2028年立委選舉前，他曾允諾：敵對政黨若在臺北市8席全上（俗稱八仙過海），便將跳海。
-                        結果對造真的達標，自己也不幸落選，駱遂於建築中的甲必丹外港，騎乘水上摩托車出海，並縱身跳入冷冽汪洋。
-                    </p>
-
-                    <p>
-                        這次經歷使駱的名聲更喧，且觸動他深埋心底已久、對海洋的無限憧憬。
-                        事後，駱加入了甲必丹，並成為一艘HANSE458的船長。
-                        基於長年問政和選民服務的經驗，駱的口條犀利且善於應付各階層的遊客，他的人氣不斷攀升，並在2033年榮獲<span class="keyword">「甲必丹年度業績先鋒」</span>獎章。
-                    </p>
-
-                    <p>
-                        駱船長的座艦是<span class="keyword">「波賽頓」</span>號。基礎服務項目有：「遠洋」、「無限暢飲」和「橡皮艇」，亦可加價客製化。
-                        駱船長有時會演奏小提琴，且不介意遊客在船上吸菸和談論政治。
-                    </p>
-                </div>
-            </div>
-            <!--第三章：「甲必丹」結束-->
-
-        </div>
-        <!--頁籤內容結束-->
+        <!-- 頁籤面板結束 -->
 
         <h1 class="title">類似的船型還有...</h1>
 

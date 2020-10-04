@@ -8,6 +8,10 @@ a{
     color: black;
 }
 
+li{
+    list-style: none;
+}
+
 main{
     font-size: 0px;
 }
@@ -28,6 +32,31 @@ main{
 #precautions_tab{
     border-right: 1px solid black;
     border-radius: 0 10px 0 0;
+}
+
+/* #yacht_information, #precautions_information{
+    visibility: hidden;
+} */
+
+.tabs_content{
+    padding: 0;
+}
+
+.information_container{
+    width: 1000px;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: auto;
+}
+
+#plan_information{
+    text-align: center
+}
+
+#yacht_information{
+    font-size: 16px;
+    padding: 30px;
 }
 
 .chapter_title{
@@ -60,6 +89,22 @@ main{
 
 .plan_itinerary_for_mobile{
     display: none;
+}
+
+.information_img_block{
+    /* border: 1px solid red; */
+    width: 350px;
+    height: 250px;
+    position: relative;
+    overflow: hidden;
+}
+
+.information_img_block img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .yacht_type_block_for_mobile{
@@ -163,7 +208,7 @@ main{
         color: #9A0303;
     }
     
-    .tabs_group{
+    .tabs{
         width: 1000px;
         height: 40px;
         box-sizing: border-box;
@@ -183,15 +228,6 @@ main{
         text-align: center;
         padding: 5px 0px;
         font-size: 18px;
-    }
-    
-    .information_container{
-        width: 1000px;
-        height: 2100px;
-        box-sizing: border-box;
-        border: 1px solid black;
-        margin: auto;
-        text-align: center;
     }
     
     .chapter1{
@@ -400,7 +436,7 @@ main{
         color: #9A0303;
     }
     
-    .tabs_group{
+    .tabs{
         width: 750px;
         height: 40px;
         box-sizing: border-box;
@@ -424,10 +460,6 @@ main{
     
     .information_container{
         width: 750px;
-        box-sizing: border-box;
-        border: 1px solid black;
-        margin: auto;
-        text-align: center;
     }
     
     .chapter1{
@@ -643,7 +675,7 @@ main{
         color: #9A0303;
     }
     
-    .tabs_group{
+    .tabs{
         width: 510px;
         height: 40px;
         box-sizing: border-box;
@@ -667,10 +699,6 @@ main{
     
     .information_container{
         width: 510px;
-        box-sizing: border-box;
-        border: 1px solid black;
-        margin: auto;
-        text-align: center;
     }
     
     .chapter1{
@@ -887,7 +915,7 @@ main{
         color: #9A0303;
     }
     
-    .tabs_group{
+    .tabs{
         width: 320px;
         height: 40px;
         box-sizing: border-box;
@@ -911,10 +939,6 @@ main{
     
     .information_container{
         width: 320px;
-        box-sizing: border-box;
-        border: 1px solid black;
-        margin: auto;
-        text-align: center;
     }
     
     .chapter1{
