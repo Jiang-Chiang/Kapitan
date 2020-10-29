@@ -83,31 +83,31 @@ $(document).ready(function () {
     triggerElement: '#point1',
     triggerHook: 0,
     offset: -400
-  }).setTween(mv01).addIndicators().addTo(controller)
+  }).setTween(mv01).addTo(controller)
 
   var scene02 = new ScrollMagic.Scene({
     triggerElement: '#point2',
     triggerHook: 0,
     offset: -400
-  }).setTween(mv02).addIndicators().addTo(controller)
+  }).setTween(mv02).addTo(controller)
 
   var scene03 = new ScrollMagic.Scene({
     triggerElement: '#point2',
     triggerHook: 0,
     offset: -400,
-  }).setTween(mv03).addIndicators().addTo(controller)
+  }).setTween(mv03).addTo(controller)
 
   var scene04 = new ScrollMagic.Scene({
     triggerElement: '#point2',
     triggerHook: 0,
     offset: -400
-  }).setTween(mv04).addIndicators().addTo(controller)
+  }).setTween(mv04).addTo(controller)
 
   var scene04 = new ScrollMagic.Scene({
     triggerElement: '#point2',
     triggerHook: 0,
     offset: -400
-  }).setTween(mv05).addIndicators().addTo(controller)
+  }).setTween(mv05).addTo(controller)
 
 });
 
